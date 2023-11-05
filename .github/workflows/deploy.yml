@@ -22,10 +22,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create example page
+      - name: Build app
         run: |
-          mkdir -p dist 
-          echo 'Legionas prieš legioneles' > dist/index.html
+          cd ./nvsc-lpl-app
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
