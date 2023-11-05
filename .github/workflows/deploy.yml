@@ -25,6 +25,7 @@ jobs:
       - name: Build app
         run: |
           cd ./nvsc-lpl-app
+          npm ci
           npm run build
 
       - name: Upload artifact
