@@ -7,7 +7,7 @@ export const App = () => {
 
   return (
     <>
-      <RouterProvider router={router} />
+        <RouterProvider router={router} />
     </>
   )
 }

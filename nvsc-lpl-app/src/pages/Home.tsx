@@ -1,12 +1,11 @@
+import React from 'react';
+import { Chart } from '../components/Chart';
 
-
-export const Home = () => {
+export const Home: React.FC = () => {
 
   return (
     <>
-      <div>
-        LEGIONAS PRIEŠ LEGIONELES.
-      </div>
+      <Chart />
     </>
   )
 }
