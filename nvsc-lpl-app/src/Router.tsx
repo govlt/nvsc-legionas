@@ -8,4 +8,4 @@ export const router = createBrowserRouter([
       path: "/",
       element: <Home />,
     },
-]);
+], {basename:'/nvsc-lpl'});
