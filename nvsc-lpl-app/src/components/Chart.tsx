@@ -3,6 +3,7 @@ import { useCases } from '../hooks/UseCases';
 import { Case } from "../types/Cases";
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
+import { ChartOptions } from 'chart.js';
 
 export const Chart: React.FC = () => {
   const { cases } = useCases();
@@ -50,30 +51,38 @@ export const Chart: React.FC = () => {
       setResults(filledResults);
     }
   }, [cases]);
-  
-  const options = {
-    type: 'line',
+
+  const options: ChartOptions<'line'> = {
     responsive: true,
     plugins: {
+      tooltip: {
+        displayColors: false, // don't show color box in
+        backgroundColor: 'rgba(72, 99, 160, 1)',
+        bodyFont: {
+          size: 20,
+          family: 'normal normal normal Public Sans',
+        },
+        callbacks: {
+          title: function () {
+            return '';
+          },
+        }
+      },
       legend: {
         display: false,
       },
       title: {
-        display: true,
-        text: 'Grafikas parengtas pagal statistikos departamento duomenis.',
-        position: 'bottom' as const,
+        display: false,
       },
     },
     scales: {
       x: {
-        color: 'red',
         grid: {
           display: false,
         },
         ticks: {
           color: '#4C74F5',
         },
-        //x0 main axis when y = 0
         border: {
           width: 1,
           color: '#4C74F5',
@@ -88,6 +97,8 @@ export const Chart: React.FC = () => {
     }
   };
   
+  
+
   const labels = results.map((item) => item.year);
   
   const data = {
@@ -113,8 +124,8 @@ export const Chart: React.FC = () => {
         pointStyle: 'circle',
         pointRadius: 5,
         pointHoverRadius: 10,
-        pointBorderColor: '#FFFFFF', // Set the border color of the points
-        pointBorderWidth: 2, // Set the border width of the points
+        pointBorderColor: '#FFFFFF',
+        pointBorderWidth: 2, 
       },
     ],
   };
