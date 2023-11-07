@@ -8,13 +8,19 @@ export const ImportantInfo: React.FC = () => {
 
   return (
     <>
-        <div style={{ textAlign: 'center' }}>
-            <p>Svarbu Žinoti</p>
-        </div>
-        <div style={styles.gridContainer}>
-
+    <div className='infoButtonContainer'>
+      <button className='infoButton'
+        onClick={() => navigate("/svarbu-zinoti")}>
+        Svarbu Žinoti
+      </button>
+    </div>
+    <div className='importantContainer'>
+      <div>
+        <p className='importantHeader'>Svarbu žinoti</p>
+      </div>
+      <div className='importantGrid'>
         <ImportantInfoCard 
-            image="/path/to/image.jpg"
+            image="src/styles/images/legionele.jpg"
             header="Kas yra legioneliozė?"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. 
             pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo 
@@ -61,19 +67,8 @@ export const ImportantInfo: React.FC = () => {
             raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių."
             onButtonClick={() => navigate("/duk")}
         />
-        </div>
+      </div>
+    </div>
     </>
   )
 }
-
-const styles = {
-    gridContainer: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      columnGap: '5px', 
-      rowGap: '5px', 
-      justifyContent: 'center',
-      padding: '10px',
-    },
-  };
-  

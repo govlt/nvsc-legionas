@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Public Sans";
+    src: url('fonts/Public_Sans/static/PublicSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('fonts/Inter/static/Inter-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.importantContainer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.importantHeader{
+    text-align: left;
+    font: normal normal 600 48px/57px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.importantTextHeader{
+    text-align: left;
+    font: normal normal 600 24px/29px "Inter", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.importantMainText{
+    margin-top: 0px;
+    text-align: left;
+    font: normal normal normal 16px/26px "Inter", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.importantGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1400px) {
+    .importantGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .importantGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .importantContainer{
+        padding: 0%;
+    }
+    .importantHeader{
+        text-align: center;
+    }
+}
+
+.importantCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.importantCard{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 15px #12112714;
+    border-radius: 12px;
+    opacity: 1;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.importantCardImageContainer{
+    text-align: left;
+    height: 50px;
+}
+
+.importantCardHeader{
+    text-align: left;
+    font: normal normal bold 18px/21px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.importantCardText{
+    text-align: left;
+    font: normal normal normal 16px/26px "Inter", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.importantCardButton{
+    text-align: left;
+    font: normal normal bold 16px/26px "Inter", Arial, Sans-Serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0px;
+    color: #4C74F5;
+    opacity: 1;
+}
+

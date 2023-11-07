@@ -1,3 +1,82 @@
-body {
-    background-color: lightgrey;
+@font-face {
+    font-family: "Public Sans";
+    src: url('fonts/Public_Sans/static/PublicSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url('fonts/Public_Sans/static/PublicSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url('fonts/Public_Sans/static/PublicSans-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+
+body{
+    overflow: scroll;
+}
+
+.infoButtonContainer{
+    display: flex;
+    justify-content: right;
+}
+
+.infoButton{
+    background: #4C74F5 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 20px;
+    opacity: 1;
+    font: normal normal 600 18px/21px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font: normal normal bold 96px/113px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.homeMainText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: '10vh';
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.homeMainButton{
+    background: #4C74F5 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 20px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: #FEFEFF;
+}
+
+.homeGraphText{
+    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
 }

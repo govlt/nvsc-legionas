@@ -8,38 +8,20 @@ export const Home: React.FC = () => {
 
   return (
     <>
-    <div style={{ position: 'relative', width: '100%'}}>
-      <button style={{ 
-        position: 'absolute', 
-        top: 0, 
-        right: 0, 
-        margin: '10px' 
-        }}
-        onClick={() => navigate("/svarbu-zinoti")}
-      >
+    <div className='infoButtonContainer'>
+      <button className='infoButton'
+        onClick={() => navigate("/svarbu-zinoti")}>
         Svarbu Žinoti
       </button>
     </div>
 
-    <div style={{ 
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center', 
-        height: '10vh'
-    }}>
+    <div>
       <h2>
-        LEGIONAS PRIEŠ LEGIONELES
+        Legionas prieš legioneles
       </h2> 
     </div>
 
-    <div style={{ 
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '10vh', 
-      width: '700px', 
-      margin: 'auto'
-    }}>
+    <div className='homeMainText'>
       <h3>
       Legioneliozė, nors ir ne visada plačiai aptariama, yra rimta grėsmė visuomenės sveikatai, 
       sukelianti pavojingas ir net mirtinas pasekmes. Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
@@ -52,11 +34,11 @@ export const Home: React.FC = () => {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <button style={{ margin: 'auto' }}>Susipažinti kaip apsisaugoti</button>
+      <button className='homeMainButton'>Susipažinti kaip apsisaugoti</button>
     </div>
     <div id="chart" style={{ width: '1200px', height: '600px', margin: 'auto' }}>
       <Chart />
-      <p>
+      <p className='homeGraphText'>
         Grafikas parengtas pagal statistikos deparatamento duomenis.
       </p>
     </div>
