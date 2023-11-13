@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useCases } from '../hooks/UseCases';
-import { Case } from "../types/Cases";
+import { Case } from '../types/Cases';
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 import { ChartOptions } from 'chart.js';
@@ -96,8 +96,6 @@ export const Chart: React.FC = () => {
       },
     }
   };
-  
-  
 
   const labels = results.map((item) => item.year);
   
