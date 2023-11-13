@@ -27,9 +27,6 @@ jobs:
           cd ./nvsc-lpl-app
           npm ci
           npm run build
-      
-      - name: Create .nojekyll
-        run: touch ./nvsc-lpl-app/dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
