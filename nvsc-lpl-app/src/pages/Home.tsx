@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <button className="homeMainButton">Susipažinti kaip apsisaugoti</button>
+        <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>Susipažinti kaip apsisaugoti</button>
       </div>
       <div id="chart" style={{ width: '1200px', height: '600px', margin: 'auto' }}>
         <Chart />

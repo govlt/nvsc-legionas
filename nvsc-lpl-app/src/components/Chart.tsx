@@ -60,7 +60,9 @@ export const Chart: React.FC = () => {
         backgroundColor: 'rgba(72, 99, 160, 1)',
         bodyFont: {
           size: 20,
-          family: 'normal normal normal Public Sans',
+          family: 'Public Sans',
+          weight: 'normal',
+          style: 'normal'
         },
         callbacks: {
           title: function () {

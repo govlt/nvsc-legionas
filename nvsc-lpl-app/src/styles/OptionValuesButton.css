@@ -1,0 +1,64 @@
+.switch-field {
+  display: flex; 
+  justify-content: start; 
+}
+
+.switch-field .option {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px; 
+  border: 1px solid transparent; 
+}
+
+.switch-field .option.selected {
+  border: 1px solid #007bff; 
+}
+
+.switch-field .option.disabled {
+  color: #ccc; 
+  cursor: not-allowed; 
+  pointer-events: none; 
+}
+
+.close-container {
+  cursor: pointer;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 10px 0
+}
+
+.option-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; 
+  margin: 0 10px;
+}
+
+.icon img {
+  cursor: pointer;
+}
+
+.text{
+  cursor: default;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

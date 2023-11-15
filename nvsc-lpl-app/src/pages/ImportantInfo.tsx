@@ -1,6 +1,7 @@
 import React from 'react';
 import ImportantInfoCard from '../components/ImportantInfoCard';
 import { useNavigate } from 'react-router-dom';
+import '../styles/ImportantInfo.css';
 import legioneleIcon from '../assets/legioneles_ikona.svg';
 import prevencijaIcon from '../assets/prevencija_ikona.svg';
 import rightsAndObligationsIcon from '../assets/teises_ikona.svg';

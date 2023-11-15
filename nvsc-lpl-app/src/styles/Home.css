@@ -19,9 +19,6 @@
     font-style: normal;
 }
 
-body{
-    overflow: scroll;
-}
 
 .infoButtonContainer{
     display: flex;
@@ -39,7 +36,7 @@ body{
     color: #FFFFFF;
 }
 
-h2{
+.h2{
     text-align: center;
     font: normal normal bold 96px/113px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
