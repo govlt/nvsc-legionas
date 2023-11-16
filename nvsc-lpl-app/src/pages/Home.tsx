@@ -1,22 +1,19 @@
 import React from 'react';
 import { Chart } from '../components/Chart';
-import '../styles/Home.css';
+import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
+import '../styles/Home.css';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="infoButtonContainer">
-        <button className="infoButton" onClick={() => navigate('/svarbu-zinoti')}>
-          Svarbu Žinoti
-        </button>
-      </div>
-
+      <InfoHeader/>
+      
       <div>
-        <h2>
-        Legionas prieš legioneles
+        <h2 className='homeMainHeader'>
+          Legionas prieš legioneles
         </h2> 
       </div>
 
@@ -37,7 +34,7 @@ export const Home: React.FC = () => {
       </div>
       <div id="chart" style={{ width: '1200px', height: '600px', margin: 'auto' }}>
         <Chart />
-        <p className="homeGraphText">
+        <p className="homeChartText">
           Grafikas parengtas pagal statistikos deparatamento duomenis.
         </p>
       </div>

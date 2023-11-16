@@ -1,15 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import InfoHeader from '../components/InfoHeader.tsx';
 
 export const LegionellosisInfo: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <>
-      <div className="infoButtonContainer">
-        <button className="infoButton" onClick={() => navigate('/svarbu-zinoti')}>
-            Svarbu Žinoti
-        </button>
-      </div>
+      <InfoHeader/>
+      
       <div className="importantContainer">
         <p className="importantHeader">Kas yra legioneliozė?</p>
         <hr/>

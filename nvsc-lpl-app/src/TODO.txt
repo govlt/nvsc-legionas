@@ -1,0 +1,9 @@
+Check all the styles
+Check if we have the text which should go in the pages
+Check if all the buttons go where they should
+Check if the images are correct
+Make all modals
+Sutikrinti ar viskas veikia su resizes screen
+
+
+Sort and remove imports

@@ -1,6 +1,6 @@
 import React, {useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { OptionsButton } from '../components/OptionsButton';
+import InfoHeader from '../components/InfoHeader.tsx';
 import '../styles/SafetyInfo.css';
 import apartmanetsCC from '../assets/daugiabutis_centralizuotai_centralizuotai.png';
 import apartmanetsCI from '../assets/daugiabutis_centralizuotai_individualiai.png';
@@ -28,8 +28,6 @@ import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoCon
 
 
 export const SafetyInfo: React.FC = () => {
-  const navigate = useNavigate();
-
   const [residenceType, setResidenceType] = useState('Daugiabutyje');
   const [drinkingWaterSource, setDrinkingWaterSource] = useState('Centralizuotai');
   const [hotWaterSource, setHotWaterSource] = useState('Centralizuotai');
@@ -108,9 +106,8 @@ export const SafetyInfo: React.FC = () => {
 
   return (
     <>
-      <button className="infoButton" onClick={() => navigate('/svarbu-zinoti')}>
-        Svarbu Žinoti
-      </button>
+      <InfoHeader/>
+
       <div>
         <button onClick={handleBathModalClick}>VONIA MODAL</button>
         <button onClick={handleSinkModalClick}>KRIAUKLE MODAL</button>

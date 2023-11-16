@@ -1,15 +1,13 @@
 import React from 'react';
+import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 
 export const ContactsInfo: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="infoButtonContainer">
-        <button className="infoButton" onClick={() => navigate('/svarbu-zinoti')}>
-            Svarbu Žinoti
-        </button>
-      </div>
+      <InfoHeader/>
+      
       <div className="importantContainer">
         <p className="importantHeader">
             Kontaktinė informacija

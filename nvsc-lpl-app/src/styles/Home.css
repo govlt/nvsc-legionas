@@ -12,17 +12,21 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Public Sans";
-    src: url('fonts/Public_Sans/static/PublicSans-Medium.ttf');
-    font-weight: medium;
-    font-style: normal;
+
+.infoContainer{
+    display: flex;
 }
 
+.infoItemContainer{
+    width: 50%;
+}
 
-.infoButtonContainer{
-    display: flex;
-    justify-content: right;
+.infoLogo{
+    width: 160px;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    float: left;
 }
 
 .infoButton{
@@ -34,9 +38,10 @@
     letter-spacing: 0px;
     cursor: pointer;
     color: #FFFFFF;
+    float: right;
 }
 
-.h2{
+.homeMainHeader{
     text-align: center;
     font: normal normal bold 96px/113px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
@@ -71,7 +76,7 @@
     color: #FEFEFF;
 }
 
-.homeGraphText{
+.homeChartText{
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
