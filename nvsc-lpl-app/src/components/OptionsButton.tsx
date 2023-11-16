@@ -4,7 +4,22 @@ import apartmentIcon from '../assets/daugiabutis_ikona.svg';
 import blueTapIcon from '../assets/melynas_ciaupas_ikona.svg';
 import redTapIcon from '../assets/raudonias_ciaupas_ikona.svg';
 import { Bath } from '../components/PreventionInfoModalPhotos/Bath';
+import { Sink } from '../components/PreventionInfoModalPhotos/Sink';
+import { Shower } from '../components/PreventionInfoModalPhotos/Shower';
+import { HeatingPoint } from '../components/PreventionInfoModalPhotos/HeatingPoint';
+import { Heater } from '../components/PreventionInfoModalPhotos/Heater';
+import { HotWaterProvider } from '../components/PreventionInfoModalPhotos/HotWaterProvider';
+import { WaterSite } from '../components/PreventionInfoModalPhotos/WaterSite';
+import { BoreHole } from '../components/PreventionInfoModalPhotos/BoreHole';
 import { PreventionInfoModal } from './PreventionInfoModal';
+import { PreventionInfoBath } from './PreventionInfoModalInfoContent/PreventionInfoBath';
+import { PreventionInfoSink } from './PreventionInfoModalInfoContent/PreventionInfoSink';
+import { PreventionInfoShower } from './PreventionInfoModalInfoContent/PreventionInfoShower';
+import { PreventionInfoHeatingPoint } from './PreventionInfoModalInfoContent/PreventionInfoHeatingPoint';
+import { PreventionInfoHeater } from './PreventionInfoModalInfoContent/PreventionInfoHeater';
+import { PreventionInfoHotWaterProvider } from './PreventionInfoModalInfoContent/PreventionInfoHotWaterProvider';
+import { PreventionInfoWaterSite } from './PreventionInfoModalInfoContent/PreventionInfoWaterSite';
+import { PreventionInfoBoreHole } from './PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 
 interface OptionsButtonProps {
     residenceType: string;
@@ -27,6 +42,14 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
   const [showOptionsDrinkingWater, setShowOptionsDrinkingWater] = useState(false);
   const [showOptionsHotWater, setShowOptionsHotWater] = useState(false);
   const [showBathInfoModal, setShowBathInfoModal] = useState(false);
+  const [showSinkInfoModal, setShowSinkInfoModal] = useState(false);
+  const [showShowerInfoModal, setShowShowerInfoModal] = useState(false);
+  const [showHeatingPointInfoModal, setShowHeatingPointInfoModal] = useState(false);
+  const [showHeaterInfoModal, setShowHeaterInfoModal] = useState(false);
+  const [showHotWaterProviderInfoModal, setShowHotWaterProviderInfoModal] = useState(false);
+  const [showWaterSiteInfoModal, setShowWaterSiteInfoModal] = useState(false);
+  const [showBoreHoleInfoModal, setShowBoreHoleInfoModal] = useState(false);
+
   const optionsRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -70,39 +93,83 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
     setShowBathInfoModal(true);
   };
 
+  const handleCloseBathModal = () => {
+    setShowBathInfoModal(false);
+  };
+
+  const handleSinkModalClick = () => {
+    setShowSinkInfoModal(true);
+  };
+
+  const handleCloseSinkModal = () => {
+    setShowSinkInfoModal(false);
+  };
+
+  const handleShowerModalClick = () => {
+    setShowShowerInfoModal(true);
+  };
+
+  const handleCloseShowerModal = () => {
+    setShowShowerInfoModal(false);
+  };
+
+  const handleHeatingPointModalClick = () => {
+    setShowHeatingPointInfoModal(true);
+  };
+
+  const handleCloseHeatingPointModal = () => {
+    setShowHeatingPointInfoModal(false);
+  };
+
+  const handleHeaterModalClick = () => {
+    setShowHeaterInfoModal(true);
+  };
+
+  const handleCloseHeaterModal = () => {
+    setShowHeaterInfoModal(false);
+  };
+
+  const handleHotWaterProviderModalClick = () => {
+    setShowHotWaterProviderInfoModal(true);
+  };
+
+  const handleCloseHotWaterProviderModal = () => {
+    setShowHotWaterProviderInfoModal(false);
+  };
+
+  const handleWaterSiteModalClick = () => {
+    setShowWaterSiteInfoModal(true);
+  };
+
+  const handleCloseWaterSiteModal = () => {
+    setShowWaterSiteInfoModal(false);
+  };
+
+  const handleBoreHoleModalClick = () => {
+    setShowBoreHoleInfoModal(true);
+  };
+
+  const handleCloseBoreHoleModal = () => {
+    setShowBoreHoleInfoModal(false);
+  };
+
+ 
+
   return(
     <>
       <div>
         <button onClick={handleBathModalClick}>VONIA MODAL</button>
-        <button>KRIAUKLE MODAL</button>
-        <button>DUSAS MODAL</button>
-        <button>SILUMOS PUNKTAS MODAL</button>
-        <button>VANDENS SILDYTUVAS MODAL</button>
-        <button>KARSTAS VANDUO FACTORY MODAL</button>
-        <button>VANDENVIETE MODAL</button>
-        <button>GREZINYS MODAL</button>
+        <button onClick={handleSinkModalClick}>KRIAUKLE MODAL</button>
+        <button onClick={handleShowerModalClick}>DUSAS MODAL</button>
+        <button onClick={handleHeatingPointModalClick}>SILUMOS PUNKTAS MODAL</button>
+        <button onClick={handleHeaterModalClick}>VANDENS SILDYTUVAS MODAL</button>
+        <button onClick={handleHotWaterProviderModalClick}>KARSTAS VANDEND TIEKEJEAS MODAL</button>
+        <button onClick={handleWaterSiteModalClick}>VANDENVIETE MODAL</button>
+        <button onClick={handleBoreHoleModalClick}>GREZINYS MODAL</button>
       </div>
-      <div className="option-buttons" ref={optionsRef}>
-        <div className="option-button" onClick={handleOptionResidenceClick}>
-          <div className="icon">
-            <img src={apartmentIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
-          </div>
-          <div className="text">{residenceType}</div>
-        </div>
-        <div className="option-button" onClick={handleOptionDrinkingWaterClick}>
-          <div className="icon">
-            <img src={blueTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
-          </div>
-          <div className="text">{drinkingWaterSource}</div>
-        </div>
-        <div className="option-button" onClick={handleOptionHotWaterClick}>
-          <div className="icon">
-            <img src={redTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
-          </div>
-          <div className="text">{hotWaterSource}</div>
-        </div>
-      </div>
-      { showOptionsResidence &&
+      
+      <div>
+        { showOptionsResidence &&
         <OptionValuesButtons
           property={residenceType}
           optValue1="Daugiabutyje"
@@ -111,8 +178,8 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
           onClose={handleCloseOptionResidence}
           optionsRef={optionsRef}
         />
-      }
-      { showOptionsDrinkingWater &&
+        }
+        { showOptionsDrinkingWater &&
         <OptionValuesButtons
           property={drinkingWaterSource}
           optValue1="Centralizuotai"
@@ -121,8 +188,8 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
           onClose={handleCloseOptionDrinkingWater}
           optionsRef={optionsRef}
         />
-      }
-      { showOptionsHotWater &&
+        }
+        { showOptionsHotWater &&
         <OptionValuesButtons
           property={hotWaterSource}
           optValue1="Centralizuotai"
@@ -132,10 +199,91 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
           onClose={handleCloseOptionHotWater}
           optionsRef={optionsRef}
         />
-      }
+        }
+        <div className="option-buttons" ref={optionsRef}>
+          <div className="option-button" onClick={handleOptionResidenceClick}>
+            <div className="icon">
+              <img src={apartmentIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
+            </div>
+            <div className="text">{residenceType}</div>
+          </div>
+          <div className="option-button" onClick={handleOptionDrinkingWaterClick}>
+            <div className="icon">
+              <img src={blueTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
+            </div>
+            <div className="text">{drinkingWaterSource}</div>
+          </div>
+          <div className="option-button" onClick={handleOptionHotWaterClick}>
+            <div className="icon">
+              <img src={redTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
+            </div>
+            <div className="text">{hotWaterSource}</div>
+          </div>
+        </div>
+      </div>
+
       { showBathInfoModal &&
         <PreventionInfoModal
           image={<Bath />}
+          header="Vonia"
+          headerSectionContent={<PreventionInfoBath />}
+          onClose={handleCloseBathModal}
+        />
+      }
+      { showSinkInfoModal &&
+        <PreventionInfoModal
+          image={<Sink />}
+          header="Kriauklė"
+          headerSectionContent={<PreventionInfoSink />}
+          onClose={handleCloseSinkModal}
+        />
+      }
+      { showShowerInfoModal &&
+        <PreventionInfoModal
+          image={<Shower />}
+          header="Dušas"
+          headerSectionContent={<PreventionInfoShower />}
+          onClose={handleCloseShowerModal}
+        />
+      }
+      { showHeatingPointInfoModal &&
+        <PreventionInfoModal
+          image={<HeatingPoint />}
+          header="Šilumos punktas"
+          headerSectionContent={<PreventionInfoHeatingPoint />}
+          onClose={handleCloseHeatingPointModal}
+        />
+      }
+      { showHeaterInfoModal &&
+        <PreventionInfoModal
+          image={<Heater />}
+          header="Vandens šildytuvas"
+          headerSectionContent={<PreventionInfoHeater />}
+          onClose={handleCloseHeaterModal}
+        />
+      }
+      { showHotWaterProviderInfoModal &&
+        <PreventionInfoModal
+          image={<HotWaterProvider />}
+          header="Karšto vandens tiekėjas"
+          headerSectionContent={<PreventionInfoHotWaterProvider />}
+          onClose={handleCloseHotWaterProviderModal}
+        />
+      }
+      { showWaterSiteInfoModal &&
+        <PreventionInfoModal
+          image={<WaterSite />}
+          header="Vandenvietė"
+          headerSectionContent={<PreventionInfoWaterSite />}
+          onClose={handleCloseWaterSiteModal}
+        />
+      }
+      { showBoreHoleInfoModal &&
+        <PreventionInfoModal
+          image={<BoreHole />}
+          header="Gręžinys"
+          headerSectionContent={<PreventionInfoBoreHole />}
+          onClose={handleCloseBoreHoleModal}
         />
       }
     </>

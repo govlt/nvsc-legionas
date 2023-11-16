@@ -1,6 +1,6 @@
 .switch-field {
   display: flex; 
-  justify-content: start; 
+  justify-content: center;
 }
 
 .switch-field .option {
@@ -26,9 +26,9 @@
 
 .option-buttons {
   display: flex;
-  justify-content: space-around; 
+  justify-content: center; 
   align-items: center;
-  padding: 10px 0
+  padding: 10px 0;
 }
 
 .option-button {
@@ -44,11 +44,15 @@
   cursor: pointer;
 }
 
-.text{
+.text {
   cursor: default;
+  width: 100px;
+  height: 50px;
+  white-space: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;

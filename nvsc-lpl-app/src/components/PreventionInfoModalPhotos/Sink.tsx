@@ -1,12 +1,12 @@
 import React from 'react';
-import bath from '../../assets/voniaMerged.png';
+import sink from '../../assets/kriaukle.svg';
 import '../../styles/PrevenInfoModalPhoto.css';
 
-export const Bath: React.FC = () => {
+export const Sink: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={bath} alt="Icon Description" className="image"/>
+        <img src={sink} alt="Icon Description" className="image"/>
       </div>
     </>
   );

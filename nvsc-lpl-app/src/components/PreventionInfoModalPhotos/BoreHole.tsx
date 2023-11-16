@@ -1,12 +1,12 @@
 import React from 'react';
-import bath from '../../assets/voniaMerged.png';
+import boreHole from '../../assets/grezinys.svg';
 import '../../styles/PrevenInfoModalPhoto.css';
 
-export const Bath: React.FC = () => {
+export const BoreHole: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={bath} alt="Icon Description" className="image"/>
+        <img src={boreHole} alt="Icon Description" className="image"/>
       </div>
     </>
   );
