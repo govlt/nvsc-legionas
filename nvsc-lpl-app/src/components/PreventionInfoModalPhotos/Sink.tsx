@@ -6,7 +6,7 @@ export const Sink: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={sink} alt="Icon Description" className="image"/>
+        <img src={sink} alt="Icon Description" className="modalImage"/>
       </div>
     </>
   );

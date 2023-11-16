@@ -6,7 +6,7 @@ export const WaterSite: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={waterSite} alt="Icon Description" className="image"/>
+        <img src={waterSite} alt="Icon Description" className="modalImage"/>
       </div>
     </>
   );

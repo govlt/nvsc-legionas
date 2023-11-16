@@ -4,6 +4,12 @@ Check if all the buttons go where they should
 Check if the images are correct
 Make all modals
 Sutikrinti ar viskas veikia su resizes screen
-
+Fix vonia image
+center modal text vertically
+add modal items to a grid for mobile compatibility
+alt texts for images
+add buttons on images
 
 Sort and remove imports
+Change CSS to Tailwind
+Push to github

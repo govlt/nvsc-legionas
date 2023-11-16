@@ -67,39 +67,8 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
   return(
     <>
       <div>
-        { showOptionsResidence &&
-        <OptionValuesButtons
-          property={residenceType}
-          optValue1="Daugiabutyje"
-          optValue2="Individualiame name"
-          setProperty={setResidenceType}
-          onClose={handleCloseOptionResidence}
-          optionsRef={optionsRef}
-        />
-        }
-        { showOptionsDrinkingWater &&
-        <OptionValuesButtons
-          property={drinkingWaterSource}
-          optValue1="Centralizuotai"
-          optValue2="Individualiai"
-          setProperty={setDrinkingWaterSource}
-          onClose={handleCloseOptionDrinkingWater}
-          optionsRef={optionsRef}
-        />
-        }
-        { showOptionsHotWater &&
-        <OptionValuesButtons
-          property={hotWaterSource}
-          optValue1="Centralizuotai"
-          optValue2="Individualiai"
-          setProperty={setHotWaterSource}
-          disableOptValue1={residenceType === 'Individualiame name'}
-          onClose={handleCloseOptionHotWater}
-          optionsRef={optionsRef}
-        />
-        }
         <div className="option-buttons" ref={optionsRef}>
-          <div className="option-button" onClick={handleOptionResidenceClick}>
+          <div className="option-button leftButton" onClick={handleOptionResidenceClick}>
             <div className="icon">
               <img src={apartmentIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
             </div>
@@ -111,13 +80,44 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
             </div>
             <div className="text">{drinkingWaterSource}</div>
           </div>
-          <div className="option-button" onClick={handleOptionHotWaterClick}>
+          <div className="option-button rightButton" onClick={handleOptionHotWaterClick}>
             <div className="icon">
               <img src={redTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
             </div>
             <div className="text">{hotWaterSource}</div>
           </div>
         </div>
+        { showOptionsResidence &&
+          <OptionValuesButtons
+            property={residenceType}
+            optValue1="Daugiabutyje"
+            optValue2="Individualiame name"
+            setProperty={setResidenceType}
+            onClose={handleCloseOptionResidence}
+            optionsRef={optionsRef}
+          />
+          }
+          { showOptionsDrinkingWater &&
+          <OptionValuesButtons
+            property={drinkingWaterSource}
+            optValue1="Centralizuotai"
+            optValue2="Individualiai"
+            setProperty={setDrinkingWaterSource}
+            onClose={handleCloseOptionDrinkingWater}
+            optionsRef={optionsRef}
+          />
+          }
+          { showOptionsHotWater &&
+          <OptionValuesButtons
+            property={hotWaterSource}
+            optValue1="Centralizuotai"
+            optValue2="Individualiai"
+            setProperty={setHotWaterSource}
+            disableOptValue1={residenceType === 'Individualiame name'}
+            onClose={handleCloseOptionHotWater}
+            optionsRef={optionsRef}
+          />
+          }
       </div>
     </>
   );

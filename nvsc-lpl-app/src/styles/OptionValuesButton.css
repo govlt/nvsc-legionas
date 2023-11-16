@@ -1,3 +1,14 @@
+.imageAndButtonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage{
+  height: 500px;
+}
+
 .switch-field {
   display: flex; 
   justify-content: center;
@@ -5,13 +16,12 @@
 
 .switch-field .option {
   cursor: pointer;
-  padding: 5px 10px;
-  margin-right: 5px; 
-  border: 1px solid transparent; 
+  padding: 5px; 
 }
 
 .switch-field .option.selected {
-  border: 1px solid #007bff; 
+  background-color: #0000FF20;
+  border: 1px solid #0000FF;
 }
 
 .switch-field .option.disabled {
@@ -24,20 +34,38 @@
   cursor: pointer;
 }
 
+.infoButtons{
+  vertical-align: bottom;
+}
+
 .option-buttons {
   display: flex;
-  justify-content: center; 
-  align-items: center;
-  padding: 10px 0;
+  border: solid;
+  border-radius: 16px;
 }
 
 .option-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #75757550;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100px; 
-  margin: 0 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.leftButton{
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-right: solid;
+}
+
+.rightButton{
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left: solid;
 }
 
 .icon img {
@@ -47,7 +75,6 @@
 .text {
   cursor: default;
   width: 100px;
-  height: 50px;
   white-space: break-word;
   overflow: hidden;
   text-overflow: ellipsis;

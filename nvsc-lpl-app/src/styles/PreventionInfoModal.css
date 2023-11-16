@@ -1,36 +1,59 @@
-  .modalBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 100;
-  }
+@font-face {
+  font-family: "Inter";
+  src: url('fonts/Inter/static/Inter-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: 48px auto;
-    border: 1px solid #888;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-  }
+.modalBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
 
-  .content {
-    padding: 0 32px;
-  }
+.modal {
+  background-color: #fefefe;
+  margin: 48px auto;
+  border: 1px solid #888;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
 
-  h2 {
-    text-align: left;
-    font: normal normal Inter;
-    letter-spacing: 0px;
-    color: #091A5A;
-    opacity: 1;
-  }
+.modalContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalInfo {
+  padding: 0 32px;
+  padding-top: 20px;
+}
+
+.modalText{
+  font: normal normal 300 12px/20px "Inter", Arial, Sans-Serif;
+  color: #091A5A;
+}
+
+.modalHeader {
+  text-align: left;
+  font: normal normal 600 40px/29px "Inter", Arial, Sans-Serif;
+  color: #091A5A;
+}
+
+.modalPreventionHeader {
+  text-align: left;
+  font: normal normal 600 20px/29px "Inter", Arial, Sans-Serif;
+  color: #091A5A;
+}
 
 .close {
   color: #aaaaaa;
@@ -44,4 +67,16 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.imagePlaceHolder {
+  background-color: #E5EBF8;
+  padding: 100px 150px 56px 100px;
+  box-sizing: border-box;
+}
+
+.modalImage{
+  width: 100%;
+  max-height: 60vh;
+  min-height: 60vh;
 }

@@ -6,7 +6,7 @@ export const Bath: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={bath} alt="Icon Description" className="image"/>
+        <img src={bath} alt="Icon Description" className="modalImage"/>
       </div>
     </>
   );

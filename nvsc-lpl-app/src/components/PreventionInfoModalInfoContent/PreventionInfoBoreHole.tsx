@@ -9,3 +9,16 @@ export const PreventionInfoBoreHole: React.FC= () => {
     </div>
   );
 };
+
+export const AdditionalInfoBoreHole: React.FC= () => {
+  return(
+    <div>
+      <h2 className='modalPreventionHeader'>
+        Prevencija
+      </h2>
+      <p className='modalText'>
+        Some small text
+      </p>
+    </div>
+  );
+};

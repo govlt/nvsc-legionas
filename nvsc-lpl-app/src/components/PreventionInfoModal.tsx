@@ -1,9 +1,11 @@
 import React, { useRef, useEffect} from 'react';
 import '../styles/PreventionInfoModal.css';
+import { LegionInfo } from './PreventionInfoModalInfoContent/legionInfo';
 interface PreventionInfoModalProps {
     image: React.ReactNode;
     header: string;
     headerSectionContent: React.ReactNode;
+    lowerSection: React.ReactNode;
     onClose: () => void;
 }
 
@@ -11,6 +13,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   image,
   header,
   headerSectionContent,
+  lowerSection,
   onClose
 }) => {
 
@@ -32,15 +35,18 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   return (
     <>
       <div className="modalBackground">
-        <div className="modal-content" ref={wrapperRef}>
+        <div className="modal" ref={wrapperRef}>
           <div className="modalImagePlaceHolder">
             {image}
           </div>
-          <div className="content">
+          <div className="modalInfo">
             <span className="close" onClick={onClose}>&times;</span>
-            <h2>{header}</h2>
-            {headerSectionContent}
-            <h2> Prevencija</h2>
+            <div className='modalContent'>
+              <h2 className='modalHeader'>{header}</h2>
+              <p className='modalText'>{headerSectionContent}</p>
+              <LegionInfo/>
+              {lowerSection}
+            </div>
           </div>
         </div>
       </div>

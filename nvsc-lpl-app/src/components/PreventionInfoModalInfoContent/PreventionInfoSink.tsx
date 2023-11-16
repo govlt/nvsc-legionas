@@ -9,3 +9,16 @@ export const PreventionInfoSink: React.FC= () => {
     </div>
   );
 };
+
+export const AdditionalInfoSink: React.FC= () => {
+  return(
+    <div>
+      <h2 className='modalPreventionHeader'>
+        Prevencija
+      </h2>
+      <p className='modalText'>
+        Some small text
+      </p>
+    </div>
+  );
+};

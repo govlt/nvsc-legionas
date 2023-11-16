@@ -1,7 +1,51 @@
-.ImageContainer{
-    display: flex;
-    width: 500px;
-    height: 500px;
-    background-color: #BB0642;
+@font-face {
+    font-family: "Inter";
+    src: url('fonts/Inter/static/Inter-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
+.legionDangerContainer{
+    background: #BB0642 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.legionDangerTopContainer{
+    display: flex;
+}
+
+.legionDangerImageItemContainer{
+    width: 30%;
+    float: left;
+}
+
+.legionDangerHeaderContainer{
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.legionDangerHeaderContainer h2{
+    font: normal normal 600 20px/20px "Inter", Arial, Sans-Serif;
+    color: #FFFFFF;
+}
+
+.legionDangerHeaderContainer p{
+    font: normal normal 300 12px/20px "Inter", Arial, Sans-Serif;
+    color: #FFFFFF;
+}
+
+.legionDangerImageContainer{
+    padding: 10%;
+    width: 50%;
+    float: left;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+.legionDangerImage{
+    width: 100%;
+}

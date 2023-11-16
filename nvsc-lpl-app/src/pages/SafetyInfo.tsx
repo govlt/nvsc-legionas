@@ -2,10 +2,10 @@ import React, {useState } from 'react';
 import { OptionsButton } from '../components/OptionsButton';
 import InfoHeader from '../components/InfoHeader.tsx';
 import '../styles/SafetyInfo.css';
-import apartmanetsCC from '../assets/daugiabutis_centralizuotai_centralizuotai.png';
-import apartmanetsCI from '../assets/daugiabutis_centralizuotai_individualiai.png';
-import apartmanetsIC from '../assets/daugiabutis_individualiai_centralizuotai.png';
-import apartmanetsII from '../assets/daugiabutis_individualiai_individualiai.png';
+import apartamnetsCC from '../assets/daugiabutis_centralizuotai_centralizuotai.png';
+import apartamnetsCI from '../assets/daugiabutis_centralizuotai_individualiai.png';
+import apartamnetsIC from '../assets/daugiabutis_individualiai_centralizuotai.png';
+import apartamnetsII from '../assets/daugiabutis_individualiai_individualiai.png';
 import houseCIG from '../assets/namas_centralizuotai_individualiai_gyvatukas.png';
 import houseIIG from '../assets/namas_individualiai_individualiai_gyvatukas.png';
 import { Bath } from '../components/PreventionInfoModalPhotos/Bath';
@@ -17,14 +17,22 @@ import { HotWaterProvider } from '../components/PreventionInfoModalPhotos/HotWat
 import { WaterSite } from '../components/PreventionInfoModalPhotos/WaterSite';
 import { BoreHole } from '../components/PreventionInfoModalPhotos/BoreHole';
 import { PreventionInfoModal } from '../components/PreventionInfoModal';
+import { AdditionalInfoBath } from '../components/PreventionInfoModalInfoContent/PreventionInfoBath';
 import { PreventionInfoBath } from '../components/PreventionInfoModalInfoContent/PreventionInfoBath';
 import { PreventionInfoSink } from '../components/PreventionInfoModalInfoContent/PreventionInfoSink';
+import { AdditionalInfoSink } from '../components/PreventionInfoModalInfoContent/PreventionInfoSink';
 import { PreventionInfoShower } from '../components/PreventionInfoModalInfoContent/PreventionInfoShower';
+import { AdditionalInfoShower } from '../components/PreventionInfoModalInfoContent/PreventionInfoShower';
 import { PreventionInfoHeatingPoint } from '../components/PreventionInfoModalInfoContent/PreventionInfoHeatingPoint';
+import { AdditionalInfoHeatingPoint } from '../components/PreventionInfoModalInfoContent/PreventionInfoHeatingPoint';
 import { PreventionInfoHeater } from '../components/PreventionInfoModalInfoContent/PreventionInfoHeater';
+import { AdditionalInfoHeater } from '../components/PreventionInfoModalInfoContent/PreventionInfoHeater';
 import { PreventionInfoHotWaterProvider } from '../components/PreventionInfoModalInfoContent/PreventionInfoHotWaterProvider';
+import { AdditionalInfoHotWaterProvider } from '../components/PreventionInfoModalInfoContent/PreventionInfoHotWaterProvider';
 import { PreventionInfoWaterSite } from '../components/PreventionInfoModalInfoContent/PreventionInfoWaterSite';
+import { AdditionalInfoWaterSite } from '../components/PreventionInfoModalInfoContent/PreventionInfoWaterSite';
 import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
+import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 
 
 export const SafetyInfo: React.FC = () => {
@@ -118,58 +126,60 @@ export const SafetyInfo: React.FC = () => {
         <button onClick={handleWaterSiteModalClick}>VANDENVIETE MODAL</button>
         <button onClick={handleBoreHoleModalClick}>GREZINYS MODAL</button>
       </div>
-      <div className="Index">
-        <OptionsButton
-          residenceType={residenceType}
-          setResidenceType={setResidenceType}
-          drinkingWaterSource={drinkingWaterSource}
-          setDrinkingWaterSource={setDrinkingWaterSource}
-          hotWaterSource={hotWaterSource}
-          setHotWaterSource={setHotWaterSource}
-        />
-        
+      <div className='imageAndButtonContainer'>
         { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
-          && hotWaterSource === 'Centralizuotai' &&
-          <div className="ImageContainer">
-            <img className="Image" src={apartmanetsCC} alt="Daugiabutis"/>
-          </div>
-        }
-        { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
-          && hotWaterSource === 'Individualiai' &&
-          <div className="ImageContainer">
-            <img className="Image" src={apartmanetsCI} alt="Daugiabutis"/>
-          </div>
-        }
-        { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
-          && hotWaterSource === 'Centralizuotai' &&
-          <div className="ImageContainer">
-            <img className="Image" src={apartmanetsIC} alt="Daugiabutis"/>
-          </div>
-        }
-        { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
-          && hotWaterSource === 'Individualiai' &&
-          <div className="ImageContainer">
-            <img className="Image" src={apartmanetsII} alt="Daugiabutis"/>
-          </div>
-        }
-        { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
-          && hotWaterSource === 'Individualiai' &&
-          <div className="ImageContainer">
-            <img src={houseCIG} alt="Namas"/>
-          </div>
-        }
-        { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
-          && hotWaterSource === 'Individualiai' &&
-          <div className="ImageContainer">
-            <img src={houseIIG} alt="Namas"/>
-          </div>
-        }
+            && hotWaterSource === 'Centralizuotai' &&
+            <div className="ImageContainer">
+              <img className="mainImage" src={apartamnetsCC} alt="Daugiabutis"/>
+            </div>
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
+            && hotWaterSource === 'Individualiai' &&
+            <div className="ImageContainer">
+              <img className="mainImage" src={apartamnetsCI} alt="Daugiabutis"/>
+            </div>
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+            && hotWaterSource === 'Centralizuotai' &&
+            <div className="ImageContainer">
+              <img className="mainImage" src={apartamnetsIC} alt="Daugiabutis"/>
+            </div>
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+            && hotWaterSource === 'Individualiai' &&
+            <div className="imageContainer">
+              <img className="mainImage" src={apartamnetsII} alt="Daugiabutis"/>
+            </div>
+          }
+          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
+            && hotWaterSource === 'Individualiai' &&
+            <div className="imageContainer">
+              <img className="mainImage" src={houseCIG} alt="Namas"/>
+            </div>
+          }
+          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
+            && hotWaterSource === 'Individualiai' &&
+            <div className="imageContainer">
+              <img className="mainImage" src={houseIIG} alt="Namas"/>
+            </div>
+          }
+        <div className="infoButtons">
+          <OptionsButton
+            residenceType={residenceType}
+            setResidenceType={setResidenceType}
+            drinkingWaterSource={drinkingWaterSource}
+            setDrinkingWaterSource={setDrinkingWaterSource}
+            hotWaterSource={hotWaterSource}
+            setHotWaterSource={setHotWaterSource}
+          />
+        </div>
       </div>
       { showBathInfoModal &&
         <PreventionInfoModal
           image={<Bath />}
           header="Vonia"
           headerSectionContent={<PreventionInfoBath />}
+          lowerSection={<AdditionalInfoBath/>}
           onClose={handleCloseBathModal}
         />
       }
@@ -178,6 +188,7 @@ export const SafetyInfo: React.FC = () => {
           image={<Sink />}
           header="Kriauklė"
           headerSectionContent={<PreventionInfoSink />}
+          lowerSection={<AdditionalInfoSink/>}
           onClose={handleCloseSinkModal}
         />
       }
@@ -186,6 +197,7 @@ export const SafetyInfo: React.FC = () => {
           image={<Shower />}
           header="Dušas"
           headerSectionContent={<PreventionInfoShower />}
+          lowerSection={<AdditionalInfoShower/>}
           onClose={handleCloseShowerModal}
         />
       }
@@ -194,6 +206,7 @@ export const SafetyInfo: React.FC = () => {
           image={<HeatingPoint />}
           header="Šilumos punktas"
           headerSectionContent={<PreventionInfoHeatingPoint />}
+          lowerSection={<AdditionalInfoHeatingPoint/>}
           onClose={handleCloseHeatingPointModal}
         />
       }
@@ -202,6 +215,7 @@ export const SafetyInfo: React.FC = () => {
           image={<Heater />}
           header="Vandens šildytuvas"
           headerSectionContent={<PreventionInfoHeater />}
+          lowerSection={<AdditionalInfoHeater/>}
           onClose={handleCloseHeaterModal}
         />
       }
@@ -210,6 +224,7 @@ export const SafetyInfo: React.FC = () => {
           image={<HotWaterProvider />}
           header="Karšto vandens tiekėjas"
           headerSectionContent={<PreventionInfoHotWaterProvider />}
+          lowerSection={<AdditionalInfoHotWaterProvider/>}
           onClose={handleCloseHotWaterProviderModal}
         />
       }
@@ -218,6 +233,7 @@ export const SafetyInfo: React.FC = () => {
           image={<WaterSite />}
           header="Vandenvietė"
           headerSectionContent={<PreventionInfoWaterSite />}
+          lowerSection={<AdditionalInfoWaterSite/>}
           onClose={handleCloseWaterSiteModal}
         />
       }
@@ -226,6 +242,7 @@ export const SafetyInfo: React.FC = () => {
           image={<BoreHole />}
           header="Gręžinys"
           headerSectionContent={<PreventionInfoBoreHole />}
+          lowerSection={<AdditionalInfoBoreHole/>}
           onClose={handleCloseBoreHoleModal}
         />
       }
