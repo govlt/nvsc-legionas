@@ -1,6 +1,6 @@
 import React, { useRef, useEffect} from 'react';
 import '../styles/PreventionInfoModal.css';
-import { LegionInfo } from './PreventionInfoModalInfoContent/legionInfo';
+import { LegionInfo } from './PreventionInfoModalInfoContent/LegionInfo';
 interface PreventionInfoModalProps {
     image: React.ReactNode;
     header: string;

@@ -24,7 +24,9 @@
   width: 90%;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  } 
 }
 
 .modalContainer{
@@ -71,8 +73,11 @@
 
 .imagePlaceHolder {
   background-color: #E5EBF8;
-  padding: 100px 150px 56px 100px;
+  padding: 100px 100px 56px 100px;
   box-sizing: border-box;
+  @media (max-width: 1000px) {
+    padding: 5% 10% 5% 10%;
+  } 
 }
 
 .modalImage{

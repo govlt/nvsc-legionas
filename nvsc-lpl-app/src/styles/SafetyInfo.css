@@ -16,10 +16,16 @@
 
 .legionDangerTopContainer{
     display: flex;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }   
+    @media (max-width: 700px) {
+        flex-direction: row;
+    }   
 }
 
 .legionDangerImageItemContainer{
-    width: 30%;
+    width: 50%;
     float: left;
 }
 
