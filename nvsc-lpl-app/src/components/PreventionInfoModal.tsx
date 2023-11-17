@@ -42,7 +42,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
           <div className="modalInfo">
             <span className="close" onClick={onClose}>&times;</span>
             <div className='modalContent'>
-              <h2 className='modalHeader'>{header}</h2>
+              <h2 className='modalTitle'>{header}</h2>
               <p className='modalText'>{headerSectionContent}</p>
               <LegionInfo/>
               {lowerSection}

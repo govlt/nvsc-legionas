@@ -1,16 +1,60 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('fonts/Roboto/static/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   background-color: #EFEFEF;
+  overflow: hidden;
 }
 
 .imageAndButtonContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.imageContainer{
+  height: calc(100vh - 240px);
+  padding: 5px;
+  position: relative;
 }
 
 .mainImage{
-  height: 500px;
+  height: 100%;
+}
+
+.buttonOnImage{
+  width: calc(100vh * 0.015);
+  height: calc(100vh * 0.015);
+  background-color: #DE1829;
+  z-index: 100;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.wave {
+  width: calc(100vh * 0.015);
+  height: calc(100vh * 0.015);
+  background-color: #DE1829;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 .switch-field {
@@ -40,6 +84,7 @@ body{
 
 .infoButtons{
   vertical-align: bottom;
+  height: 105px;
 }
 
 .option-buttons {
@@ -74,6 +119,11 @@ body{
 
 .icon img {
   cursor: pointer;
+}
+
+.optionText{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #091A5A;
 }
 
 .text {

@@ -1,9 +1,7 @@
 import React from 'react';
 import InfoHeader from '../components/InfoHeader.tsx';
-import { useNavigate } from 'react-router-dom';
 
 export const WaterTestingInfo: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <>
       <InfoHeader/>

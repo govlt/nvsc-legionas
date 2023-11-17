@@ -26,21 +26,17 @@ export const AdditionalInfoBath: React.FC= () => {
       </p>
       
       <h1 className='modalTopicHeader'>
-        Neleisti vandeniui užsistovėti vandens sistemoje
+        Vykdyti stebėseną
       </h1>
       <p className='modalText'>
-        Jei vanduo nebuvo naudojamas ilgesnį laiką,
-        leisti vandeniui nubėgti keletą minučių,
-        kol bus pasiekta 50 C temperatūra
+        Stebėti sanitarinių prietaisų, vandens čiaupų, maišytuvų, žarnelių būklę
       </p>
 
       <h1 className='modalTopicHeader'>
-        Neleisti vandeniui užsistovėti vandens sistemoje
+        Atlikti reguliarią dezinfekciją
       </h1>
       <p className='modalText'>
-        Jei vanduo nebuvo naudojamas ilgesnį laiką,
-        leisti vandeniui nubėgti keletą minučių,
-        kol bus pasiekta 50 C temperatūra
+        Valyti ir dezinfekuoti dušus, dušų galvutes, čiaupus
       </p>
     </div>
   );

@@ -1,13 +1,9 @@
 Check all the styles
-Check if we have the text which should go in the pages
-Check if all the buttons go where they should
-Check if the images are correct
-Sutikrinti ar viskas veikia su resizes screen
-add modal items to a grid for mobile compatibility
-alt texts for images
-add buttons on images
-add correct text to modals
+align red buttons perfectly
 
-Sort and remove imports
-Change CSS to Tailwind
+?add modal items to a grid for mobile compatibility
+?Sutikrinti ar viskas veikia su resizes screen
+?add alt texts for all images
+?Sort and remove imports
+?Change CSS to Tailwind
 Push to github

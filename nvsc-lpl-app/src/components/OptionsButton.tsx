@@ -72,19 +72,19 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
             <div className="icon">
               <img src={apartmentIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
             </div>
-            <div className="text">{residenceType}</div>
+            <div className="optionText">{residenceType}</div>
           </div>
           <div className="option-button" onClick={handleOptionDrinkingWaterClick}>
             <div className="icon">
               <img src={blueTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
             </div>
-            <div className="text">{drinkingWaterSource}</div>
+            <div className="optionText">{drinkingWaterSource}</div>
           </div>
           <div className="option-button rightButton" onClick={handleOptionHotWaterClick}>
             <div className="icon">
               <img src={redTapIcon} alt="Icon Description" style={{ width: '24px', height: '24px' }} />
             </div>
-            <div className="text">{hotWaterSource}</div>
+            <div className="optionText">{hotWaterSource}</div>
           </div>
         </div>
         { showOptionsResidence &&

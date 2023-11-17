@@ -16,6 +16,7 @@
 
 .legionDangerTopContainer{
     display: flex;
+
     @media (max-width: 1100px) {
         flex-direction: column;
     }   
