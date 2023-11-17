@@ -1,4 +1,3 @@
-Check all the styles
 align red buttons perfectly
 
 ?add modal items to a grid for mobile compatibility
