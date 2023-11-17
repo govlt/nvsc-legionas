@@ -1,6 +1,5 @@
 import React from 'react';
-import bath from '../../assets/voniaMerged.png';
-import '../../styles/PrevenInfoModalPhoto.css';
+import bath from '../../assets/vonia.svg';
 
 export const Bath: React.FC = () => {
   return (

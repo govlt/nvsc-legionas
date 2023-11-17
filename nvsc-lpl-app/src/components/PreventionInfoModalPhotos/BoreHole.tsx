@@ -1,6 +1,5 @@
 import React from 'react';
 import boreHole from '../../assets/grezinys.svg';
-import '../../styles/PrevenInfoModalPhoto.css';
 
 export const BoreHole: React.FC = () => {
   return (

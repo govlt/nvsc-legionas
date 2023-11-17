@@ -1,6 +1,5 @@
 import React from 'react';
 import hotWaterProvider from '../../assets/centriniai_silumos_tinklai.svg';
-import '../../styles/PrevenInfoModalPhoto.css';
 
 export const HotWaterProvider: React.FC = () => {
   return (

@@ -1,3 +1,7 @@
+body{
+  background-color: #EFEFEF;
+}
+
 .imageAndButtonContainer{
   display: flex;
   flex-direction: column;
@@ -47,7 +51,7 @@
 .option-button {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #75757550;
+  background-color: #FFFFFF50;
   display: flex;
   flex-direction: column;
   align-items: center;
