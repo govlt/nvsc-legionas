@@ -1,8 +1,6 @@
-align red buttons perfectly
-
-?add modal items to a grid for mobile compatibility
-?Sutikrinti ar viskas veikia su resizes screen
-?add alt texts for all images
-?Sort and remove imports
-?Change CSS to Tailwind
+add modal items to a grid for mobile compatibility
+Sutikrinti ar viskas veikia su resizes screen
+add alt texts for all images
+Sort and remove imports
+Change CSS to Tailwind
 Push to github
