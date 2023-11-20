@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url('fonts/Inter/static/Inter-Regular.ttf');
+    font-family: "Public Sans";
+    src: url('fonts/Public_Sans/static/PublicSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 
 .importantTextHeader{
     text-align: left;
-    font: normal normal 600 24px/29px "Inter", Arial, Sans-Serif;
+    font: normal normal 600 24px/29px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;
@@ -37,7 +37,7 @@
 .importantMainText{
     margin-top: 0px;
     text-align: left;
-    font: normal normal normal 16px/26px "Inter", Arial, Sans-Serif;
+    font: normal normal normal 16px/26px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;
@@ -99,7 +99,7 @@
 
 .importantCardText{
     text-align: left;
-    font: normal normal normal 16px/26px "Inter", Arial, Sans-Serif;
+    font: normal normal normal 16px/26px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;
@@ -107,7 +107,7 @@
 
 .importantCardButton{
     text-align: left;
-    font: normal normal bold 16px/26px "Inter", Arial, Sans-Serif;
+    font: normal normal bold 16px/26px "Public Sans", Arial, Sans-Serif;
     background-color: white;
     border: none;
     cursor: pointer;

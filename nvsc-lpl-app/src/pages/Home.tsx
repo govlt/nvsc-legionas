@@ -32,7 +32,7 @@ export const Home: React.FC = () => {
       }}>
         <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>Susipažinti kaip apsisaugoti</button>
       </div>
-      <div id="chart" style={{ width: '1200px', height: '600px', margin: 'auto' }}>
+      <div id="chart" style={{ width: '80%', height: '300px', margin: 'auto' }}>
         <Chart />
         <p className="homeChartText">
           Grafikas parengtas pagal statistikos deparatamento duomenis.

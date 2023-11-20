@@ -53,6 +53,7 @@ export const Chart: React.FC = () => {
   }, [cases]);
 
   const options: ChartOptions<'line'> = {
+    maintainAspectRatio: false,
     responsive: true,
     plugins: {
       tooltip: {

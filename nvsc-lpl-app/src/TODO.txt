@@ -4,3 +4,9 @@ add alt texts for all images
 Sort and remove imports
 Change CSS to Tailwind
 Push to github
+
+move the modulo closing button to the top of the screen when on mobile
+home screene sumažinti font thickness, pakelti aukščiau ir išplėsti į šonus konteinerį
+padaryti pulsuojantį "Svarbu žinoti" mygtuką
+sutvarkyti backgroundą naudojant position
+sumažinti nuotraukų loading time

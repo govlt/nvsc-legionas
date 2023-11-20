@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Roboto";
-  src: url('fonts/Roboto/static/Roboto-Regular.ttf');
+  font-family: "Public Sans";
+  src: url('fonts/Public_Sans/static/PublicSans-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -117,7 +117,7 @@
 }
 
 .optionText{
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Public Sans", Arial, Sans-Serif;
   color: #091A5A;
 }
 

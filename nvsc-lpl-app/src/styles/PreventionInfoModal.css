@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Inter";
-  src: url('fonts/Inter/static/Inter-Regular.ttf');
+  font-family: "Public Sans";
+  src: url('fonts/Public_Sans/static/PublicSans-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +26,7 @@
   grid-template-columns: 2fr 1fr;
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
-  } 
+  }
 }
 
 .modalContainer{
@@ -42,32 +42,33 @@
 
 .modalTitle {
   text-align: left;
-  font: normal normal 600 40px/29px "Inter", Arial, Sans-Serif;
+  font: normal normal 600 40px/29px "Public Sans", Arial, Sans-Serif;
   color: #091A5A;
 }
 
 .modalPreventionHeader {
   text-align: left;
-  font: normal normal 600 30px/29px "Inter", Arial, Sans-Serif;
+  font: normal normal 600 30px/29px "Public Sans", Arial, Sans-Serif;
   color: #091A5A;
 }
 
 .modalTopicHeader {
   text-align: left;
-  font: normal normal 600 15px/29px "Inter", Arial, Sans-Serif;
+  font: normal normal 600 15px/29px "Public Sans", Arial, Sans-Serif;
   color: #091A5A;
 }
 
 .modalText{
-  font: normal normal 300 12px/20px "Inter", Arial, Sans-Serif;
+  font: normal normal 300 12px/20px "Public Sans", Arial, Sans-Serif;
   color: #091A5A;
 }
 
 .close {
   color: #aaaaaa;
-  float: right;
+  left: 100%;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
 }
 
 .close:hover,
