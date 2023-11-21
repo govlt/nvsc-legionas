@@ -1,5 +1,6 @@
 add modal items to a grid for mobile compatibility
 Sutikrinti ar viskas veikia su resizes screen
-add alt texts for all images
+visur sudėti atitinkamą tekstą
 Sort and remove imports
 pridėti tekstą prie namo paveikslėlio
+numesti options į kairę ant pc versijos

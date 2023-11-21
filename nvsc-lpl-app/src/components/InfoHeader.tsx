@@ -7,7 +7,7 @@ const InfoHeader = () => {
     <div className="infoContainer">
       <div className='infoItemContainer'>
         <button className="infoLogo" onClick={() => navigate('/')}>
-          <img src="/nvsc-lpl/src/assets/legion.svg" alt="Logotipas"></img>
+          <img src="/nvsc-lpl/src/assets/legion.svg" alt="LPL Logotipas"></img>
         </button>
       </div>
       
