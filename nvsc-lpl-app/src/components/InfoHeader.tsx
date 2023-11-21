@@ -12,7 +12,7 @@ const InfoHeader = () => {
       </div>
       
       <div className='infoItemContainer'>
-        <button className="infoButton" onClick={() => navigate('/svarbu-zinoti')}>
+        <button className="blob" onClick={() => navigate('/svarbu-zinoti')}>
           Svarbu Žinoti
         </button>
       </div>

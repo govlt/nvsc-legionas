@@ -10,7 +10,6 @@ export const Home: React.FC = () => {
   return (
     <>
       <InfoHeader/>
-      
       <div>
         <h2 className='homeMainHeader'>
           Legionas prieš legioneles
@@ -34,9 +33,9 @@ export const Home: React.FC = () => {
       </div>
       <div id="chart" style={{ width: '80%', height: '300px', margin: 'auto' }}>
         <Chart />
-        <p className="homeChartText">
+        <a className="homeChartText" href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
           Grafikas parengtas pagal statistikos deparatamento duomenis.
-        </p>
+        </a>
       </div>
     </>
   );

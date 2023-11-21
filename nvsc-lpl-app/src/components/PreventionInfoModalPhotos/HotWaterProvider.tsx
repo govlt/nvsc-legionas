@@ -5,7 +5,7 @@ export const HotWaterProvider: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={hotWaterProvider} alt="Icon Description" className="modalImage"/>
+        <img src={hotWaterProvider} alt="Centriniai šilumos tinklai" className="modalImage"/>
       </div>
     </>
   );

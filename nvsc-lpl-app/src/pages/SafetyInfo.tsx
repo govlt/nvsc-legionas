@@ -116,104 +116,95 @@ export const SafetyInfo: React.FC = () => {
   return (
     <>
       <InfoHeader/>
-
-      <div hidden>
-        <button onClick={handleBathModalClick}>VONIA MODAL</button>
-        <button onClick={handleSinkModalClick}>KRIAUKLE MODAL</button>
-        <button onClick={handleShowerModalClick}>DUSAS MODAL</button>
-        <button onClick={handleHeatingPointModalClick}>SILUMOS PUNKTAS MODAL</button>
-        <button onClick={handleHeaterModalClick}>VANDENS SILDYTUVAS MODAL</button>
-        <button onClick={handleHotWaterProviderModalClick}>KARSTO VANDENS TIEKEJEAS MODAL</button>
-        <button onClick={handleWaterSiteModalClick}>VANDENVIETE MODAL</button>
-        <button onClick={handleBoreHoleModalClick}>GREZINYS MODAL</button>
-      </div>
-      <div className='imageAndButtonContainer'>
-        { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
-            && hotWaterSource === 'Centralizuotai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={apartamnetsCC} alt="Daugiabutis"/>
-              <DaugiabutisDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeatingPointModalClick}
-                coldButton={handleWaterSiteModalClick}/>
-              <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
-            </div>
-          }
+      <div className='ImageOverlayContainer'>
+        <div className='imageAndButtonContainer'>
           { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
-            && hotWaterSource === 'Individualiai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={apartamnetsCI} alt="Daugiabutis"/>
-              <DaugiabutisDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeaterModalClick}
-                coldButton={handleWaterSiteModalClick}/>
-            </div>
-          }
-          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
-            && hotWaterSource === 'Centralizuotai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={apartamnetsIC} alt="Daugiabutis"/>
-              <DaugiabutisDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeatingPointModalClick}
-                coldButton={handleBoreHoleModalClick}/>
-              <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
-            </div>
-          }
-          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
-            && hotWaterSource === 'Individualiai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={apartamnetsII} alt="Daugiabutis"/>
-              <DaugiabutisDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeaterModalClick}
-                coldButton={handleBoreHoleModalClick}/>
-            </div>
-          }
-          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
-            && hotWaterSource === 'Individualiai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={houseCIG} alt="Namas"/>
-              <IndividualusDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeaterModalClick}
-                coldButton={handleWaterSiteModalClick}
-              />
-            </div>
-          }
-          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
-            && hotWaterSource === 'Individualiai' &&
-            <div className="imageContainer">
-              <img className="mainImage" src={houseIIG} alt="Namas"/>
-              <IndividualusDefaultButtons
-                sinkButton={handleSinkModalClick}
-                bathButton={handleBathModalClick}
-                showerButton={handleShowerModalClick}
-                heatingButton={handleHeaterModalClick}
-                coldButton={handleBoreHoleModalClick}
-              />
-            </div>
-          }
+              && hotWaterSource === 'Centralizuotai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={apartamnetsCC} alt="Daugiabutis"/>
+                <DaugiabutisDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeatingPointModalClick}
+                  coldButton={handleWaterSiteModalClick}/>
+                <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
+              </div>
+            }
+            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
+              && hotWaterSource === 'Individualiai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={apartamnetsCI} alt="Daugiabutis"/>
+                <DaugiabutisDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeaterModalClick}
+                  coldButton={handleWaterSiteModalClick}/>
+              </div>
+            }
+            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+              && hotWaterSource === 'Centralizuotai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={apartamnetsIC} alt="Daugiabutis"/>
+                <DaugiabutisDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeatingPointModalClick}
+                  coldButton={handleBoreHoleModalClick}/>
+                <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
+              </div>
+            }
+            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+              && hotWaterSource === 'Individualiai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={apartamnetsII} alt="Daugiabutis"/>
+                <DaugiabutisDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeaterModalClick}
+                  coldButton={handleBoreHoleModalClick}/>
+              </div>
+            }
+            { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
+              && hotWaterSource === 'Individualiai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={houseCIG} alt="Namas"/>
+                <IndividualusDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeaterModalClick}
+                  coldButton={handleWaterSiteModalClick}
+                />
+              </div>
+            }
+            { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
+              && hotWaterSource === 'Individualiai' &&
+              <div className="imageContainer">
+                <img className="mainImage" src={houseIIG} alt="Namas"/>
+                <IndividualusDefaultButtons
+                  sinkButton={handleSinkModalClick}
+                  bathButton={handleBathModalClick}
+                  showerButton={handleShowerModalClick}
+                  heatingButton={handleHeaterModalClick}
+                  coldButton={handleBoreHoleModalClick}
+                />
+              </div>
+            }
 
-        <div className="infoButtons">
-          <OptionsButton
-            residenceType={residenceType}
-            setResidenceType={setResidenceType}
-            drinkingWaterSource={drinkingWaterSource}
-            setDrinkingWaterSource={setDrinkingWaterSource}
-            hotWaterSource={hotWaterSource}
-            setHotWaterSource={setHotWaterSource}
-          />
+          <div className="infoButtons">
+            <OptionsButton
+              residenceType={residenceType}
+              setResidenceType={setResidenceType}
+              drinkingWaterSource={drinkingWaterSource}
+              setDrinkingWaterSource={setDrinkingWaterSource}
+              hotWaterSource={hotWaterSource}
+              setHotWaterSource={setHotWaterSource}
+            />
+          </div>
         </div>
       </div>
       { showBathInfoModal &&

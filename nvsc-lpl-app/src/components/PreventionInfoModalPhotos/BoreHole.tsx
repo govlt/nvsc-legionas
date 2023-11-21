@@ -5,7 +5,7 @@ export const BoreHole: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={boreHole} alt="Icon Description" className="modalImage"/>
+        <img src={boreHole} alt="Gręžinys" className="modalImage"/>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ export const WaterSite: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={waterSite} alt="Icon Description" className="modalImage"/>
+        <img src={waterSite} alt="Vandenvietė" className="modalImage"/>
       </div>
     </>
   );

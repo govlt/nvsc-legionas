@@ -5,7 +5,7 @@ export const HeatingPoint: React.FC = () => {
   return (
     <>
       <div className="imagePlaceHolder">
-        <img src={heatingPoint} alt="Icon Description" className="modalImage"/>
+        <img src={heatingPoint} alt="Šilumos punktas" className="modalImage"/>
       </div>
     </>
   );
