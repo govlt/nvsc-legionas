@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import { OptionsButton } from '../components/OptionsButton';
 import InfoHeader from '../components/InfoHeader.tsx';
 import '../styles/SafetyInfo.css';
@@ -34,9 +34,20 @@ import { AdditionalInfoWaterSite } from '../components/PreventionInfoModalInfoCo
 import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
+import useImagePreloader from '../hooks/PreloadImages.tsx';
 
+
+const preloadSrcList: string[] = [
+  apartamnetsCC,
+  apartamnetsCI,
+  apartamnetsIC,
+  apartamnetsII,
+  houseCIG,
+  houseIIG
+];
 
 export const SafetyInfo: React.FC = () => {
+  const { imagesPreloaded } = useImagePreloader(preloadSrcList);
   const [residenceType, setResidenceType] = useState('Daugiabutyje');
   const [drinkingWaterSource, setDrinkingWaterSource] = useState('Centralizuotai');
   const [hotWaterSource, setHotWaterSource] = useState('Centralizuotai');
@@ -113,11 +124,15 @@ export const SafetyInfo: React.FC = () => {
     setShowBoreHoleInfoModal(false);
   };
 
+  if (!imagesPreloaded) {
+    return <p>Preloading Assets</p>;
+  }
+
   return (
     <>
       <InfoHeader/>
-      <div className='ImageOverlayContainer'>
-        <div className='imageAndButtonContainer'>
+      <div className="ImageOverlayContainer">
+        <div className="imageAndButtonContainer">
           { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
               && hotWaterSource === 'Centralizuotai' &&
               <div className="imageContainer">
@@ -130,8 +145,8 @@ export const SafetyInfo: React.FC = () => {
                   coldButton={handleWaterSiteModalClick}/>
                 <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
               </div>
-            }
-            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
               && hotWaterSource === 'Individualiai' &&
               <div className="imageContainer">
                 <img className="mainImage" src={apartamnetsCI} alt="Daugiabutis"/>
@@ -142,8 +157,8 @@ export const SafetyInfo: React.FC = () => {
                   heatingButton={handleHeaterModalClick}
                   coldButton={handleWaterSiteModalClick}/>
               </div>
-            }
-            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
               && hotWaterSource === 'Centralizuotai' &&
               <div className="imageContainer">
                 <img className="mainImage" src={apartamnetsIC} alt="Daugiabutis"/>
@@ -155,8 +170,8 @@ export const SafetyInfo: React.FC = () => {
                   coldButton={handleBoreHoleModalClick}/>
                 <DaugiabutisAdditionalHot singleButton={handleHotWaterProviderModalClick}/>
               </div>
-            }
-            { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
+          }
+          { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Individualiai'
               && hotWaterSource === 'Individualiai' &&
               <div className="imageContainer">
                 <img className="mainImage" src={apartamnetsII} alt="Daugiabutis"/>
@@ -167,8 +182,8 @@ export const SafetyInfo: React.FC = () => {
                   heatingButton={handleHeaterModalClick}
                   coldButton={handleBoreHoleModalClick}/>
               </div>
-            }
-            { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
+          }
+          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Centralizuotai'
               && hotWaterSource === 'Individualiai' &&
               <div className="imageContainer">
                 <img className="mainImage" src={houseCIG} alt="Namas"/>
@@ -180,8 +195,8 @@ export const SafetyInfo: React.FC = () => {
                   coldButton={handleWaterSiteModalClick}
                 />
               </div>
-            }
-            { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
+          }
+          { residenceType === 'Individualiame name' && drinkingWaterSource === 'Individualiai'
               && hotWaterSource === 'Individualiai' &&
               <div className="imageContainer">
                 <img className="mainImage" src={houseIIG} alt="Namas"/>
@@ -193,7 +208,7 @@ export const SafetyInfo: React.FC = () => {
                   coldButton={handleBoreHoleModalClick}
                 />
               </div>
-            }
+          }
 
           <div className="infoButtons">
             <OptionsButton

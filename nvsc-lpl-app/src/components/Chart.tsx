@@ -109,8 +109,8 @@ export const Chart: React.FC = () => {
         label: 'Mirtys',
         data: results.map((item) => item.deaths),
         tension: 0.3, // smoothness of line
-        borderColor: '#BC936F',
-        backgroundColor: '#BC936F',
+        borderColor: '#000000',
+        backgroundColor: '#000000',
         pointRadius: 5,
         pointHoverRadius: 10,
         pointBorderColor: '#FFFFFF', 
