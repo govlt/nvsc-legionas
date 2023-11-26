@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/OptionValuesButton.css';
 
 interface OptionValueButtonProps {
+    text: string;
     property: string;
     optValue1: string;
     optValue2: string;
@@ -10,6 +11,7 @@ interface OptionValueButtonProps {
 }
 
 export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
+  text,
   property,
   optValue1,
   optValue2,
@@ -25,6 +27,7 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
 
   return(
     <div className="switch-field">
+      {text}
       <span 
         className={`option ${property === optValue1 ? 'selected' : ''} ${disableOptValue1 ? 'disabled' : ''}`}
         onClick={() => handleValueChange(optValue1)}>
