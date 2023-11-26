@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import '../styles/OptionValuesButton.css';
 
 interface OptionValueButtonProps {
@@ -7,8 +7,6 @@ interface OptionValueButtonProps {
     optValue2: string;
     setProperty: React.Dispatch<React.SetStateAction<string>>;
     disableOptValue1?: boolean;
-    onClose: () => void;
-    optionsRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
@@ -17,23 +15,7 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
   optValue2,
   setProperty,
   disableOptValue1 = false,
-  onClose,
-  optionsRef
 }) => {
-  const wrapperRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node) && !optionsRef.current?.contains(event.target as Node)) {
-        onClose();
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [optionsRef, onClose]);
 
   const handleValueChange = (newValue: string) => {
     if (!disableOptValue1 || newValue !== optValue1) {
@@ -42,7 +24,7 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
   };
 
   return(
-    <div className="switch-field" ref={wrapperRef}>
+    <div className="switch-field">
       <span 
         className={`option ${property === optValue1 ? 'selected' : ''} ${disableOptValue1 ? 'disabled' : ''}`}
         onClick={() => handleValueChange(optValue1)}>
@@ -53,7 +35,6 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
         onClick={() => handleValueChange(optValue2)}>
         {optValue2}
       </span>
-      <span className="close" onClick={onClose}>&times;</span>
     </div>
   );
 };
