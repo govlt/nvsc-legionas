@@ -21,10 +21,6 @@ body{
     background-position: center;
     background-repeat: repeat;
     height: 100vh;
-
-    @media (max-width: 800px) {
-        overflow: initial;
-    }
 }
 
 .blob {
@@ -54,15 +50,6 @@ body{
     }
     100% {
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-}
-
-@media(max-width:800px){
-    .blob {
-        height: 80px;
-        width: 100px;
-        line-height: 80px;
-        font-size: 14px;
     }
 }
 
@@ -131,4 +118,39 @@ body{
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
     opacity: 1;
+}
+
+.homeChart{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+}
+
+@media (max-height:890px){
+    body{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-aspect-ratio:1/1){
+    body{
+        padding: 10px;
+    }
+    .blob {
+        height: 80px;
+        width: 100px;
+        line-height: 80px;
+        font-size: 14px;
+    }
+    .homeMainHeader{
+        font: normal normal bold 50px/60px "Public Sans", Arial, Sans-Serif;
+    }
+    .homeMainText{
+        width: 100%;
+        font: normal normal normal 15px/20px "Public Sans", Arial, Sans-Serif;
+    }
+    .homeChart{
+        height: 200px;
+    }
+    
 }

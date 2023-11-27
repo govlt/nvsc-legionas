@@ -4,3 +4,5 @@ visur sudėti atitinkamą tekstą
 Sort and remove imports
 pridėti tekstą prie namo paveikslėlio
 numesti options į kairę ant pc versijos
+allign pulsating buttons perfectly
+find where the modal x has gone

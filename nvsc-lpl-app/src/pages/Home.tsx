@@ -29,9 +29,11 @@ export const Home: React.FC = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>Susipažinti kaip apsisaugoti</button>
+        <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
+          Susipažinti kaip apsisaugoti
+        </button>
       </div>
-      <div id="chart" style={{ width: '80%', height: '300px', margin: 'auto' }}>
+      <div id="chart" className='homeChart'>
         <Chart />
         <a className="homeChartText" href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
           Grafikas parengtas pagal statistikos deparatamento duomenis.
