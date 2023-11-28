@@ -136,6 +136,13 @@
   opacity: 1;
 }
 
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 @media (min-width: 1001px) {
   .interactiveButtonAndTextContainer{
     z-index: 0;
