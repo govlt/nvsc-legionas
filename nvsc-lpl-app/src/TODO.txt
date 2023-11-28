@@ -1,8 +1,9 @@
-add modal items to a grid for mobile compatibility
-Sutikrinti ar viskas veikia su resizes screen
-visur sudėti atitinkamą tekstą
-Sort and remove imports
 pridėti tekstą prie namo paveikslėlio
 numesti options į kairę ant pc versijos
-allign pulsating buttons perfectly
+align pulsating buttons perfectly
 find where the modal x has gone
+
+padaryti iššokantį langą home page'e pirmą kartą atėjus
+padidinti užsikrėtimų kreivės storį
+apačioj homepage parašyti
+mobile dizaine implementuoti apatinę juostą

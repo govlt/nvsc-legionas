@@ -36,8 +36,11 @@ export const Home: React.FC = () => {
       <div id="chart" className='homeChart'>
         <Chart />
         <a className="homeChartText" href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
-          Grafikas parengtas pagal statistikos deparatamento duomenis.
+          Grafikas parengtas pagal statistikos departamento duomenis.
         </a>
+        <p>
+          Kažkas vykdė šį projektą
+        </p>
       </div>
     </>
   );
