@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
         <h3>
           Legioneliozė, nors ir ne visada plačiai aptariama, yra rimta grėsmė visuomenės sveikatai, 
           sukelianti pavojingas ir net mirtinas pasekmes. Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
-          dažniausiai plinta per užterštą vandenį, todėl yra svarbu žinoti ir suprasti, kaip galima išvengti.
+          dažniausiai plinta per užterštą vandenį, todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
         </h3>
       </div>
 

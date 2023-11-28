@@ -35,6 +35,7 @@ import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoCon
 import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
 import useImagePreloader from '../hooks/PreloadImages.tsx';
+import InteractiveHeader from '../components/InteractiveHeader.tsx';
 
 
 const preloadSrcList: string[] = [
@@ -131,6 +132,8 @@ export const SafetyInfo: React.FC = () => {
   return (
     <>
       <InfoHeader/>
+      <div className='firstInteractiveHeader'><InteractiveHeader/></div>
+
       <div className="ImageOverlayContainer">
         <div className="imageAndButtonContainer">
           { residenceType === 'Daugiabutyje' && drinkingWaterSource === 'Centralizuotai'
@@ -210,7 +213,12 @@ export const SafetyInfo: React.FC = () => {
               </div>
           }
 
-          <div className="infoButtons">
+        </div>
+      </div>
+
+      <div className="interactiveButtonAndTextContainer">
+        <div className='interactiveButtonContainer'>
+          <div className="optionButtons">
             <OptionsButton
               residenceType={residenceType}
               setResidenceType={setResidenceType}
@@ -221,6 +229,7 @@ export const SafetyInfo: React.FC = () => {
             />
           </div>
         </div>
+        <div className='secondInteractiveHeader'><InteractiveHeader/></div>
       </div>
       { showBathInfoModal &&
         <PreventionInfoModal

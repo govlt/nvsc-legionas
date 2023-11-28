@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   position: relative;
 }
 
@@ -24,7 +24,7 @@
 
 .imageContainer{
   align-items: center;
-  height: calc(100vh - 300px);
+  height: calc(90vh);
   position: relative;
 }
 
@@ -117,10 +117,57 @@
   pointer-events: none; 
 }
 
+.interactiveHeader{
+  text-align: right;
+  font: normal normal 600 50px/50px "Public Sans", Arial, Sans-Serif;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: #091A5A;
+  opacity: 1;
+}
+
+.interactiveText{
+  text-align: left;
+  font: normal normal 300 16px/24px "Public Sans", Arial, Sans-Serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: #091A5A;
+  opacity: 1;
+}
+
+@media (min-width: 1001px) {
+  .interactiveButtonAndTextContainer{
+    z-index: 0;
+    height: 10%;
+  }
+  .interactiveButtonContainer{
+    float: left;
+    min-width: 330px;
+  }
+  .optionButtonContainer{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+  .interactiveTextContainer{
+    float: right;
+    position: relative;
+    z-index: 10;
+    width: 25%;
+  }
+  .interactiveText{
+    text-align: right;
+  }
+  .firstInteractiveHeader{
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .imageContainer{
-    margin-top: 50px;
-    height: calc(100vw - 100px);
+    margin-top: 10px;
+    height: calc(100vw - 200px);
   }
   .optionButtonContainer{
     width: 90vw;
@@ -128,5 +175,16 @@
   }
   .optionButton{
     font: normal normal normal 12px/0px "Public Sans", Arial, Sans-Serif;
+  }
+  .ImageOverlayContainer{
+    top: 0;
+    position: relative;
+  }
+  .secondInteractiveHeader{
+    display: none;
+  }
+  .interactiveHeader{
+    text-align: left;
+    margin-top: 10px;
   }
 }

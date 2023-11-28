@@ -7,7 +7,7 @@ padaryti iššokantį langą home page'e pirmą kartą atėjus
 mobile dizaine implementuoti apatinę juostą
 
 
-
+link į "mano teisės ir pareigos"
 
 
 modulo išėjimas iš ekrano
