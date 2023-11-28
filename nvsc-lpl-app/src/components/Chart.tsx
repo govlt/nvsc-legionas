@@ -107,6 +107,7 @@ export const Chart: React.FC = () => {
     datasets: [
       {
         label: 'Mirtys',
+        borderWidth: 2,
         data: results.map((item) => item.deaths),
         tension: 0.3, // smoothness of line
         borderColor: '#000000',
@@ -115,9 +116,11 @@ export const Chart: React.FC = () => {
         pointHoverRadius: 10,
         pointBorderColor: '#FFFFFF', 
         pointBorderWidth: 2,
+        lineThickness: 5,
       },
       {
         label: 'Užsikrėtimai',
+        borderWidth: 5,
         data: results.map((item) => item.infections),
         tension: 0.3, // smoothness of line
         borderColor: '#4C74F5',
