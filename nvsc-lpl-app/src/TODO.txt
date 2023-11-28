@@ -7,3 +7,11 @@ padaryti iššokantį langą home page'e pirmą kartą atėjus
 padidinti užsikrėtimų kreivės storį
 apačioj homepage parašyti
 mobile dizaine implementuoti apatinę juostą
+
+
+
+
+
+modulo išėjimas iš ekrano
+svarbu žinoti mygtukas išeina iš ribų telefone
+viskas yra vos vos už ribų telefone
