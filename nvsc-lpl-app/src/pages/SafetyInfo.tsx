@@ -36,6 +36,7 @@ import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoCon
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
+import { Link } from 'react-router-dom';
 
 
 const preloadSrcList: string[] = [
@@ -132,7 +133,32 @@ export const SafetyInfo: React.FC = () => {
   return (
     <>
       <InfoHeader/>
-      <div className='firstInteractiveHeader'><InteractiveHeader/></div>
+      { residenceType === 'Daugiabutyje' &&
+        <div className='firstInteractiveHeader'>
+          <InteractiveHeader
+            header="Daugiabutis namas"
+            text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+            textWithLink={
+              <>
+                Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+              </>
+            }
+          />
+        </div>
+      }
+      { residenceType === 'Individualiame name' &&
+        <div className='firstInteractiveHeader'>
+          <InteractiveHeader
+            header="Individualus namas"
+            text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+            textWithLink={
+              <>
+                Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+              </>
+            }
+          />
+        </div>
+      }
 
       <div className="ImageOverlayContainer">
         <div className="imageAndButtonContainer">
@@ -229,7 +255,32 @@ export const SafetyInfo: React.FC = () => {
             />
           </div>
         </div>
-        <div className='secondInteractiveHeader'><InteractiveHeader/></div>
+        { residenceType === 'Daugiabutyje' &&
+          <div className='secondInteractiveHeader'>
+            <InteractiveHeader
+              header="Daugiabutis namas"
+              text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+              textWithLink={
+                <>
+                  Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+                </>
+              }
+            />
+          </div>
+        }
+        { residenceType === 'Individualiame name' &&
+          <div className='secondInteractiveHeader'>
+            <InteractiveHeader
+              header="Individualus namas"
+              text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+              textWithLink={
+                <>
+                  Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+                </>
+              }
+            />
+          </div>
+        }
       </div>
       { showBathInfoModal &&
         <PreventionInfoModal
