@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Chart } from '../components/Chart';
 import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
+import { WelcomeModal } from '../components/WelcomeModal.tsx';
+import { Bath } from '../components/PreventionInfoModalPhotos/Bath';
+
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
+  const [showWelcomeModal, setShowWelcomeModal] = useState(true);
+
+  const handleCloseWelcomeModal = () => {
+    setShowWelcomeModal(false);
+  };
 
   return (
     <>
@@ -42,6 +50,13 @@ export const Home: React.FC = () => {
           Kažkas vykdė šį projektą
         </p>
       </div>
+      { showWelcomeModal &&
+        <WelcomeModal
+          image={<Bath />}
+          header="Vonia"
+          onClose={handleCloseWelcomeModal}
+        />
+      }
     </>
   );
 };
