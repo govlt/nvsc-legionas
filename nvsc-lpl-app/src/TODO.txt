@@ -12,4 +12,4 @@ mobile dizaine implementuoti apatinę juostą
 
 modulo išėjimas iš ekrano
 svarbu žinoti mygtukas išeina iš ribų telefone
-viskas yra vos vos už ribų telefone
+viskas yra vos vos už ribų telefone.
