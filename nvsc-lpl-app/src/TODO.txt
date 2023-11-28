@@ -4,8 +4,6 @@ align pulsating buttons perfectly
 find where the modal x has gone
 
 padaryti iššokantį langą home page'e pirmą kartą atėjus
-padidinti užsikrėtimų kreivės storį
-apačioj homepage parašyti
 mobile dizaine implementuoti apatinę juostą
 
 

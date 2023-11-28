@@ -1,13 +1,13 @@
 import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { ImportantInfo } from './pages/ImportantInfo';
-import { PreventionInfo } from './pages/PreventionInfo';
-import { LegionellosisInfo } from './pages/LegionellosisInfo';
-import { RightsAndObligationsInfo } from './pages/RightsAndObligationsInfo';
-import { ContactsInfo } from './pages/ContactsInfo';
-import { WaterTestingInfo } from './pages/WaterTestingInfo';
-import { FAQ } from './pages/FAQ';
+import { ImportantInfo } from './pages/ImportantInfo/ImportantInfo';
+import { PreventionInfo } from './pages/ImportantInfo/PreventionInfo';
+import { LegionellosisInfo } from './pages/ImportantInfo/LegionellosisInfo';
+import { RightsAndObligationsInfo } from './pages/ImportantInfo/RightsAndObligationsInfo';
+import { ContactsInfo } from './pages/ImportantInfo/ContactsInfo';
+import { WaterTestingInfo } from './pages/ImportantInfo/WaterTestingInfo';
+import { FAQ } from './pages/ImportantInfo/FAQ';
 import { SafetyInfo } from './pages/SafetyInfo';
 
 export const App = () => {

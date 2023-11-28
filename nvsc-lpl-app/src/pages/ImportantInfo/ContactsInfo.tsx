@@ -1,19 +1,21 @@
 import React from 'react';
-import InfoHeader from '../components/InfoHeader.tsx';
+import InfoHeader from '../../components/InfoHeader.tsx';
 
-export const RightsAndObligationsInfo: React.FC = () => {
+export const ContactsInfo: React.FC = () => {
   return (
     <>
       <InfoHeader/>
       
       <div className="importantContainer">
-        <p className="importantHeader">Mano teisės ir pareigos</p>
+        <p className="importantHeader">
+            Kontaktinė informacija
+        </p>
         <hr/>
         <p className="importantTextHeader">
-            Teisė turėti geriamo vandens šaltinį.
+            Nelaimės atveju
         </p>
         <h3 className="importantMainText">
-            Jūs ją turite!
+            skambinti 112
         </h3>
             
         <p className="importantTextHeader">

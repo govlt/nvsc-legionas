@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoHeader from '../components/InfoHeader.tsx';
+import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const FAQ: React.FC = () => {
   return (
