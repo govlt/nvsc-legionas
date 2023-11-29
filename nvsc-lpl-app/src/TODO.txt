@@ -1,15 +1,8 @@
-pridėti tekstą prie namo paveikslėlio
-numesti options į kairę ant pc versijos
 align pulsating buttons perfectly
-find where the modal x has gone
-
 padaryti iššokantį langą home page'e pirmą kartą atėjus
 mobile dizaine implementuoti apatinę juostą
-
-
 link į "mano teisės ir pareigos"
-
-
+pakeisti "Daugiabutis namas"
 modulo išėjimas iš ekrano
-svarbu žinoti mygtukas išeina iš ribų telefone
-viskas yra vos vos už ribų telefone.
+viskas yra vos vos už ribų telefone
+sutvarkyti SVARBU ŽINOTI telefone
