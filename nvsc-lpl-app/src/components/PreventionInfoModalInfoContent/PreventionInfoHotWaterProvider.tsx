@@ -2,42 +2,39 @@ import React from 'react';
 
 export const PreventionInfoHotWaterProvider: React.FC= () => {
   return(
-    <div>
-      <p>
-        Atsukus čiaupą karštas, ne mažiau nei <span style={{color: 'red'}}>50°</span>, vanduo turi atbėgti per 1 minutę!
-      </p>
-    </div>
+    <>
+    </>
   );
 };
 
 export const AdditionalInfoHotWaterProvider: React.FC= () => {
   return(
-    <div>
-      <h2 className='modalPreventionHeader'>
-        Prevencija
-      </h2>
+    <>
       <h1 className='modalTopicHeader'>
-        Neleisti vandeniui užsistovėti vandens sistemoje
+        Centrinių šilumos tinklų atsakomybės:
       </h1>
-      <p className='modalText'>
-        Jei vanduo nebuvo naudojamas ilgesnį laiką,
-        leisti vandeniui nubėgti keletą minučių,
-        kol bus pasiekta 50 C temperatūra
+      <p>
+        ✓ Karšto vandens tiekėjas atsako už karšto vandens temperatūrinių parametrų nukrypimus,
+        nuo nustatytų galiojančiuose teisės aktuose ir karšto vandens pirkimo pardavimo sutartyje,
+        bei karšto vandens kokybę (ŠTVT 232.1 P.P..);
       </p>
-      
-      <h1 className='modalTopicHeader'>
-        Vykdyti stebėseną
-      </h1>
-      <p className='modalText'>
-        Stebėti sanitarinių prietaisų, vandens čiaupų, maišytuvų, žarnelių būklę
+      <p>
+        ✓ Užtikrina tinkamos temperatūros termofikato tiekimą;
+      </p>
+      <p>
+        ✓ Matuoja termofikato temperatūrą šildymo punktuose;
+      </p>
+      <p>
+        ✓ Tikrina karšto vandens parametrus ne rečiau kaip 2-3 kartus per savaitę žiemos metu;
+      </p>
+      <p>
+        ✓ Tikrina karšto vandens parametrus ne rečiau kaip 1 kartą per savaitę vasaros metu;
+      </p>
+      <p>
+        ✓ Sprendžia problemas.
       </p>
 
-      <h1 className='modalTopicHeader'>
-        Atlikti reguliarią dezinfekciją
-      </h1>
-      <p className='modalText'>
-        Valyti ir dezinfekuoti dušus, dušų galvutes, čiaupus
-      </p>
-    </div>
+      LINK
+    </>
   );
 };

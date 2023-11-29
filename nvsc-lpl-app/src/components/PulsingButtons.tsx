@@ -23,22 +23,22 @@ export const DaugiabutisDefaultButtons: React.FC<HouseItems> = ({
     <>
     <a className="buttonOnImage" style={{top: '33.75%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
     <a className="wave" style={{top: '33.75%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
-    <a className="buttonOnImage" style={{top: '37%',  left: '59%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
-    <a className="wave" style={{top: '37%',  left: '59%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
-    <a className="buttonOnImage" style={{top: '25%',  left: '77%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
-    <a className="wave" style={{top: '25%',  left: '77%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="buttonOnImage" style={{top: '37%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
+    <a className="wave" style={{top: '37%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
+    <a className="buttonOnImage" style={{top: '25%',  left: '77.75%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="wave" style={{top: '25%',  left: '77.75%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
 
-    <a className="buttonOnImage" style={{top: '62.25%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
-    <a className="wave" style={{top: '62.25%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
-    <a className="buttonOnImage" style={{top: '65.5%',  left: '59%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
-    <a className="wave" style={{top: '65.5%',  left: '59%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
-    <a className="buttonOnImage" style={{top: '54%',  left: '77%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
-    <a className="wave" style={{top: '54%',  left: '77%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="buttonOnImage" style={{top: '63%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
+    <a className="wave" style={{top: '63%',  left: '42.75%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
+    <a className="buttonOnImage" style={{top: '66%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
+    <a className="wave" style={{top: '66%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
+    <a className="buttonOnImage" style={{top: '54%',  left: '77.75%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="wave" style={{top: '54%',  left: '77.75%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
 
-    <a className="buttonOnImage" style={{top: '83.5%',  left: '22%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
-    <a className="wave" style={{top: '83.5%',  left: '22%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
-    <a className="buttonOnImage" style={{top: '77.5%',  left: '13.5%'}} onClick={coldButton}></a>
-    <a className="wave" style={{top: '77.5%',  left: '13.5%'}} onClick={coldButton}></a>
+    <a className="buttonOnImage" style={{top: '84%',  left: '45%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
+    <a className="wave" style={{top: '84%',  left: '45%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
+    <a className="buttonOnImage" style={{top: '78%',  left: '15%'}} onClick={coldButton}></a>
+    <a className="wave" style={{top: '78%',  left: '15%'}} onClick={coldButton}></a>
     </>
   );
 };
@@ -48,8 +48,8 @@ export const DaugiabutisAdditionalHot: React.FC<SingleButton> = ({
 }) => {
   return(
     <>
-    <a className="buttonOnImage" style={{top: '88.25%',  left: '13.5%'}} onClick={singleButton}></a>
-    <a className="wave" style={{top: '88.25%',  left: '13.5%'}} onClick={singleButton}></a>
+    <a className="buttonOnImage" style={{top: '89%',  left: '15%'}} onClick={singleButton}></a>
+    <a className="wave" style={{top: '89%',  left: '15%'}} onClick={singleButton}></a>
     </>
   );
 };
@@ -63,17 +63,17 @@ export const IndividualusDefaultButtons: React.FC<HouseItems> = ({
 }) => {
   return(
     <>
-    <a className="buttonOnImage" style={{top: '49%',  left: '43%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
-    <a className="wave" style={{top: '49%',  left: '43%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
+    <a className="buttonOnImage" style={{top: '49.75%',  left: '43%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
+    <a className="wave" style={{top: '49.75%',  left: '43%', backgroundColor: '#DE1829'}} onClick={sinkButton}></a>
     <a className="buttonOnImage" style={{top: '54%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
     <a className="wave" style={{top: '54%',  left: '59.75%', backgroundColor: '#DE1829'}} onClick={bathButton}></a>
-    <a className="buttonOnImage" style={{top: '38%',  left: '77.5%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
-    <a className="wave" style={{top: '38%',  left: '77.5%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="buttonOnImage" style={{top: '38%',  left: '78%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
+    <a className="wave" style={{top: '38%',  left: '78%', backgroundColor: '#DE1829'}} onClick={showerButton}></a>
 
-    <a className="buttonOnImage" style={{top: '79%',  left: '39%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
-    <a className="wave" style={{top: '79%',  left: '39%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
-    <a className="buttonOnImage" style={{top: '69.75%',  left: '13.75%'}} onClick={coldButton}></a>
-    <a className="wave" style={{top: '69.75%',  left: '13.75%'}} onClick={coldButton}></a>
+    <a className="buttonOnImage" style={{top: '80%',  left: '39%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
+    <a className="wave" style={{top: '80%',  left: '39%', backgroundColor: '#DE1829'}} onClick={heatingButton}></a>
+    <a className="buttonOnImage" style={{top: '70.5%',  left: '15.25%'}} onClick={coldButton}></a>
+    <a className="wave" style={{top: '70.5%',  left: '15.25%'}} onClick={coldButton}></a>
     </>
   );
 };

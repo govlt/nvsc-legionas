@@ -37,6 +37,7 @@ import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaul
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
 import { Link } from 'react-router-dom';
+import { LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
 
 const preloadSrcList: string[] = [
@@ -286,6 +287,7 @@ export const SafetyInfo: React.FC = () => {
         <PreventionInfoModal
           image={<Bath />}
           header="Vonia"
+          legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoBath />}
           lowerSection={<AdditionalInfoBath/>}
           onClose={handleCloseBathModal}
@@ -295,6 +297,7 @@ export const SafetyInfo: React.FC = () => {
         <PreventionInfoModal
           image={<Sink />}
           header="Kriauklė"
+          legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoSink />}
           lowerSection={<AdditionalInfoSink/>}
           onClose={handleCloseSinkModal}
@@ -304,6 +307,7 @@ export const SafetyInfo: React.FC = () => {
         <PreventionInfoModal
           image={<Shower />}
           header="Dušas"
+          legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoShower />}
           lowerSection={<AdditionalInfoShower/>}
           onClose={handleCloseShowerModal}
@@ -313,6 +317,7 @@ export const SafetyInfo: React.FC = () => {
         <PreventionInfoModal
           image={<HeatingPoint />}
           header="Šilumos punktas"
+          legionInfo={<LegionInfoHeatingPoint/>}
           headerSectionContent={<PreventionInfoHeatingPoint />}
           lowerSection={<AdditionalInfoHeatingPoint/>}
           onClose={handleCloseHeatingPointModal}
@@ -322,6 +327,7 @@ export const SafetyInfo: React.FC = () => {
         <PreventionInfoModal
           image={<Heater />}
           header="Vandens šildytuvas"
+          legionInfo={<LegionInfoHeater/>}
           headerSectionContent={<PreventionInfoHeater />}
           lowerSection={<AdditionalInfoHeater/>}
           onClose={handleCloseHeaterModal}
@@ -330,7 +336,8 @@ export const SafetyInfo: React.FC = () => {
       { showHotWaterProviderInfoModal &&
         <PreventionInfoModal
           image={<HotWaterProvider />}
-          header="Karšto vandens tiekėjas"
+          header="Centriniai šilumos tinklai"
+          legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoHotWaterProvider />}
           lowerSection={<AdditionalInfoHotWaterProvider/>}
           onClose={handleCloseHotWaterProviderModal}
@@ -339,7 +346,8 @@ export const SafetyInfo: React.FC = () => {
       { showWaterSiteInfoModal &&
         <PreventionInfoModal
           image={<WaterSite />}
-          header="Vandenvietė"
+          header="Geriamojo vandens tiekėjai"
+          legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoWaterSite />}
           lowerSection={<AdditionalInfoWaterSite/>}
           onClose={handleCloseWaterSiteModal}
@@ -348,7 +356,8 @@ export const SafetyInfo: React.FC = () => {
       { showBoreHoleInfoModal &&
         <PreventionInfoModal
           image={<BoreHole />}
-          header="Gręžinys"
+          header="Gręžinys / Šulinys"
+          legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoBoreHole />}
           lowerSection={<AdditionalInfoBoreHole/>}
           onClose={handleCloseBoreHoleModal}

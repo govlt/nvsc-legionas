@@ -9,8 +9,6 @@
     background: #BB0642 0% 0% no-repeat padding-box;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     color: #FFFFFF;
 }
 
@@ -27,21 +25,24 @@
 .legionDangerImageItemContainer{
     width: 50%;
     float: left;
+    color: white;
 }
 
 .legionDangerHeaderContainer{
     width: 100%;
-    color: #FFFFFF;
 }
 
 .legionDangerHeaderContainer h2{
     font: normal normal 600 20px/20px "Public Sans", Arial, Sans-Serif;
-    color: #FFFFFF;
+}
+
+.legionDangerHeaderContainer h3{
+    font: normal normal 600 13px/15px "Public Sans", Arial, Sans-Serif;
 }
 
 .legionDangerHeaderContainer p{
-    font: normal normal 300 12px/20px "Public Sans", Arial, Sans-Serif;
-    color: #FFFFFF;
+    font: normal normal 300 12px/18px "Public Sans", Arial, Sans-Serif;
+    color: white;
 }
 
 .legionDangerImageContainer{
