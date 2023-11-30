@@ -2,42 +2,45 @@ import React from 'react';
 
 export const PreventionInfoWaterSite: React.FC= () => {
   return(
-    <div>
-      <p>
-        Atsukus čiaupą karštas, ne mažiau nei <span style={{color: 'red'}}>50°</span>, vanduo turi atbėgti per 1 minutę!
-      </p>
-    </div>
+    <>
+    </>
   );
 };
 
 export const AdditionalInfoWaterSite: React.FC= () => {
   return(
     <div>
-      <h2 className='modalPreventionHeader'>
-        Prevencija
-      </h2>
       <h1 className='modalTopicHeader'>
-        Neleisti vandeniui užsistovėti vandens sistemoje
+        Geriamo vandens tiekėjų atsakomybės:
       </h1>
-      <p className='modalText'>
-        Jei vanduo nebuvo naudojamas ilgesnį laiką,
-        leisti vandeniui nubėgti keletą minučių,
-        kol bus pasiekta 50 C temperatūra
+      <p>
+        ✓ Atsako už geriamojo vandens saugą ir kokybę iki įvadų į vartotojams ir (arba)
+        abonentams nuosavybės teise priklausančių ar kitaip valdomų ir (arba)
+        naudojamų pastatų vidaus vandentiekį;
       </p>
-      
-      <h1 className='modalTopicHeader'>
-        Vykdyti stebėseną
-      </h1>
-      <p className='modalText'>
-        Stebėti sanitarinių prietaisų, vandens čiaupų, maišytuvų, žarnelių būklę
+      <p>
+        ✓ Atlieka savo tiekiamo geriamojo vandens stebėseną
+        pagal sveikatos apsaugos ministro nustatytus reikalavimus.
       </p>
 
       <h1 className='modalTopicHeader'>
-        Atlikti reguliarią dezinfekciją
+        Valstybinė maisto ir veterinarijos tarnyba vykdo:
       </h1>
-      <p className='modalText'>
-        Valyti ir dezinfekuoti dušus, dušų galvutes, čiaupus
+      <p>
+        ✓ Geriamojo vandens ruošimo procesų priežiūrą;
       </p>
+      <p>
+        ✓ Geriamojo vandens saugos ir kokybės rodiklių laikymosi priežiūrą,
+        geriamojo vandens stebėsenos programų derinimą, šių programų vykdymo priežiūrą;
+      </p>
+      <p>
+        ✓ Nagrinėja vartotojų ir abonentų skundų dėl geriamojo vandens saugos ir kokybės;
+      </p>
+      <p>
+        ✓ Ima geriamojo vandens mėginius (pagal skundus ir priežiūros tikslu).
+      </p>
+
+      LINK
     </div>
   );
 };

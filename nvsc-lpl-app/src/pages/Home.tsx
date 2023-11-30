@@ -4,7 +4,6 @@ import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import { WelcomeModal } from '../components/WelcomeModal.tsx';
-import { Bath } from '../components/PreventionInfoModalPhotos/Bath';
 
 
 export const Home: React.FC = () => {
@@ -29,6 +28,8 @@ export const Home: React.FC = () => {
           Legioneliozė, nors ir ne visada plačiai aptariama, yra rimta grėsmė visuomenės sveikatai, 
           sukelianti pavojingas ir net mirtinas pasekmes. Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
           dažniausiai plinta per užterštą vandenį, todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
+          Mes visi kartu esame „legionas“, tad sutelkdami jėgas ir atsakingai rūpindamiesi, kokį vandenį vartojame,
+          galime duoti atkirtį bakterijoms ir įveikti šį nematomą pavojų mūsų sveikatai.
         </h3>
       </div>
 
@@ -46,14 +47,12 @@ export const Home: React.FC = () => {
         <a className="homeChartText" href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
           Grafikas parengtas pagal statistikos departamento duomenis.
         </a>
-        <p>
-          Kažkas vykdė šį projektą
+        <p className='homeFooterText'>
+          Projektas gimė siekiant padididinti gyventojų sąmoningumą kovoje su legionelioze. Projekto partneriai: 
         </p>
       </div>
       { showWelcomeModal &&
         <WelcomeModal
-          image={<Bath />}
-          header="Vonia"
           onClose={handleCloseWelcomeModal}
         />
       }

@@ -1,15 +1,12 @@
+import mainImage from '../assets/legionas_pries_legioneles.png';
 import React, { useRef, useEffect} from 'react';
 import '../styles/PreventionInfoModal.css';
 
 interface PreventionInfoModalProps {
-    image: React.ReactNode;
-    header: string;
     onClose: () => void;
 }
 
 export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
-  image,
-  header,
   onClose
 }) => {
 
@@ -34,8 +31,8 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
         <span className="close" onClick={onClose}>&times;</span>
         <div className="modal" ref={wrapperRef}>  
           <div className="modalImagePlaceHolder">
-            {header}
-            {image}
+            
+            {mainImage}
           </div>
         </div>
       </div>

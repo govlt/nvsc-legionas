@@ -94,7 +94,6 @@ body{
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
-    margin-bottom: 2%;
 
     @media (max-width: 800px) {
         grid-template-columns: 1fr;
@@ -117,13 +116,17 @@ body{
 .homeChartText{
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
-    opacity: 1;
 }
 
 .homeChart{
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: 250px;
     margin: auto;
+}
+
+.homeFooterText{
+    font: normal normal normal 15px/20px "Public Sans", Arial, Sans-Serif;
+    color: #091A5A;
 }
 
 @media (max-height:890px){
@@ -139,7 +142,6 @@ body{
     .blob {
         height: 80px;
         width: 100px;
-        line-height: 80px;
         font-size: 14px;
     }
     .homeMainHeader{
@@ -150,7 +152,7 @@ body{
         font: normal normal normal 15px/20px "Public Sans", Arial, Sans-Serif;
     }
     .homeChart{
-        height: 200px;
+        height: 150px;
     }
     
 }
