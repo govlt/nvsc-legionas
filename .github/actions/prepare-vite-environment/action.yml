@@ -1,16 +1,11 @@
-name: Build app
-description: Builds app
+name: Prepare Vite environment
+description: Setup Node and install dependencies
 
 inputs:
   working-directory:
     description: "Optional input to set working directory"
     required: false
     default: ./nvsc-lpl-app
-
-outputs:
-  distribution-directory:
-    description: "Distribution directory"
-    value: ${{ inputs.working-directory }}/dist
 
 runs:
   using: composite
@@ -24,10 +19,5 @@ runs:
 
     - name: Install dependencies
       run: npm ci
-      working-directory: ${{ inputs.working-directory }}
-      shell: bash
-
-    - name: Build
-      run: npm run build
       working-directory: ${{ inputs.working-directory }}
       shell: bash

@@ -17,6 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build app
-        uses: ./.github/actions/build-vite-app
+      - name: Prepare environment and install dependencies
+        uses: ./.github/actions/prepare-vite-environment
 
+      - name: Build
+        run: npm run build
+        working-directory: nvsc-lpl-app
