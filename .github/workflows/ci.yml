@@ -1,0 +1,22 @@
+name: Continuous integration
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions: { }
+
+jobs:
+  build-app:
+    name: Build app
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build app
+        uses: ./.github/actions/build-vite-app
+
