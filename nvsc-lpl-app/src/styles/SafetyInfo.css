@@ -9,40 +9,43 @@
     background: #BB0642 0% 0% no-repeat padding-box;
     border-radius: 16px;
     padding: 20px;
-    color: #FFFFFF;
+    color: white;
+}
+
+.legionDangerContainer h2{
+    font: normal normal 600 20px/20px "Public Sans", Arial, Sans-Serif;
+    color: white;
+}
+
+.legionDangerContainer h3{
+    font: normal normal 600 13px/15px "Public Sans", Arial, Sans-Serif;
+    color: white;
+}
+
+.legionDangerContainer p{
+    font: normal normal 300 12px/18px "Public Sans", Arial, Sans-Serif;
+    color: white;
 }
 
 .legionDangerTopContainer{
     display: flex;
-    @media (max-width: 1100px) {
-        flex-direction: column;
-    }   
-    @media (max-width: 800px) {
-        flex-direction: row;
-    }   
+    flex-direction: column;
+}
+
+.legionDangerHeaderAndImageContainer{
+    width: 100%;
 }
 
 .legionDangerImageItemContainer{
     width: 50%;
+    max-width: 100px;
+    margin: 10px;
     float: left;
     color: white;
 }
 
 .legionDangerHeaderContainer{
     width: 100%;
-}
-
-.legionDangerHeaderContainer h2{
-    font: normal normal 600 20px/20px "Public Sans", Arial, Sans-Serif;
-}
-
-.legionDangerHeaderContainer h3{
-    font: normal normal 600 13px/15px "Public Sans", Arial, Sans-Serif;
-}
-
-.legionDangerHeaderContainer p{
-    font: normal normal 300 12px/18px "Public Sans", Arial, Sans-Serif;
-    color: white;
 }
 
 .legionDangerImageContainer{
@@ -55,4 +58,37 @@
 
 .legionDangerImage{
     width: 100%;
+}
+
+@media (max-width: 1500px){
+    .legionDangerImageItemContainer{
+        width: 100%;
+        max-width: none;
+    }
+    .legionDangerImageContainer{
+        width: 8vh;
+        height: 8vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .legionDangerImageItemContainer{
+        width: 50%;
+        max-width: 100px;
+    }
+    .legionDangerImageContainer{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .legionDangerImageItemContainer{
+        width: 80%;
+        max-width: none;
+    }
+    .legionDangerImageContainer{
+        width: 10vh;
+        height: 10vh;
+    }
 }

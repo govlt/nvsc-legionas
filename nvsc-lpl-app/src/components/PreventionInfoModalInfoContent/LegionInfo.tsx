@@ -1,29 +1,32 @@
+import LegionImage from '../../assets/legioneles_ikona.svg';
+
 export const LegionInfoHeatingPoint = () => {
   return(
     <>
     <div className="legionDangerContainer">
         <div className="legionDangerTopContainer">
-            <div className="legionDangerImageItemContainer">
-                <div className="legionDangerImageContainer">
-                    <img src="/nvsc-lpl/src/assets/legioneles_ikona.svg" className="legionDangerImage"></img>
+            <div className="legionDangerHeaderAndImageContainer">
+                <div className="legionDangerImageItemContainer">
+                    <div className="legionDangerImageContainer">
+                        <img src={LegionImage} className="legionDangerImage"></img>
+                    </div>
+                </div>
+                <div className="legionDangerHeaderContainer">
+                    <h2>
+                        Legioneliozės pavojus!
+                    </h2>
+                    <h2>
+                        Ką atlikti prevenciškai?
+                    </h2>
                 </div>
             </div>
-
-            <div className="legionDangerHeaderContainer">
-                <h2>
-                    Legioneliozės pavojus!
-                </h2>
-                <h2>
-                    Ką atlikti prevenciškai?
-                </h2>
-
+            <div>
                 <p>
                     BNO administratorius prižiūri šilumos sistemas
                     ir kad karšto vandens temperatūra čiaupe nebūtų žemesnė nei 50°C !
                 </p>
             </div>
         </div>
-        
     </div>
     </>
   )
@@ -34,20 +37,22 @@ export const LegionInfoHeater = () => {
         <>
         <div className="legionDangerContainer">
             <div className="legionDangerTopContainer">
-                <div className="legionDangerImageItemContainer">
-                    <div className="legionDangerImageContainer">
-                        <img src="/nvsc-lpl/src/assets/legioneles_ikona.svg" className="legionDangerImage"></img>
+                <div className="legionDangerHeaderAndImageContainer">
+                    <div className="legionDangerImageItemContainer">
+                        <div className="legionDangerImageContainer">
+                            <img src={LegionImage} className="legionDangerImage"></img>
+                        </div>
+                    </div>
+                    <div className="legionDangerHeaderContainer">
+                        <h2>
+                            Legioneliozės pavojus!
+                        </h2>
+                        <h2>
+                            Ką atlikti prevenciškai?
+                        </h2>
                     </div>
                 </div>
-    
-                <div className="legionDangerHeaderContainer">
-                    <h2>
-                        Legioneliozės pavojus!
-                    </h2>
-                    <h2>
-                        Ką atlikti prevenciškai?
-                    </h2>
-
+                <div>
                     <h3>
                         Prižiūrėti vandens šildytuvus
                     </h3>
@@ -63,7 +68,6 @@ export const LegionInfoHeater = () => {
                     </p>
                 </div>
             </div>
-            
         </div>
         </>
     )
@@ -74,20 +78,22 @@ export const LegionInfoInside = () => {
         <>
         <div className="legionDangerContainer">
             <div className="legionDangerTopContainer">
-                <div className="legionDangerImageItemContainer">
-                    <div className="legionDangerImageContainer">
-                        <img src="/nvsc-lpl/src/assets/legioneles_ikona.svg" className="legionDangerImage"></img>
+                <div className="legionDangerHeaderAndImageContainer">
+                    <div className="legionDangerImageItemContainer">
+                        <div className="legionDangerImageContainer">
+                            <img src={LegionImage} className="legionDangerImage"></img>
+                        </div>
+                    </div>
+                    <div className="legionDangerHeaderContainer">
+                        <h2>
+                            Legioneliozės pavojus!
+                        </h2>
+                        <h2>
+                            Ką atlikti prevenciškai?
+                        </h2>
                     </div>
                 </div>
-    
-                <div className="legionDangerHeaderContainer">
-                    <h2>
-                        Legioneliozės pavojus!
-                    </h2>
-                    <h2>
-                        Ką atlikti prevenciškai?
-                    </h2>
-
+                <div>
                     <h3>
                         1. Neleisti vandeniui užsistovėti vandens sistemoje
                     </h3>
@@ -111,7 +117,6 @@ export const LegionInfoInside = () => {
                     </p>
                 </div>
             </div>
-            
         </div>
         </>
     )

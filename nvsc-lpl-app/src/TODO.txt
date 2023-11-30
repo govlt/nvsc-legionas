@@ -1,21 +1,15 @@
-modulo išėjimas iš ekrano
-viskas yra vos vos už ribų telefone
-
 2) apatinis meniu mobile
-4) mygtukas sugrįžti į vaizdą
-9) pridėti footerį apačioje, projekto partneriai (reikia daugiau informacijos)
-10) iššokantis langas home screene
+4) mygtukas sugrįžti į vaizdą, per vidurį headerio
+9) pridėti footerį apačioje, projekto partneriai (reikia daugiau informacijos),
+    nuspalvinti mėlynai ir duot daugiau vietos
 11) prie legionėlių ikonos pridėti skydą
 12) papildyti DUK
 13) sužiūrėti asmenuotes
-16) padaryti kad logo veiktų githube
 17) bekontakčio šildymo rodyklės
 18) kiekviename module turi būti hyperlinkai
 19) atnaujinti tekstus pagal Ingą
 21) prieinamumo įskiepis
 22) google analytics
 
-fix legioneliozės pavojus text to be 90% width below the logo
 add checkmarks to modulos
-make modulos take up full space with borders
-    - all space on mobile
+pagrindiniam ekrane tekstą išskaidyti į tris dalis

@@ -36,8 +36,9 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   return (
     <>
       <div className="modalBackground">
-        <span className="close" onClick={onClose}>&times;</span>
-        <div className="modal" ref={wrapperRef}>  
+      
+        <div className="modal" ref={wrapperRef}>
+        <div className="close" onClick={onClose}>&times;</div>
           <div className="modalImagePlaceHolder">
             {image}
           </div>

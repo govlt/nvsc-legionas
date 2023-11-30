@@ -12,31 +12,25 @@
   right: 0;
   bottom: 0;
   height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  background: white;
   z-index: 20;
 }
 
 .modal {
   background-color: #E5EBF8;
-  margin: 48px auto;
-  border: 1px solid #888;
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
 }
 
 .close {
   color: #aaaaaa;
-  font-size: 28px;
-  font-weight: bold;
-  position: relative;
-  top: 60px;
-  right: 7%;
+  font-size: 100px;
+  position: absolute;
+  float: right;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -55,6 +49,7 @@
 .modalInfo {
   padding: 0 32px;
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
 }
 
@@ -86,9 +81,6 @@
   padding: 100px 100px 56px 100px;
   height: 100%;
   box-sizing: border-box;
-  @media (max-width: 1000px) {
-    padding: 5% 10% 5% 10%;
-  } 
 }
 
 .modalImage{
@@ -96,5 +88,16 @@
   max-width: 600px;
   margin: auto;
   display: block;
+}
 
+@media (max-width: 1000px){
+  .imagePlaceHolder {
+    padding: 5% 10% 5% 10%;
+  }
+  .modal{
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100%;
+    margin: none;
+  }
 }

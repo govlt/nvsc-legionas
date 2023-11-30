@@ -27,15 +27,10 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
 
   return (
     <>
-      <div className="modalBackground">
-        <span className="close" onClick={onClose}>&times;</span>
-        <div className="modal" ref={wrapperRef}>  
-          <div className="modalImagePlaceHolder">
-            
-            {mainImage}
-          </div>
-        </div>
-      </div>
+    <div className="welcomeBackground">
+        <div className="close" onClick={onClose}>&times;</div>
+        <img src={mainImage} className='welcomeImage'></img>
+    </div>
     </>
   );
 };

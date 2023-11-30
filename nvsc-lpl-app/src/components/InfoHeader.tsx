@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import LPLLogo from '../assets/legion.svg';
 
 const InfoHeader = () => {
   const navigate = useNavigate();
@@ -7,7 +8,7 @@ const InfoHeader = () => {
     <div className="infoContainer">
       <div className='infoItemContainer'>
         <button className="infoLogo" onClick={() => navigate('/')}>
-          <img src="/nvsc-lpl/src/assets/legion.svg" alt="LPL Logotipas"></img>
+          <img src={LPLLogo} alt="LPL Logotipas"></img>
         </button>
       </div>
       
