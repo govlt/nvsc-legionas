@@ -134,7 +134,7 @@ export const RightsAndObligationsLink = () => {
     const navigate = useNavigate();
     return(
         <>
-        <div className='legionLinkContainer' onClick={() => navigate('/kontaktai')}>
+        <div className='legionLinkContainer' onClick={() => navigate('/teises-atsakomybes')}>
             <div className='legionLinkTextContainer'>
                 <p>
                     Išsamiau
