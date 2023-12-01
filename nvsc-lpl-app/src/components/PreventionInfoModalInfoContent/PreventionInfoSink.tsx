@@ -16,8 +16,6 @@ export const AdditionalInfoSink: React.FC= () => {
     <p>
       Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti.
     </p>
-
-    LINK
     </>
   );
 };

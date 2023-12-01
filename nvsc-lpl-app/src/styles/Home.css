@@ -105,21 +105,29 @@ body{
     color: #091A5A;
 }
 
-.homeMainText{
+.homeMainTextContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.homeMainTextContainer h3{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: '10vh';
-    width: 60%;
+    width: 90%;
     margin: auto;
     text-align: center;
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
+}
 
-    @media (max-width: 800px) {
-        grid-template-columns: 1fr;
-    } 
+.homeMainButtonContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeMainButton{
@@ -149,6 +157,15 @@ body{
 .homeFooterText{
     font: normal normal normal 15px/20px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
+}
+
+@media (max-width: 1000px){
+    .homeMainTextContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .homeMainTextContainer h3{
+        margin-top: 20px;
+    }
 }
 
 @media (max-height:890px){

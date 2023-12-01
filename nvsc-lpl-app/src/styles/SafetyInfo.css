@@ -60,6 +60,41 @@
     width: 100%;
 }
 
+.legionLinkContainer{
+    background: #fafafa 0% 0% no-repeat padding-box;
+    border: 1px solid #D2DCF7;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+
+.legionLinkContainer h3{
+    text-align: left;
+    color: black;
+    font: normal normal bold 16px/15px "Public Sans", Arial, Sans-Serif;
+}
+
+.legionLinkContainer p{
+    text-align: left;
+    color: black;
+    font: normal normal normal 16px/15px "Public Sans", Arial, Sans-Serif;
+}
+
+.legionLinkTextContainer{
+    width: 90%;
+}
+
+.legionLinkArrowContainer{
+    width: 10%;
+}
+
+.legionLinkArrow{
+    float: right;
+    margin: 10px;
+    filter: invert(38%) sepia(86%) saturate(510%) hue-rotate(189deg) brightness(101%) contrast(105%);
+}
+
 @media (max-width: 1500px){
     .legionDangerImageItemContainer{
         width: 100%;

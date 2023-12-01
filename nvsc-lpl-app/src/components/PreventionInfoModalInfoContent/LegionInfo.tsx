@@ -1,7 +1,8 @@
 import LegionImage from '../../assets/legioneles_ikona.svg';
+import { useNavigate } from 'react-router-dom';
 
 export const LegionInfoHeatingPoint = () => {
-  return(
+    return(
     <>
     <div className="legionDangerContainer">
         <div className="legionDangerTopContainer">
@@ -123,6 +124,36 @@ export const LegionInfoInside = () => {
 };
 
 export const LegionInfoNothing = () => {
+    return(
+        <>
+        </>
+    )
+};
+
+export const RightsAndObligationsLink = () => {
+    const navigate = useNavigate();
+    return(
+        <>
+        <div className='legionLinkContainer' onClick={() => navigate('/kontaktai')}>
+            <div className='legionLinkTextContainer'>
+                <p>
+                    Išsamiau apie atsakomybes
+                </p>
+                <h3 className="legionLink" >
+                    Susipažinti kaip apsisaugoti
+                </h3>
+            </div>
+            <div className='legionLinkArrowContainer'>
+                <svg className='legionLinkArrow' xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/>
+                </svg>
+            </div>
+        </div>
+        </>
+    )
+};
+
+export const ContactsLink = () => {
     return(
         <>
         </>

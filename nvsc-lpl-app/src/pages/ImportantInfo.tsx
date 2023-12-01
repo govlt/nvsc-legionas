@@ -1,14 +1,14 @@
 import React from 'react';
-import InfoHeader from '../../components/InfoHeader.tsx';
-import ImportantInfoCard from '../../components/ImportantInfoCard';
+import InfoHeader from '../components/InfoHeader.tsx';
+import ImportantInfoCard from '../components/ImportantInfoCard.tsx';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/ImportantInfo.css';
-import legioneleIcon from '../../assets/legioneles_ikona.svg';
-import prevencijaIcon from '../../assets/prevencija_ikona.svg';
-import rightsAndObligationsIcon from '../../assets/teises_ikona.svg';
-import contactsIcon from '../../assets/kontaktai_ikona.svg';
-import waterTestsIcon from '../../assets/tyrimai_ikona.svg';
-import faqIcon from '../../assets/duk_ikona.svg';
+import '../styles/ImportantInfo.css';
+import legioneleIcon from '../assets/legioneles_ikona.svg';
+import prevencijaIcon from '../assets/prevencija_ikona.svg';
+import rightsAndObligationsIcon from '../assets/teises_ikona.svg';
+import contactsIcon from '../assets/kontaktai_ikona.svg';
+import waterTestsIcon from '../assets/tyrimai_ikona.svg';
+import faqIcon from '../assets/duk_ikona.svg';
 
 
 export const ImportantInfo: React.FC = () => {

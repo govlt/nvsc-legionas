@@ -33,8 +33,6 @@ export const AdditionalInfoHotWaterProvider: React.FC= () => {
       <p>
         ✓ Sprendžia problemas.
       </p>
-
-      LINK
     </>
   );
 };

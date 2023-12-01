@@ -17,8 +17,6 @@ export const AdditionalInfoHeater: React.FC= () => {
         Mano atsakomybė prižiūrėti, kad vandens temperatūra vartojimo vietoje nebūtų žemesnė nei 50°C,
         bei prižiūrėti karšto vandens įrenginių būklė, reguliariai dezinfekuoti.
       </p>
-
-      LINK
     </div>
   );
 };

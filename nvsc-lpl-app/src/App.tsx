@@ -1,7 +1,7 @@
 import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { ImportantInfo } from './pages/ImportantInfo/ImportantInfo';
+import { ImportantInfo } from './pages/ImportantInfo';
 import { PreventionInfo } from './pages/ImportantInfo/PreventionInfo';
 import { LegionellosisInfo } from './pages/ImportantInfo/LegionellosisInfo';
 import { RightsAndObligationsInfo } from './pages/ImportantInfo/RightsAndObligationsInfo';

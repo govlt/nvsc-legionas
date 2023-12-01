@@ -31,9 +31,6 @@ export const AdditionalInfoBoreHole: React.FC= () => {
         Jeigu geriamo vandens kokybės būklė kelia įtarimų, pavyzdžiui, spalva, skonis, kvapas,
         būtinai atlikite vandens kokybės tyrimus ir kreipkitės į VMVT. 
       </p>
-      
-
-      LINK
     </div>
   );
 };

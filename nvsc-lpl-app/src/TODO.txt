@@ -12,4 +12,3 @@
 22) google analytics
 
 add checkmarks to modulos
-pagrindiniam ekrane tekstą išskaidyti į tris dalis

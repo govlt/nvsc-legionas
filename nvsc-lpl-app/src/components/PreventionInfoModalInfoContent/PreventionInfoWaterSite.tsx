@@ -39,8 +39,6 @@ export const AdditionalInfoWaterSite: React.FC= () => {
       <p>
         ✓ Ima geriamojo vandens mėginius (pagal skundus ir priežiūros tikslu).
       </p>
-
-      LINK
     </div>
   );
 };

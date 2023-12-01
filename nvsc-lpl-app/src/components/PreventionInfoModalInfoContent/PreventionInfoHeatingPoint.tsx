@@ -36,8 +36,6 @@ export const AdditionalInfoHeatingPoint: React.FC= () => {
     <p>
       ✓ Informuoja apie prevencines priemones.
     </p>
-
-    LINK
     </>
   );
 };

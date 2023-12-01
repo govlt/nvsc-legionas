@@ -23,21 +23,29 @@ export const Home: React.FC = () => {
         </h2> 
       </div>
 
-      <div className="homeMainText">
+      <div className='homeMainTextContainer'>
         <h3>
-          Legioneliozė, nors ir ne visada plačiai aptariama, yra rimta grėsmė visuomenės sveikatai, 
-          sukelianti pavojingas ir net mirtinas pasekmes. Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
-          dažniausiai plinta per užterštą vandenį, todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
-          Mes visi kartu esame „legionas“, tad sutelkdami jėgas ir atsakingai rūpindamiesi, kokį vandenį vartojame,
-          galime duoti atkirtį bakterijoms ir įveikti šį nematomą pavojų mūsų sveikatai.
+          Legioneliozė, nors ir ne visada plačiai aptariama,
+          yra rimta grėsmė visuomenės sveikatai, 
+          sukelianti pavojingas ir net mirtinas pasekmes.
+        </h3>
+        <h3>
+          Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
+          dažniausiai plinta per užterštą vandenį,
+          todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
+        </h3>
+        <h3>
+          Mes visi kartu esame „legionas“,
+          tad sutelkdami jėgas ir atsakingai rūpindamiesi,
+          kokį vandenį vartojame,
+          galime duoti atkirtį bakterijoms
+          ir įveikti šį nematomą pavojų mūsų sveikatai.
         </h3>
       </div>
 
-      <div style={{ 
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
+      
+
+      <div className='homeMainButtonContainer'>
         <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
           Susipažinti kaip apsisaugoti
         </button>

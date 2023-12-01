@@ -37,7 +37,7 @@ import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaul
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
 import { Link } from 'react-router-dom';
-import { LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
+import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
 
 const preloadSrcList: string[] = [
@@ -290,6 +290,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoBath />}
           lowerSection={<AdditionalInfoBath/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseBathModal}
         />
       }
@@ -300,6 +301,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoSink />}
           lowerSection={<AdditionalInfoSink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseSinkModal}
         />
       }
@@ -310,6 +312,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoShower />}
           lowerSection={<AdditionalInfoShower/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseShowerModal}
         />
       }
@@ -320,6 +323,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoHeatingPoint/>}
           headerSectionContent={<PreventionInfoHeatingPoint />}
           lowerSection={<AdditionalInfoHeatingPoint/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseHeatingPointModal}
         />
       }
@@ -330,6 +334,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoHeater/>}
           headerSectionContent={<PreventionInfoHeater />}
           lowerSection={<AdditionalInfoHeater/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseHeaterModal}
         />
       }
@@ -340,6 +345,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoHotWaterProvider />}
           lowerSection={<AdditionalInfoHotWaterProvider/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseHotWaterProviderModal}
         />
       }
@@ -350,6 +356,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoWaterSite />}
           lowerSection={<AdditionalInfoWaterSite/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseWaterSiteModal}
         />
       }
@@ -360,6 +367,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoBoreHole />}
           lowerSection={<AdditionalInfoBoreHole/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseBoreHoleModal}
         />
       }

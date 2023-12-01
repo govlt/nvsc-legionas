@@ -1,12 +1,13 @@
 import React, { useRef, useEffect} from 'react';
 import '../styles/PreventionInfoModal.css';
 interface PreventionInfoModalProps {
-    image: React.ReactNode;
-    header: string;
-    legionInfo: React.ReactNode;
-    headerSectionContent: React.ReactNode;
-    lowerSection: React.ReactNode;
-    onClose: () => void;
+  image: React.ReactNode;
+  header: string;
+  legionInfo: React.ReactNode;
+  headerSectionContent: React.ReactNode;
+  lowerSection: React.ReactNode;
+  lowerLink: React.ReactNode;
+  onClose: () => void;
 }
 
 export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
@@ -15,6 +16,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   legionInfo,
   headerSectionContent,
   lowerSection,
+  lowerLink,
   onClose
 }) => {
 
@@ -36,7 +38,6 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   return (
     <>
       <div className="modalBackground">
-      
         <div className="modal" ref={wrapperRef}>
         <div className="close" onClick={onClose}>&times;</div>
           <div className="modalImagePlaceHolder">
@@ -48,6 +49,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
               <p className='modalText'>{headerSectionContent}</p>
               {legionInfo}
               {lowerSection}
+              {lowerLink}
             </div>
           </div>
         </div>
