@@ -96,6 +96,9 @@
 }
 
 .switch-field .option {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  border: none;
   display: inline-block;
   cursor: pointer;
   align-items: center;
@@ -113,7 +116,12 @@
 }
 
 .switch-field .option.disabled {
-  color: #ccc; 
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  border: none;
+  opacity: 1;
+  color: #ccc;
+  backdrop-filter: blur(11px);
   cursor: not-allowed; 
   pointer-events: none; 
 }

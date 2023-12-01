@@ -31,20 +31,20 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
         {text}
       </p>
       <div className='optionButtonContainer'>
-        <span 
+        <button 
           className={`option ${property === optValue1 ? 'selected' : ''} ${disableOptValue1 ? 'disabled' : ''}`}
           onClick={() => handleValueChange(optValue1)}>
           <div className='optionButton'>
             {optValue1}
           </div>
-        </span>
-        <span 
+        </button>
+        <button 
           className={`option ${property === optValue2 ? 'selected' : ''}`} 
           onClick={() => handleValueChange(optValue2)}>
           <div className='optionButton'>
             {optValue2}
           </div>
-        </span>
+        </button>
       </div>
     </div>
   );
