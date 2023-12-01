@@ -6,9 +6,6 @@
 12) papildyti DUK
 13) sužiūrėti asmenuotes
 17) bekontakčio šildymo rodyklės
-18) kiekviename module turi būti hyperlinkai
 19) atnaujinti tekstus pagal Ingą
 21) prieinamumo įskiepis
 22) google analytics
-
-add checkmarks to modulos

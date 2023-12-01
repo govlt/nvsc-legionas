@@ -137,10 +137,10 @@ export const RightsAndObligationsLink = () => {
         <div className='legionLinkContainer' onClick={() => navigate('/kontaktai')}>
             <div className='legionLinkTextContainer'>
                 <p>
-                    Išsamiau apie atsakomybes
+                    Išsamiau
                 </p>
                 <h3 className="legionLink" >
-                    Susipažinti kaip apsisaugoti
+                    „Mano teisės ir pareigos“
                 </h3>
             </div>
             <div className='legionLinkArrowContainer'>
@@ -154,8 +154,24 @@ export const RightsAndObligationsLink = () => {
 };
 
 export const ContactsLink = () => {
+    const navigate = useNavigate();
     return(
         <>
+        <div className='legionLinkContainer' onClick={() => navigate('/kontaktai')}>
+            <div className='legionLinkTextContainer'>
+                <p>
+                    Išsamiau apie atsakomybes
+                </p>
+                <h3 className="legionLink" >
+                    „Institucijų ir įmonių atsakomybės ir kontaktai“
+                </h3>
+            </div>
+            <div className='legionLinkArrowContainer'>
+                <svg className='legionLinkArrow' xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/>
+                </svg>
+            </div>
+        </div>
         </>
     )
 };

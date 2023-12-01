@@ -290,7 +290,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoBath />}
           lowerSection={<AdditionalInfoBath/>}
-          lowerLink={<ContactsLink/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseBathModal}
         />
       }
@@ -301,7 +301,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoSink />}
           lowerSection={<AdditionalInfoSink/>}
-          lowerLink={<ContactsLink/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseSinkModal}
         />
       }
@@ -312,7 +312,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoInside/>}
           headerSectionContent={<PreventionInfoShower />}
           lowerSection={<AdditionalInfoShower/>}
-          lowerLink={<ContactsLink/>}
+          lowerLink={<RightsAndObligationsLink/>}
           onClose={handleCloseShowerModal}
         />
       }
@@ -323,7 +323,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoHeatingPoint/>}
           headerSectionContent={<PreventionInfoHeatingPoint />}
           lowerSection={<AdditionalInfoHeatingPoint/>}
-          lowerLink={<RightsAndObligationsLink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseHeatingPointModal}
         />
       }
@@ -334,7 +334,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoHeater/>}
           headerSectionContent={<PreventionInfoHeater />}
           lowerSection={<AdditionalInfoHeater/>}
-          lowerLink={<RightsAndObligationsLink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseHeaterModal}
         />
       }
@@ -345,7 +345,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoHotWaterProvider />}
           lowerSection={<AdditionalInfoHotWaterProvider/>}
-          lowerLink={<RightsAndObligationsLink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseHotWaterProviderModal}
         />
       }
@@ -356,7 +356,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoWaterSite />}
           lowerSection={<AdditionalInfoWaterSite/>}
-          lowerLink={<RightsAndObligationsLink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseWaterSiteModal}
         />
       }
@@ -367,7 +367,7 @@ export const SafetyInfo: React.FC = () => {
           legionInfo={<LegionInfoNothing/>}
           headerSectionContent={<PreventionInfoBoreHole />}
           lowerSection={<AdditionalInfoBoreHole/>}
-          lowerLink={<RightsAndObligationsLink/>}
+          lowerLink={<ContactsLink/>}
           onClose={handleCloseBoreHoleModal}
         />
       }
