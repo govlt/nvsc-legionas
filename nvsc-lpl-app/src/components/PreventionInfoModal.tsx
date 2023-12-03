@@ -71,7 +71,9 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
               <p className='modalText'>{headerSectionContent}</p>
               {legionInfo}
               {lowerSection}
-              {lowerLink}
+              <div onClick={onCloseAction} >
+                {lowerLink}
+              </div>
             </div>
           </div>
         </div>
