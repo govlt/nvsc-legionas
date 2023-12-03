@@ -201,6 +201,6 @@
 @media (max-width: 1000px) {
   .imageContainer{
     margin-top: 10px;
-    height: calc(100vw - 300px);
+    height: calc(100vw - 30px);
   }
 }

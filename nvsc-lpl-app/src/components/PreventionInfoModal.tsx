@@ -1,5 +1,7 @@
-import React, { useRef, useEffect} from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import '../styles/PreventionInfoModal.css';
+import { createFocusTrap } from 'focus-trap';
+
 interface PreventionInfoModalProps {
   image: React.ReactNode;
   header: string;
@@ -21,11 +23,17 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
 }) => {
 
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const [focusTrap, setFocusTrap] = useState<any>(null);
+
+  const onCloseAction = () => {
+    focusTrap.deactivate();
+    onClose();
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
-        onClose();
+        onCloseAction();
       }
     }
 
@@ -35,11 +43,25 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
     };
   }, [onClose]);
 
+  useEffect(() => {
+    const trap = createFocusTrap('#preventionInfoModal');
+    trap.activate();
+    setFocusTrap(trap);
+  }, [])
+
   return (
     <>
-      <div className="modalBackground">
+      <div id="preventionInfoModal" className="modalBackground">
         <div className="modal" ref={wrapperRef}>
-        <div className="close" onClick={onClose}>&times;</div>
+        <button 
+          className="close" 
+          onClick={onCloseAction} 
+          tabIndex={1} 
+          role="button" 
+          aria-label="Close modal"
+      >
+          &times;
+      </button>
           <div className="modalImagePlaceHolder">
             {image}
           </div>

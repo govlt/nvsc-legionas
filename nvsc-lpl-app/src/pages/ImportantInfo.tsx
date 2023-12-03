@@ -1,7 +1,6 @@
 import React from 'react';
 import InfoHeader from '../components/InfoHeader.tsx';
 import ImportantInfoCard from '../components/ImportantInfoCard.tsx';
-import { useNavigate } from 'react-router-dom';
 import '../styles/ImportantInfo.css';
 import legioneleIcon from '../assets/legioneles_ikona.svg';
 import prevencijaIcon from '../assets/prevencija_ikona.svg';
@@ -12,8 +11,6 @@ import faqIcon from '../assets/duk_ikona.svg';
 
 
 export const ImportantInfo: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
     <>
       <InfoHeader/>
@@ -27,37 +24,37 @@ export const ImportantInfo: React.FC = () => {
             image={legioneleIcon}
             header="Kas yra legioneliozė?"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/legionelioze')}
+            link={'/legionelioze'}
           />
           <ImportantInfoCard 
             image={prevencijaIcon}
             header="Kokios prevencinės priemonės?"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/prevencija')}
+            link={'/prevencija'}
           />
           <ImportantInfoCard 
             image={rightsAndObligationsIcon}
             header="Mano teisės ir pareigos"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/teises-atsakomybes')}
+            link={'/teises-atsakomybes'}
           />
           <ImportantInfoCard 
             image={contactsIcon}
             header="Institucijų ir įmonių atsakomybės ir kontaktai"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/kontaktai')}
+            link={'/kontaktai'}
           />
           <ImportantInfoCard 
             image={waterTestsIcon}
             header="Geriamojo vandens tyrimų programos"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/geriamojo-vandens-tyrimu-programos')}
+            link={'/geriamojo-vandens-tyrimu-programos'}
           />
           <ImportantInfoCard 
             image={faqIcon}
             header="DUK"
             text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
-            onButtonClick={() => navigate('/duk')}
+            link={'/duk'}
           />
         </div>
       </div>

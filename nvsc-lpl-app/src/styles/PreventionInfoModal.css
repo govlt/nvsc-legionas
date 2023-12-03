@@ -26,12 +26,17 @@
 }
 
 .close {
+  all: unset;
   color: #aaaaaa;
   font-size: 100px;
   position: absolute;
   float: right;
   right: 30px;
   cursor: pointer;
+}
+
+.close:focus{
+  outline: 2px solid black;
 }
 
 .close:hover, .close:focus {

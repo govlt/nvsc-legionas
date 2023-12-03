@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/ImportantInfo.css';
+import { Link } from 'react-router-dom';
 
 type CardProps = {
     image?: string; 
     header: string;
     text: string;
-    onButtonClick: () => void; 
+    link: string;
   };
 
-const ImportantInfoCard: React.FC<CardProps> = ({ image, header, text, onButtonClick }) => {
+const ImportantInfoCard: React.FC<CardProps> = ({ image, header, text, link }) => {
   return (
     <div className="importantCardContainer">
       <div className="importantCard">
@@ -17,7 +18,7 @@ const ImportantInfoCard: React.FC<CardProps> = ({ image, header, text, onButtonC
         </div>
         <h3 className="importantCardHeader">{header}</h3>
         <p className="importantCardText">{text}</p>
-        <button onClick={onButtonClick} className="importantCardButton">Plačiau</button>
+        <Link to={link} className="importantCardLink">Plačiau</Link>
       </div>
     </div>
   );

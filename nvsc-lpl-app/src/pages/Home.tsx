@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Chart } from '../components/Chart';
 import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
@@ -8,11 +8,19 @@ import { WelcomeModal } from '../components/WelcomeModal.tsx';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
-  const [showWelcomeModal, setShowWelcomeModal] = useState(true);
+  const [showWelcomeModal, setShowWelcomeModal] = useState(false);
 
   const handleCloseWelcomeModal = () => {
     setShowWelcomeModal(false);
   };
+
+  useEffect(() => {
+    // localStorage vs sessionStorage???
+    const savedState = sessionStorage.getItem("welcomeModal");
+    if (savedState) return;
+    setShowWelcomeModal(true);
+    sessionStorage.setItem("welcomeModal", "true");
+  }, []);
 
   return (
     <>

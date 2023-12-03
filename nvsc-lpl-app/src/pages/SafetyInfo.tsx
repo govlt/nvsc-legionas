@@ -141,7 +141,7 @@ export const SafetyInfo: React.FC = () => {
             text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
             textWithLink={
               <>
-                Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+                Išsamiau: <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
               </>
             }
           />

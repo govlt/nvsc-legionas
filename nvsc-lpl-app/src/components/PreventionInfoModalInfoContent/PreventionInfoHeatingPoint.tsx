@@ -2,12 +2,10 @@ import React from 'react';
 
 export const PreventionInfoHeatingPoint: React.FC= () => {
   return(
-    <div>
-      <p>
+    <>
       BNO administratorius prižiūri šilumos sistemas
         ir kad karšto vandens temperatūra nebūtų žemesnė nei <span style={{color: 'red'}}>50°</span>!
-      </p>
-    </div>
+    </>
   );
 };
 
