@@ -6,3 +6,5 @@ pridėti footerį apačioje, projekto partneriai (reikia daugiau informacijos)
 socialsharepreview, įdėti main AI generated screen photo
 aprašyti #/svarbu-zinoti "brief description"
 nothing in water testing info
+
+fix MODAL STILL NOT BEING FULLSCREEN
