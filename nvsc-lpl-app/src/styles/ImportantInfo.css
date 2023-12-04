@@ -12,6 +12,30 @@
     font-style: normal;
 }
 
+.importantInfoCollapsibleSummary{
+    cursor: pointer;
+}
+
+.importantInfoMainButtonContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.importantInfoMainButton{
+    background: #4C74F5 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 20px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: #FEFEFF;
+    border: none;
+}
+
 .importantContainer{
     padding-left: 10%;
     padding-right: 10%;
@@ -23,6 +47,7 @@
     letter-spacing: 0px;
     color: #091A5A;
     margin-top: 0;
+    margin-bottom: 0;
     opacity: 1;
 }
 
@@ -36,9 +61,19 @@
 }
 
 .importantMainText{
-    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: left;
     font: normal normal normal 16px/26px "Public Sans", Arial, Sans-Serif;
+    letter-spacing: 0px;
+    color: #091A5A;
+    opacity: 1;
+}
+
+.importantSmallText{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    font: normal normal normal 10px/15px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;

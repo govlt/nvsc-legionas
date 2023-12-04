@@ -14,7 +14,14 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [focusTrap, setFocusTrap] = useState<any>(null);
 
-  const onCloseAction = () => {
+  const [fadeModal, setModalFade] = useState(false);
+  const delay = (ms: number) => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+
+  const onCloseAction = async () => {
+    setModalFade(true);
+    await delay(1000);
     focusTrap.deactivate();
     onClose();
   };
@@ -40,7 +47,7 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
 
   return (
     <>
-    <div id="welcomeModal" className="welcomeBackground">
+    <div id="welcomeModal" className={`welcomeBackground ${fadeModal? 'fadeModalAnimation' : ''}`}>
       <button 
           className="close" 
           onClick={onCloseAction} 

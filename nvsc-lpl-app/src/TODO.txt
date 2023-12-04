@@ -1,15 +1,8 @@
-2) apatinis meniu mobile
-4) mygtukas sugrįžti į vaizdą, per vidurį headerio
-9) pridėti footerį apačioje, projekto partneriai (reikia daugiau informacijos),
-    nuspalvinti mėlynai ir duot daugiau vietos
 11) prie legionėlių ikonos pridėti skydą
-12) papildyti DUK
-13) sužiūrėti asmenuotes
 17) bekontakčio šildymo rodyklės
-19) atnaujinti tekstus pagal Ingą
-21) prieinamumo įskiepis
-22) google analytics
 
-main screen image nuvažiuoja viršun nyewwww
-favicon legionelės
+
+pridėti footerį apačioje, projekto partneriai (reikia daugiau informacijos)
 socialsharepreview, įdėti main AI generated screen photo
+aprašyti #/svarbu-zinoti "brief description"
+nothing in water testing info

@@ -37,6 +37,10 @@ import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaul
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
 import { Link } from 'react-router-dom';
+import HouseSVG from '../assets/daugiabutis_ikona.svg'
+import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
+import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
+import SettingsSVG from '../assets/cog.svg'
 import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
 
@@ -62,6 +66,9 @@ export const SafetyInfo: React.FC = () => {
   const [showHotWaterProviderInfoModal, setShowHotWaterProviderInfoModal] = useState(false);
   const [showWaterSiteInfoModal, setShowWaterSiteInfoModal] = useState(false);
   const [showBoreHoleInfoModal, setShowBoreHoleInfoModal] = useState(false);
+
+  const [footerVisibility, changeVisibility] = useState(true);
+  
 
   const handleBathModalClick = () => {
     setShowBathInfoModal(true);
@@ -243,7 +250,8 @@ export const SafetyInfo: React.FC = () => {
         </div>
       </div>
 
-      <div className="interactiveButtonAndTextContainer">
+      
+      <div className="interactiveButtonAndTextContainer interactive1">
         <div className='interactiveButtonContainer'>
           <div className="optionButtons">
             <OptionsButton
@@ -283,6 +291,79 @@ export const SafetyInfo: React.FC = () => {
           </div>
         }
       </div>
+      <br/><br/><br/><br/>
+
+      <div className='optionFooter'>
+        <div className={`interactiveButtonAndTextContainer interactive2 ${footerVisibility ? 'openFooter' : ''}`}>
+          <div className='interactiveButtonContainer'>
+            <div className="optionButtons">
+              <OptionsButton
+                residenceType={residenceType}
+                setResidenceType={setResidenceType}
+                drinkingWaterSource={drinkingWaterSource}
+                setDrinkingWaterSource={setDrinkingWaterSource}
+                hotWaterSource={hotWaterSource}
+                setHotWaterSource={setHotWaterSource}
+              />
+            </div>
+          </div>
+          { residenceType === 'Daugiabutyje' &&
+            <div className='secondInteractiveHeader'>
+              <InteractiveHeader
+                header="Daugiabutis namas"
+                text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+                textWithLink={
+                  <>
+                    Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+                  </>
+                }
+              />
+            </div>
+          }
+          { residenceType === 'Individualiame name' &&
+            <div className='secondInteractiveHeader'>
+              <InteractiveHeader
+                header="Individualus namas"
+                text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
+                textWithLink={
+                  <>
+                    Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+                  </>
+                }
+              />
+            </div>
+          }
+          <button className="optionFooterSaveButton" onClick={() => changeVisibility(!footerVisibility)}>
+            Išsaugoti
+          </button>
+        </div>
+
+
+        <div className={`optionFooterSettings ${footerVisibility ? '' : 'openFooterSettings'}`}>
+          <div className='optionFooterItemContainer' style={{marginLeft: '10px'}}>
+            <img src={HouseSVG} className="optionFooterImage"></img>
+            <p className='optionFooterText'>{residenceType}</p>
+          </div>
+          <div className='optionFooterItemContainer'>
+            <img src={ColdWaterSVG} className="optionFooterImage"></img>
+            <p className='optionFooterText'>{drinkingWaterSource}</p>
+          </div>
+          <div className='optionFooterItemContainer'>
+            <img src={HotWaterSVG} className="optionFooterImage"></img>
+            <p className='optionFooterText'>{hotWaterSource}</p>
+          </div>
+          <button className='optionFooterItemContainer optionFooterButton'
+              style={{marginRight: '10px'}}
+              onClick={() => changeVisibility(!footerVisibility)}>
+            <img src={SettingsSVG} className="optionFooterImage"></img>
+            <p className='optionFooterText'>
+              {footerVisibility? 'Keisti nustatymus': 'Saugoti'}
+            </p>
+          </button>
+        </div>
+      </div>
+
+
       { showBathInfoModal &&
         <PreventionInfoModal
           image={<Bath />}
@@ -370,6 +451,7 @@ export const SafetyInfo: React.FC = () => {
           lowerLink={<ContactsLink/>}
           onClose={handleCloseBoreHoleModal}
         />
+        
       }
     </>
   );

@@ -4,6 +4,9 @@ import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import { WelcomeModal } from '../components/WelcomeModal.tsx';
+import KTULogo from '../../mock_KTU_logo.png';
+import NVSCLogo from '../../mock_NVSC_logo.png';
+import LRVKLogo from '../../mock_LRVK_logo.png';
 
 
 export const Home: React.FC = () => {
@@ -51,8 +54,6 @@ export const Home: React.FC = () => {
         </h3>
       </div>
 
-      
-
       <div className='homeMainButtonContainer'>
         <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
           Susipažinti kaip apsisaugoti
@@ -63,9 +64,28 @@ export const Home: React.FC = () => {
         <a className="homeChartText" href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
           Grafikas parengtas pagal statistikos departamento duomenis.
         </a>
-        <p className='homeFooterText'>
-          Projektas gimė siekiant padididinti gyventojų sąmoningumą kovoje su legionelioze. Projekto partneriai: 
-        </p>
+        <div className='homeFiller'>
+
+        </div>
+        <div className='homeFooter'>
+          <p>
+            Projektas gimė siekiant padididinti gyventojų sąmoningumą kovoje su legionelioze. Projekto partneriai: 
+          </p>
+          <div className='homeFooterPartnerContainer'>
+            <div className='homeFooterPartner'>
+              <h1>KTU</h1>
+              <img src={KTULogo} className='homeFooterImage'></img>
+            </div>
+            <div className='homeFooterPartner'>
+              <h1>NVSC</h1>
+              <img src={NVSCLogo} className='homeFooterImage'></img>
+            </div>
+            <div className='homeFooterPartner'>
+              <h1>LRVK</h1>
+              <img src={LRVKLogo} className='homeFooterImage'></img>
+            </div>
+          </div>
+        </div>
       </div>
       { showWelcomeModal &&
         <WelcomeModal

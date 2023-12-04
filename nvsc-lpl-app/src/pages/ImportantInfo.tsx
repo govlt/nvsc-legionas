@@ -8,12 +8,21 @@ import rightsAndObligationsIcon from '../assets/teises_ikona.svg';
 import contactsIcon from '../assets/kontaktai_ikona.svg';
 import waterTestsIcon from '../assets/tyrimai_ikona.svg';
 import faqIcon from '../assets/duk_ikona.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 export const ImportantInfo: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <InfoHeader/>
+
+      <div className='importantInfoMainButtonContainer'>
+        <button className="importantInfoMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
+          Susipažinti kaip apsisaugoti
+        </button>
+      </div>
       
       <div className="importantContainer">
         <div>

@@ -20,6 +20,7 @@
   right: 0;
   width: 100%;
   z-index: 0;
+  margin-bottom: 20px;
 }
 
 .imageContainer{
@@ -145,6 +146,83 @@
   opacity: 1;
 }
 
+.optionFooter{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 20;
+  border-radius: 16px 16px 0px 0px;
+  
+}
+
+.optionFooterSettings{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.optionFooterItemContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  border-right: solid 1px #091A5A;
+}
+
+.optionFooterImage{
+  height: 25px;
+}
+
+.optionFooterText{
+  text-align: center;
+  font: normal normal 300 15px/15px "Public Sans", Arial, Sans-Serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: #091A5A;
+}
+
+.interactive2{
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .optionButtonContainer{
+    background-color: #F7F9FD;
+  }
+  .option{
+    background-color: #F7F9FD;
+  }
+}
+
+.openFooter{
+  display: none;
+}
+
+.openFooterSettings{
+  display: none;
+}
+
+.optionFooterButton{
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.optionFooterSaveButton{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #091A5A 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  border: none;
+  opacity: 1;
+  backdrop-filter: blur(11px);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
 @media (min-width: 1501px) {
   .interactiveButtonAndTextContainer{
     z-index: 0;
@@ -198,9 +276,31 @@
   }
 }
 
+@media (min-width: 1001px){
+  .optionFooter{
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .imageContainer{
     margin-top: 10px;
-    height: calc(100vw - 30px);
+    height: calc(100vw - 100px);
+  }
+  .interactive1{
+    display: none;
   }
 }
+
+@media (max-width: 650px) {
+  .optionFooterText{
+    font: normal normal 300 12px/15px "Public Sans", Arial, Sans-Serif;
+  }
+}
+
+@media (max-width: 400px) {
+  .optionFooterText{
+    font: normal normal 300 10px/12px "Public Sans", Arial, Sans-Serif;
+  }
+}
+

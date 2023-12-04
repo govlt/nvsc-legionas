@@ -7,29 +7,47 @@ export const PreventionInfo: React.FC = () => {
       <InfoHeader/>
       
       <div className="importantContainer">
-        <p className="importantHeader">Prevencinės priemonės</p>
+        <h1 className="importantHeader">Prevencinės priemonės</h1>
         <hr/>
-        <p className="importantTextHeader">
-            Neįkvėpti vandens
-        </p>
-        <h3 className="importantMainText">
-            Atsargiai
+
+        <h3 className="importantTextHeader">
+          Neleisti vandeniui užsistovėti vandens sistemoje
         </h3>
-            
-        <p className="importantTextHeader">
-            Dar kas nors?
+        <p className="importantMainText">
+          Jei vanduo nebuvo naudojamas
+          ilgesnį laiką, leisti vandeniui
+          nubėgti keletą minučių, kol bus
+          pasiekta 50°C temperatūra.
         </p>
-        <h3 className="importantMainText">
-            Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios.
-            Lorem Ipsum tapo standartiniu fiktyviu tekstu,
-            kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese
-            ir tokiu būdu sukūrė raidžių egzempliorių.
-          <br/><br/>
-            Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios.
-            Lorem Ipsum tapo standartiniu fiktyviu tekstu,
-            kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese
-            ir tokiu būdu sukūrė raidžių egzempliorių.
+        <h3 className="importantTextHeader">
+          Vykdyti stebėseną
         </h3>
+        <p className="importantMainText">
+          Stebėti sanitarinių prietaisų, vandens
+          čiaupų, maišytuvų, žarnelių būklę.
+        </p>
+        <h3 className="importantTextHeader">
+          Atlikti reguliarią dezinfekciją
+        </h3>
+        <p className="importantMainText">
+          Valyti ir dezinfekuoti dušus, dušų galvutes, čiaupus.
+        </p>
+        <h3 className="importantTextHeader">
+          Nuosavuose namuose:
+        </h3>
+        <p className="importantMainText">
+          Dezinfekcija bent 1 x metuose.
+        </p>
+        <h3 className="importantTextHeader">
+          Daugiabučiuose:
+        </h3>
+        <p className="importantMainText">
+          Vadovautis pastato
+          administratoriaus/bendrijos/jungtinės
+          veiklos sutarties dalyvio teikiamomis
+          rekomendacijomis apie prevencines
+          priemones.
+        </p>
       </div>
     </>
   );

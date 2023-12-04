@@ -7,14 +7,15 @@ export const WaterTestingInfo: React.FC = () => {
       <InfoHeader/>
       
       <div className="importantContainer">
-        <p className="importantHeader">Geriamojo vandens informacija</p>
+        <h1 className="importantHeader">Geriamojo vandens informacija</h1>
         <hr/>
-        <p className="importantTextHeader">
-            Informacija
-        </p>
-        <h3 className="importantMainText">
-            Vandenį gerti galima 👍
+        
+        <h3 className="importantTextHeader">
+            Teisė turėti geriamo vandens šaltinį.
         </h3>
+        <p className="importantMainText">
+            Jūs ją turite!
+        </p>
       </div>
     </>
   );

@@ -51,7 +51,8 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
 
   return (
     <>
-      <div id="preventionInfoModal" className="modalBackground">
+      <div id="preventionInfoModal" className="modalBackground"
+        style={{height: window.document.body.scrollHeight}}>
         <div className="modal" ref={wrapperRef}>
         <button 
           className="close" 
