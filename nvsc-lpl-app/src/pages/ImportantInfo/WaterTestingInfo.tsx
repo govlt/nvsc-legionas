@@ -7,15 +7,12 @@ export const WaterTestingInfo: React.FC = () => {
       <InfoHeader/>
       
       <div className="importantContainer">
-        <h1 className="importantHeader">Geriamojo vandens informacija</h1>
+        <h1 className="importantHeader">Geriamojo vandens tyrimų programos</h1>
         <hr/>
         
-        <h3 className="importantTextHeader">
-            Teisė turėti geriamo vandens šaltinį.
-        </h3>
-        <p className="importantMainText">
-            Jūs ją turite!
-        </p>
+        <a className="importantMainText" href = "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.216309/asr">
+          Vykdomos pagal Lietuvos higienos normos HN 24:2023 Geriamojo vandens saugos ir kokybės reikalavimus
+        </a>
       </div>
     </>
   );

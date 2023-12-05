@@ -3,10 +3,11 @@ import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const ContactsInfo: React.FC = () => {
   useEffect(() => {
+    const old = document.body.style.overflow;
     document.body.style.overflow = "scroll";
     return () => {
       window.scrollTo(0, 0);
-      document.body.style.overflow = "initial";
+      document.body.style.overflow = old;
     };}, []);
 
   return (
@@ -82,57 +83,57 @@ export const ContactsInfo: React.FC = () => {
             <br/><br/>
             Vilniaus TS
             <br/>
-            Mindaugas Kapočius vyr.
+            Mindaugas Kapočius
             <br/>
-            specialistas mindaugas.kapocius@vert.lt
+            mindaugas.kapocius@vert.lt
             <br/>
             8 (659) 79 469
             <br/>
-            Dmitrij Krivochiža vyresn.
+            Dmitrij Krivochiža
             <br/>
-            specialistas dmitrij.krivochiza@vert.lt
+            dmitrij.krivochiza@vert.lt
             <br/>
             8 (646) 00 156
             <br/><br/>
             Kauno TS
             <br/>
-            Raimundas Valauskis vyr.
+            Raimundas Valauskis
             <br/>
-            specialistas raimundas.valauskis@vert.lt
+            raimundas.valauskis@vert.lt
             <br/>
             8 (616) 96 717
             <br/>
-            Giedrius Mackevičius vyr.
+            Giedrius Mackevičius
             <br/>
-            specialistas giedrius.mackevicius@vert.lt
+            giedrius.mackevicius@vert.lt
             <br/>
             8 (615) 25 478
             <br/><br/>
             Klaipėdos TS
             <br/>
-            Asta Ščiukaitytė vyr.
+            Asta Ščiukaitytė
             <br/>
-            specialistė asta.sciukaityte@vert.lt
+            asta.sciukaityte@vert.lt
             <br/>
             8 (618) 22 971
             <br/>
-            Jurgita Grigonienė vyr.
+            Jurgita Grigonienė
             <br/>
-            specialistė jurgita.grigoniene@vert.lt
+            jurgita.grigoniene@vert.lt
             <br/>
             8 (616) 14 708
             <br/><br/>
             Šiaulių TS
             <br/>
-            Rolandas Mikalauskas vyr.
+            Rolandas Mikalauskas
             <br/>
-            specialistas rolandas.mikalauskas@vert.lt
+            rolandas.mikalauskas@vert.lt
             <br/>
             8 (615) 25 414
             <br/>
-            Algirdas Janulis vyr.
+            Algirdas Janulis
             <br/>
-            specialistas algirdas.janulis@vert.lt
+            algirdas.janulis@vert.lt
             <br/>
             8 (618) 28 722
           </p>
@@ -281,9 +282,7 @@ export const ContactsInfo: React.FC = () => {
             <br/><br/>
             Kontaktai:
             <br/>
-            -Daugiabučių pastatų
-            administratoriai/bendrijos/jungtinės
-            veiklos sutarties dalyviai
+            Susisiekite su savo daugiabučio BNO administratoriumi
           </p>
           <hr/>
         </details>

@@ -32,37 +32,31 @@ export const ImportantInfo: React.FC = () => {
           <ImportantInfoCard 
             image={legioneleIcon}
             header="Kas yra legioneliozė?"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/legionelioze'}
           />
           <ImportantInfoCard 
             image={prevencijaIcon}
             header="Kokios prevencinės priemonės?"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/prevencija'}
           />
           <ImportantInfoCard 
             image={rightsAndObligationsIcon}
             header="Mano teisės ir pareigos"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/teises-atsakomybes'}
           />
           <ImportantInfoCard 
             image={contactsIcon}
             header="Institucijų ir įmonių atsakomybės ir kontaktai"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/kontaktai'}
           />
           <ImportantInfoCard 
             image={waterTestsIcon}
             header="Geriamojo vandens tyrimų programos"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/geriamojo-vandens-tyrimu-programos'}
           />
           <ImportantInfoCard 
             image={faqIcon}
             header="DUK"
-            text="Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio"
             link={'/duk'}
           />
         </div>

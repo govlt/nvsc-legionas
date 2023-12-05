@@ -5,20 +5,17 @@ import { Link } from 'react-router-dom';
 type CardProps = {
     image?: string; 
     header: string;
-    text: string;
     link: string;
   };
 
-const ImportantInfoCard: React.FC<CardProps> = ({ image, header, text, link }) => {
+const ImportantInfoCard: React.FC<CardProps> = ({ image, header, link }) => {
   return (
     <div className="importantCardContainer">
       <div className="importantCard">
         <div className="importantCardImageContainer">
-          {image && <img src={image} alt="Logo"/>}
+          {image && <img src={image} alt="Logo" className='importantCardImage'/>}
         </div>
-        <h3 className="importantCardHeader">{header}</h3>
-        <p className="importantCardText">{text}</p>
-        <Link to={link} className="importantCardLink">Plačiau</Link>
+        <Link to={link} className="importantCardHeader">{header}</Link>
       </div>
     </div>
   );

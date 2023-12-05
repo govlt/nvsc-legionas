@@ -90,6 +90,10 @@
     justify-content: center;
 }
 
+.importantCardImage{
+    width: 60px;
+}
+
 .importantCard{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 15px #12112714;
@@ -98,17 +102,12 @@
     width: 300px;
     padding: 20px;
     margin: 20px;
-}
-
-.importantCardImageContainer{
-    text-align: left;
-    height: 50px;
+    text-align: center;
 }
 
 .importantCardHeader{
-    text-align: left;
+    text-align: right;
     font: normal normal bold 18px/21px "Public Sans", Arial, Sans-Serif;
-    letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;
 }

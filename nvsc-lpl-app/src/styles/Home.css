@@ -153,7 +153,6 @@ body{
 .homeChartText{
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
-    margin-bottom: 1000px;
 }
 
 .homeChart{
@@ -190,7 +189,12 @@ body{
     z-index: 20;
     border-radius: 16px 16px 0px 0px;
     color: white;
-    padding-bottom: 10px;
+    padding: 10px auto 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .homeFooter p{
@@ -212,7 +216,6 @@ body{
 }
 
 .homeFooterPartner{
-    margin-left: 20px;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -220,11 +223,20 @@ body{
 }
 
 .homeFooterImage{
-    height: 30px;
+    height: 100px;
 }
 
 .homeFiller{
     height: 120px;
+}
+
+@media (max-width: 1200px){
+    .homeFiller{
+        height: 170px;
+    }
+    .homeFooter{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 1000px){
@@ -242,21 +254,32 @@ body{
     }
 }
 
-@media (max-width:750px){
+@media (max-width:900px){
     .homeFiller{
-        height: 200px;
+        height: 290px;
     }
     .homeFooterPartnerContainer{
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
 
-@media (max-width:450px){
+@media (max-width:600px){
     .homeFiller{
-        height: 250px;
+        height: 300px;
     }
     .homeFooterPartnerContainer{
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .homeFooterImage{
+        height: 50px;
+    }
+    .homeFooter h1{
+        font: normal normal normal 20px/0px "Public Sans", Arial, Sans-Serif;
+    }
+    .homeFooter p{
+        font: normal normal normal 10px/12px "Public Sans", Arial, Sans-Serif;
     }
 }
 
