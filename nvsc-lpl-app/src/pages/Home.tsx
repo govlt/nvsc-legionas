@@ -72,15 +72,12 @@ export const Home: React.FC = () => {
           </p>
           <div className='homeFooterPartnerContainer'>
             <div className='homeFooterPartner'>
-              <h1>KTU</h1>
               <img src={KTULogo} className='homeFooterImage'></img>
             </div>
             <div className='homeFooterPartner'>
-              <h1>NVSC</h1>
               <img src={NVSCLogo} className='homeFooterImage'></img>
             </div>
             <div className='homeFooterPartner'>
-              <h1>LRVK</h1>
               <img src={LRVKLogo} className='homeFooterImage'></img>
             </div>
           </div>
