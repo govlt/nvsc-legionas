@@ -60,13 +60,6 @@ export const LegionInfoHeater = () => {
                     <p>
                         Dezinfekcija bent 1 kartą metuose.
                     </p>
-
-                    <h3>
-                        Palaikyti vandens šildytuvo minimalią temperatūrą
-                    </h3>
-                    <p>
-                        O tokios prevencijos nereikia???
-                    </p>
                 </div>
             </div>
         </div>
