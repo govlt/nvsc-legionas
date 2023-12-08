@@ -282,7 +282,7 @@ export const ContactsInfo: React.FC = () => {
             <br/><br/>
             Kontaktai:
             <br/>
-            Susisiekite su savo daugiabučio BNO administratoriumi
+            Kiekvieno pastato bendro naudojimo patalpų administratorius gali skirtis. Susisiekite su jūsų bendrijos pirminku(-e), šią informaciją turėtumet gauti iš jo.
           </p>
           <hr/>
         </details>
