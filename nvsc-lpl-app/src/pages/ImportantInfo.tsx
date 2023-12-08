@@ -26,7 +26,7 @@ export const ImportantInfo: React.FC = () => {
       
       <div className="importantContainer">
         <div>
-          <p className="importantHeader">Svarbu žinoti</p>
+          <h1 className="importantHeader">Svarbu žinoti</h1>
         </div>
         <div className="importantGrid">
           <ImportantInfoCard 

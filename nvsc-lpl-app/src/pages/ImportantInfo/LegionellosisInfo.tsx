@@ -10,7 +10,7 @@ export const LegionellosisInfo: React.FC = () => {
         <h1 className="importantHeader">Kas yra legioneliozė?</h1>
         <hr/>
 
-        <h3 className="importantTextHeader">
+        <p className="importantMainText">
           Legioneliozė - tai ūminė infekcinė liga, kurią sukelia bakterijos  legionelės (Legionella).
           <br/>
           Ligai būdingos dvi pagrindinės kliniškai ir epidemiologiškai susijusios ligos formos:
@@ -18,7 +18,7 @@ export const LegionellosisInfo: React.FC = () => {
           pirmoji - legionierių liga, kuri pasireiškia pneumonija (plaučių uždegimu)
           <br/>
           antroji - Pontiako karštligė, pasižyminti lengvesne ūminės respiracinės ligos eiga be pneumonijos.
-        </h3>
+        </p>
       </div>
     </>
   );

@@ -28,9 +28,9 @@ export const Home: React.FC = () => {
     <>
       <InfoHeader/>
       <div>
-        <h2 className='homeMainHeader'>
+        <h1 className='homeMainHeader'>
           Legionas prieš legioneles
-        </h2> 
+        </h1> 
       </div>
 
       <div className='homeMainTextContainer'>

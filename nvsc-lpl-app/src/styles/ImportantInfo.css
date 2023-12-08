@@ -12,10 +12,6 @@
     font-style: normal;
 }
 
-.importantInfoCollapsibleSummary{
-    cursor: pointer;
-}
-
 .importantInfoMainButtonContainer{
     margin-top: 20px;
     display: flex;
@@ -53,7 +49,7 @@
 
 .importantTextHeader{
     text-align: left;
-    font: normal normal 600 24px/29px "Public Sans", Arial, Sans-Serif;
+    font: normal normal 500 24px/29px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     opacity: 1;
@@ -79,6 +75,11 @@
     opacity: 1;
 }
 
+.importantInfoCollapsibleSummary{
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
 .importantGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,31 +87,31 @@
 
 .importantCardContainer{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 .importantCardImage{
-    width: 60px;
+    height: 60px;
 }
 
 .importantCard{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 15px #12112714;
     border-radius: 12px;
-    opacity: 1;
     width: 300px;
+    height: 110px;
     padding: 20px;
     margin: 20px;
     text-align: center;
 }
 
 .importantCardHeader{
-    text-align: right;
+    margin-top: auto;
+    text-align: center;
     font: normal normal bold 18px/21px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
     text-decoration: none;
-    opacity: 1;
 }
 
 .importantCardText{
@@ -118,7 +119,13 @@
     font: normal normal normal 16px/26px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
-    opacity: 1;
+}
+
+.importantCardLinkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
 }
 
 .importantCardLink {

@@ -15,7 +15,9 @@ const ImportantInfoCard: React.FC<CardProps> = ({ image, header, link }) => {
         <div className="importantCardImageContainer">
           {image && <img src={image} alt="Logo" className='importantCardImage'/>}
         </div>
-        <Link to={link} className="importantCardHeader">{header}</Link>
+        <div className='importantCardLinkContainer'>
+          <Link to={link} className="importantCardHeader">{header}</Link>
+        </div>
       </div>
     </div>
   );

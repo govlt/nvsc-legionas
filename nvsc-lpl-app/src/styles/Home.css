@@ -189,7 +189,8 @@ body{
     z-index: 20;
     border-radius: 16px 16px 0px 0px;
     color: white;
-    padding: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -223,7 +224,7 @@ body{
 }
 
 .homeFooterImage{
-    height: 100px;
+    height: 80px;
 }
 
 .homeFiller{
