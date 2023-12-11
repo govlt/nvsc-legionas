@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const LegionellosisInfo: React.FC = () => {
+  useEffect(() => {
+    const old = document.body.style.overflow;
+    document.body.style.overflow = "scroll";
+    return () => {
+      window.scrollTo(0, 0);
+      document.body.style.overflow = old;
+    };}, []);
+
   return (
     <>
       <InfoHeader/>

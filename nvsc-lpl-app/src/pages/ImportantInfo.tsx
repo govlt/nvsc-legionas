@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import InfoHeader from '../components/InfoHeader.tsx';
 import ImportantInfoCard from '../components/ImportantInfoCard.tsx';
 import '../styles/ImportantInfo.css';
@@ -13,6 +13,17 @@ import { useNavigate } from 'react-router-dom';
 
 export const ImportantInfo: React.FC = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
