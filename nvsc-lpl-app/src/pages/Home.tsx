@@ -44,24 +44,26 @@ export const Home: React.FC = () => {
         </h1> 
       </div>
 
-      <div className='homeMainTextContainer'>
-        <h3>
-          Legioneliozė, nors ir ne visada plačiai aptariama,
-          yra rimta grėsmė visuomenės sveikatai, 
-          sukelianti pavojingas ir net mirtinas pasekmes.
-        </h3>
-        <h3>
-          Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
-          dažniausiai plinta per užterštą vandenį,
-          todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
-        </h3>
-        <h3>
-          Mes visi kartu esame „legionas“,
-          tad sutelkdami jėgas ir atsakingai rūpindamiesi,
-          kokį vandenį vartojame,
-          galime duoti atkirtį bakterijoms
-          ir įveikti šį nematomą pavojų mūsų sveikatai.
-        </h3>
+      <div className='homeMainTextGridContainer'>
+        <div className='homeMainTextContainer'>
+          <h3>
+            Legioneliozė, nors ir ne visada plačiai aptariama,
+            yra rimta grėsmė visuomenės sveikatai, 
+            sukelianti pavojingas ir net mirtinas pasekmes.
+          </h3>
+          <h3>
+            Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
+            dažniausiai plinta per užterštą vandenį,
+            todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
+          </h3>
+          <h3>
+            Mes visi kartu esame „legionas“,
+            tad sutelkdami jėgas ir atsakingai rūpindamiesi,
+            kokį vandenį vartojame,
+            galime duoti atkirtį bakterijoms
+            ir įveikti šį nematomą pavojų mūsų sveikatai.
+          </h3>
+        </div>
       </div>
 
       <div className='homeMainButtonContainer'>

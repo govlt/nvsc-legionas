@@ -138,6 +138,10 @@ body{
 }
 
 .homeMainTextContainer h3{
+    max-width: 600px;
+}
+
+.homeMainTextContainer h3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,11 +246,45 @@ a:focus {
     color: #4C74F5;
 }
 
-@media (min-width: 2000px){
-    .homeChart{
-        height: 40vh;
+@media (min-width: 1500px){
+    .homeMainTextContainer{
+        gap: 100px;
+        grid-template-columns: repeat(3, minmax(400px, 1fr));
+        width: 1500px;
+    }
+    .homeMainTextContainer h3{
+        width: 100%;
+    }
+    .homeMainTextGridContainer{
+        display: flex;
+        justify-content: center;
     }
 }
+
+@media (min-width: 2000px){
+    .homeChart{
+        height: 35vh;
+    }
+    .homeMainButtonContainer{
+        margin-top: 10vh;
+    }
+    body{
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 2500px){
+    .homeMainButtonContainer{
+        margin-top: 20vh;
+    }
+}
+
+@media (min-width: 3000px){
+    .homeMainButtonContainer{
+        margin-top: 30vh;
+    }
+}
+
 
 @media (max-width: 1200px){
     .homeFiller{
