@@ -18,8 +18,10 @@ export const ContactsInfo: React.FC = () => {
         <h1 className="importantHeader">Kontaktinė informacija</h1>
         <hr/>
         
+
+        
         <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>AM</summary>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Aplinkos ministerija</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -45,7 +47,43 @@ export const ContactsInfo: React.FC = () => {
         </details>
 
         <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>SAM</summary>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Energetikos ministerija </summary>
+          <p className="importantMainText">
+            Atsakomybės:
+            <br/>
+            Užtikrina teisinį reglamentavimą
+            šilumos ir karšto vandens sistemų
+            priežiūros atžvilgiu.
+            <br/><br/>
+            Tvirtina:
+            <br/>
+            - Šilumos tiekimo ir vartojimo
+            taisykles, kuriomis nustatomos
+            šilumos (karšto vandens) tiekėjo,
+            vartotojo, pastato valdytojo ir
+            pastato šildymo ir karšto vandens
+            sistemų prižiūrėtojo teisės ir
+            pareigos;
+            <br/>
+            -Pastato šildymo ir karšto
+            vandens sistemų priežiūros
+            tvarkos aprašą, kuriuo nustatoma
+            prižiūrėtojo veiklos atsakomybės
+            ribos, teisės ir pareigos,
+            privalomų darbų sąrašas ir
+            apimtis.
+            <br/><br/>
+            Kontaktai:
+            <br/>
+            El. p. info@enmin.lt
+            <br/>
+            Tel. (8 5) 203 4696
+          </p>
+          <hr/>
+        </details>
+
+        <details className='imporantInfoCollapsible'>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Sveikatos apsaugos ministerija</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -66,7 +104,41 @@ export const ContactsInfo: React.FC = () => {
         </details>
 
         <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>VERT</summary>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Valstybinė maisto ir veterinarijos tarnyba</summary>
+          <p className="importantMainText">
+            Vykdo:
+            <br/>
+            - geriamojo vandens ruošimo procesų priežiūrą;
+            <br/>
+            - geriamojo vandens saugos ir kokybės rodiklių
+            laikymosi priežiūrą;
+            <br/>
+            - geriamojo vandens stebėsenos programų
+            derinimą, šių programų vykdymo priežiūrą;
+            <br/>
+            - Nagrinėja vartotojų ir abonentų skundų dėl
+            geriamojo vandens saugos ir kokybės;
+            <br/>
+            - Ima geriamojo vandens mėginius (pagal
+            skundus ir priežiūros tikslu).
+            <br/><br/>
+            Kontaktai:
+            <br/>
+            Tel. 1879,
+            <br/>
+            El. paštas skundams:
+            <br/>
+            skundai@vmvt.lt,
+            <br/>
+            El. paštas pasiteiravimams:
+            <br/>
+            klausimai@vmvt.lt
+          </p>
+          <hr/>
+        </details>
+
+        <details className='imporantInfoCollapsible'>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Valstybinė energetikos reguliavimo taryba </summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -141,7 +213,7 @@ export const ContactsInfo: React.FC = () => {
         </details>
 
         <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>NVSC</summary>
+          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Nacionalinis visuomenės sveikatos centras</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -184,85 +256,24 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>VMVT</summary>
-          <p className="importantMainText">
-            Vykdo:
-            <br/>
-            - geriamojo vandens ruošimo procesų priežiūrą;
-            <br/>
-            - geriamojo vandens saugos ir kokybės rodiklių
-            laikymosi priežiūrą;
-            <br/>
-            - geriamojo vandens stebėsenos programų
-            derinimą, šių programų vykdymo priežiūrą;
-            <br/>
-            - Nagrinėja vartotojų ir abonentų skundų dėl
-            geriamojo vandens saugos ir kokybės;
-            <br/>
-            - Ima geriamojo vandens mėginius (pagal
-            skundus ir priežiūros tikslu).
-            <br/><br/>
-            Kontaktai:
-            <br/>
-            Tel. 1879,
-            <br/>
-            El. paštas skundams:
-            <br/>
-            skundai@vmvt.lt,
-            <br/>
-            El. paštas pasiteiravimams:
-            <br/>
-            klausimai@vmvt.lt
-          </p>
-          <hr/>
-        </details>
-
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>ENMIN</summary>
-          <p className="importantMainText">
-            Atsakomybės:
-            <br/>
-            Užtikrina teisinį reglamentavimą
-            šilumos ir karšto vandens sistemų
-            priežiūros atžvilgiu.
-            <br/><br/>
-            Tvirtina:
-            <br/>
-            - Šilumos tiekimo ir vartojimo
-            taisykles, kuriomis nustatomos
-            šilumos (karšto vandens) tiekėjo,
-            vartotojo, pastato valdytojo ir
-            pastato šildymo ir karšto vandens
-            sistemų prižiūrėtojo teisės ir
-            pareigos;
-            <br/>
-            -Pastato šildymo ir karšto
-            vandens sistemų priežiūros
-            tvarkos aprašą, kuriuo nustatoma
-            prižiūrėtojo veiklos atsakomybės
-            ribos, teisės ir pareigos,
-            privalomų darbų sąrašas ir
-            apimtis.
-            <br/><br/>
-            Kontaktai:
-            <br/>
-            El. p. info@enmin.lt
-            <br/>
-            Tel. (8 5) 203 4696
-          </p>
-          <hr/>
-        </details>
+        
 
         <details className='imporantInfoCollapsible'>
           <summary className='importantInfoCollapsibleSummary importantTextHeader'>BNO administratorius</summary>
           <p className="importantMainText">
-            BNO (bendrojo naudojimo
-            objektų) administratorius -
-            pastato administratorius/bendrija/jungtinės
-            veiklos sutarties dalyvis.
+            BNO – bendrojo naudojimo objektai, kaip bendros patalpos,
+            laiptinės, stogas, bendri koridoriai ir panašiai, kurių
+            nuosavybės teisė bendrai priklauso visiems pastato savininkams.
             <br/><br/>
-            Atsakomybės:
+            BNO administratorius: pastato administratorius/bendrija/jungtinės
+            veiklos sutarties dalyvis, kuris prižiūri bendrojo naudojimo
+            objektus ir galimai šilumos punktus. Šilumos punktą taip pat
+            gali administruoti nebūtinai tik BNO administratorius, bet
+            ir pvz. bendrijos pirmininkas. Dažniausiai šilumos punktą
+            prižiūri centriniai šilumos tinklai, pastatą administruojanti
+            įmonė (pvz.: “Mano būstas”, “Senamiesčio ūkis” ir panašiai).
+            <br/><br/>
+            Atsako už:
             <br/>
             - Reikiamą temperatūrą butuose;
             <br/>
