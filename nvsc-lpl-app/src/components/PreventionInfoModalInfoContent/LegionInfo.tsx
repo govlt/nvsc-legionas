@@ -1,4 +1,4 @@
-import LegionImage from '../../assets/legioneles_ikona.svg';
+import LegionImage from '../../assets/skydas.svg';
 import { Link } from 'react-router-dom';
 
 export const LegionInfoHeatingPoint = () => {

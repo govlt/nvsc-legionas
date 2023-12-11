@@ -18,20 +18,6 @@ export const FAQ: React.FC = () => {
         <hr/>
 
         <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kas yra legioneliozė?</summary>
-          <p className="importantMainText">
-            Legioneliozė - tai ūminė infekcinė liga, kurią sukelia bakterijos - legionelės (Legionella).
-            <br/>
-            Ligai būdingos dvi pagrindinės kliniškai ir epidemiologiškai susijusios ligos formos:
-            <br/>
-            pirmoji - legionierių liga, kuri pasireiškia pneumonija (plaučių uždegimu)
-            <br/>
-            antroji - Pontiako karštligė, pasižyminti lengvesne ūminės respiracinės ligos eiga be pneumonijos.
-          </p>
-          <hr/>
-        </details>
-
-        <details className='imporantInfoCollapsible'>
           <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kaip atpažinti šią ligą, kokie jos požymiai?</summary>
           <p className="importantMainText">
             Legionierių ligai būdingas plaučių uždegimas, lydimas karščiavimo, kosulio, dusulio, raumenų ir galvos skausmo.

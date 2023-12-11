@@ -4,9 +4,9 @@ import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import { WelcomeModal } from '../components/WelcomeModal.tsx';
-import KTULogo from '../assets/KTU.png';
-import NVSCLogo from '../assets/NVSC.png';
-import LRVKLogo from '../assets/LRVK.png';
+import KTULogo from '../assets/KTUIF.svg';
+import NVSCLogo from '../assets/NVSC.svg';
+import LRVKLogo from '../assets/LRVK.svg';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
