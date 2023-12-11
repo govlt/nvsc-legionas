@@ -16,8 +16,12 @@ export const AdditionalInfoHotWaterProvider: React.FC= () => {
       <p>
         ✓ Karšto vandens tiekėjas atsako už karšto vandens temperatūrinių parametrų nukrypimus,
         nuo nustatytų galiojančiuose teisės aktuose ir karšto vandens pirkimo pardavimo sutartyje,
-        bei karšto vandens kokybę (ŠTVT 232.1 P.P..);
+        bei karšto vandens kokybę&nbsp;
+        <a href = 'https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.384505/asr'>
+          (ŠTVŠ 232.1 p.)
+        </a>;
       </p>
+      
       <p>
         ✓ Užtikrina tinkamos temperatūros termofikato tiekimą;
       </p>
