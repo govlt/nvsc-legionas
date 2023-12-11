@@ -232,6 +232,22 @@ body{
     height: 120px;
 }
 
+a {
+    color: #091A5A;
+    text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus {
+    color: #4C74F5;
+}
+
+@media (min-width: 2000px){
+    .homeChart{
+        height: 40vh;
+    }
+}
+
 @media (max-width: 1200px){
     .homeFiller{
         height: 170px;
@@ -307,14 +323,4 @@ body{
     .homeChart{
         height: 150px;
     }
-}
-
-a {
-    color: #091A5A;
-    text-underline-offset: 3px;
-}
-
-a:hover,
-a:focus {
-    color: #4C74F5;
 }

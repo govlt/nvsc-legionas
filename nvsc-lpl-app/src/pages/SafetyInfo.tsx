@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { OptionsButton } from '../components/OptionsButton';
 import InfoHeader from '../components/InfoHeader.tsx';
 import '../styles/SafetyInfo.css';
@@ -132,6 +132,17 @@ export const SafetyInfo: React.FC = () => {
   const handleCloseBoreHoleModal = () => {
     setShowBoreHoleInfoModal(false);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   if (!imagesPreloaded) {
     return <p>Preloading Assets</p>;

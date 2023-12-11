@@ -24,6 +24,17 @@ export const Home: React.FC = () => {
     sessionStorage.setItem("welcomeModal", "true");
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <InfoHeader/>

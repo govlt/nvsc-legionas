@@ -256,6 +256,11 @@
     margin-top: 10px;
     height: calc(100vw - 600px);
   }
+  .interactiveButtonAndTextContainer{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .optionButtonContainer{
     width: 100%;
     height: calc(5vh/10vw);
@@ -286,6 +291,9 @@
   .imageContainer{
     margin-top: 10px;
     height: calc(100vw - 100px);
+  }
+  .interactiveButtonAndTextContainer{
+    width: 90%;
   }
   .interactive1{
     display: none;
