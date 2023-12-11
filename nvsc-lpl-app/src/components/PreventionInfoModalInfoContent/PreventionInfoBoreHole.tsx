@@ -26,11 +26,6 @@ export const AdditionalInfoBoreHole: React.FC= () => {
       <p>
         ✓ Ima geriamojo vandens mėginius (pagal skundus ir priežiūros tikslu).
       </p>
-      <br/>
-      <p>
-        Jeigu geriamo vandens kokybės būklė kelia įtarimų, pavyzdžiui, spalva, skonis, kvapas,
-        būtinai atlikite vandens kokybės tyrimus ir kreipkitės į VMVT. 
-      </p>
     </div>
   );
 };

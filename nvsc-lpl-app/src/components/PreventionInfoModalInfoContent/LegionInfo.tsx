@@ -60,6 +60,9 @@ export const LegionInfoHeater = () => {
                     <p>
                         Dezinfekcija bent 1 kartą metuose.
                     </p>
+                    <h3>
+                        Palaikyti vandens šildytuvo minimalią temperatūrą
+                    </h3>
                 </div>
             </div>
         </div>
@@ -114,6 +117,23 @@ export const LegionInfoInside = () => {
         </div>
         </>
     )
+};
+
+export const LegionInfoRed = () => {
+    return(
+    <>
+    <div className="legionDangerContainer">
+        <div className="legionDangerTopContainer">
+            <div className="legionDangerHeaderAndImageContainer">
+                <p>
+                    Jeigu geriamo vandens kokybės būklė kelia įtarimų, pavyzdžiui, spalva, skonis, kvapas,
+                    būtinai atlikite vandens kokybės tyrimus ir kreipkitės į VMVT. 
+                </p>
+            </div>
+        </div>
+    </div>
+    </>
+  )
 };
 
 export const LegionInfoNothing = () => {

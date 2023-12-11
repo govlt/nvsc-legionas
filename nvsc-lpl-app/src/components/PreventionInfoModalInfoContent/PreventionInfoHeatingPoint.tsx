@@ -3,8 +3,8 @@ import React from 'react';
 export const PreventionInfoHeatingPoint: React.FC= () => {
   return(
     <>
-      BNO administratorius prižiūri šilumos sistemas
-        ir kad karšto vandens temperatūra nebūtų žemesnė nei <span style={{color: 'red'}}>50°</span>!
+      Namo įvade geriamas vanduo pašildomas nekontaktiniu būdu
+      termofikato, kurį tiekia centriniai šilumos tinklai.
     </>
   );
 };

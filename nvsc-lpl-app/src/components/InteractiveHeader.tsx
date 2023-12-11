@@ -1,17 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface InteractiveHeaderProps {
   header: string;
-  text1: string;
-  text2?: string;
-  textWithLink?: React.ReactNode;
+}
+
+const ExtraInfoIndividual = () => {
+  return(
+    <>
+      <p className="interactiveText">
+        Mano atsakomybė prižiūrėti, kad vandens temperatūra nebūtų žemesnė nei&nbsp;
+        <span style={{color: 'red'}}>50°</span>,
+        bei prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti
+        <br/>
+        (Išsamiau „
+        <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+        “).
+      </p>
+    </>
+  )
+}
+
+const ExtraInfoPublic = () => {
+  return(
+    <>
+      <p className="interactiveText">
+        Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, juos reguliariai dezinketuoti
+        <br/>
+        Išamiau:&nbsp;
+        <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
+      </p>
+    </>
+  )
 }
 
 const InteractiveHeader: React.FC<InteractiveHeaderProps> = ({
   header,
-  text1,
-  text2,
-  textWithLink
 }) => {
 
   return(
@@ -20,12 +44,7 @@ const InteractiveHeader: React.FC<InteractiveHeaderProps> = ({
         <h3 className="interactiveHeader">
           {header}
         </h3>
-        <p className="interactiveText">
-          {text1}
-        </p>
-        <p className="interactiveText">
-          {textWithLink ? textWithLink : text2}
-        </p>
+        {header == "Individualus namas"? <ExtraInfoIndividual/> : <ExtraInfoPublic/>}
       </div>
     </>
   );

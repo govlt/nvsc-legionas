@@ -36,12 +36,11 @@ import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoCon
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
-import { Link } from 'react-router-dom';
 import HouseSVG from '../assets/daugiabutis_ikona.svg'
 import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
 import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
 import SettingsSVG from '../assets/cog.svg'
-import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
+import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, LegionInfoRed, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
 
 const preloadSrcList: string[] = [
@@ -143,28 +142,12 @@ export const SafetyInfo: React.FC = () => {
       <InfoHeader/>
       { residenceType === 'Daugiabutyje' &&
         <div className='firstInteractiveHeader'>
-          <InteractiveHeader
-            header="Daugiabutis namas"
-            text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-            textWithLink={
-              <>
-                Išsamiau: <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-              </>
-            }
-          />
+          <InteractiveHeader header="Daugiabutis namas"/>
         </div>
       }
       { residenceType === 'Individualiame name' &&
         <div className='firstInteractiveHeader'>
-          <InteractiveHeader
-            header="Individualus namas"
-            text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-            textWithLink={
-              <>
-                Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-              </>
-            }
-          />
+          <InteractiveHeader header="Individualus namas"/>
         </div>
       }
 
@@ -266,27 +249,12 @@ export const SafetyInfo: React.FC = () => {
         </div>
         { residenceType === 'Daugiabutyje' &&
           <div className='secondInteractiveHeader'>
-            <InteractiveHeader
-              header="Daugiabutis namas"
-              text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-              textWithLink={
-                <>
-                  Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-                </>
-              }
-            />
+            <InteractiveHeader header="Daugiabutis namas"/>
           </div>
         }
         { residenceType === 'Individualiame name' &&
           <div className='secondInteractiveHeader'>
-            <InteractiveHeader
-              header="Individualus namas"
-              text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-              textWithLink={
-                <>
-                  Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-                </>
-              }
+            <InteractiveHeader header="Individualus namas"
             />
           </div>
         }
@@ -309,28 +277,12 @@ export const SafetyInfo: React.FC = () => {
           </div>
           { residenceType === 'Daugiabutyje' &&
             <div className='secondInteractiveHeader'>
-              <InteractiveHeader
-                header="Daugiabutis namas"
-                text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-                textWithLink={
-                  <>
-                    Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-                  </>
-                }
-              />
+              <InteractiveHeader header="Daugiabutis namas"/>
             </div>
           }
           { residenceType === 'Individualiame name' &&
             <div className='secondInteractiveHeader'>
-              <InteractiveHeader
-                header="Individualus namas"
-                text1="Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti"
-                textWithLink={
-                  <>
-                    Išsamiau: <Link to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
-                  </>
-                }
-              />
+              <InteractiveHeader header="Individualus namas"/>
             </div>
           }
           <button className="optionFooterSaveButton" onClick={() => changeVisibility(!footerVisibility)}>
@@ -444,8 +396,8 @@ export const SafetyInfo: React.FC = () => {
       { showBoreHoleInfoModal &&
         <PreventionInfoModal
           image={<BoreHole />}
-          header="Gręžinys / Šulinys"
-          legionInfo={<LegionInfoNothing/>}
+          header="Gręžinys / šulinys"
+          legionInfo={<LegionInfoRed/>}
           headerSectionContent={<PreventionInfoBoreHole />}
           lowerSection={<AdditionalInfoBoreHole/>}
           lowerLink={<ContactsLink/>}
