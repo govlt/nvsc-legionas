@@ -16,9 +16,7 @@ export const ContactsInfo: React.FC = () => {
       
       <div className="importantContainer">
         <h1 className="importantHeader">Kontaktinė informacija</h1>
-        <hr/>
-        
-
+        <br/>
         
         <details className='imporantInfoCollapsible'>
           <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Aplinkos ministerija</summary>
