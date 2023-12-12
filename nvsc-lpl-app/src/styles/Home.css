@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+body{
+    background-color: #dde1ec;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 30px;
+    /* background-image: url('/src/assets/fonas_extended.jpg'); */
+    background-image: url('/src/assets/legionas_pries_legioneles_01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
 .welcomeBackground{
     position: absolute;
     top: 0;
@@ -61,18 +75,6 @@
 
 .homeWindowContainer{
     max-width: 1500px;
-}
-
-body{
-    background-color: #dde1ec;
-    overflow: scroll;
-    padding: 30px;
-    /* background-image: url('/src/assets/fonas_extended.jpg'); */
-    background-image: url('/src/assets/legionas_pries_legioneles_01.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .blob {
@@ -155,7 +157,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: '10vh';
     width: 90%;
     margin: auto;
     text-align: center;
@@ -184,15 +185,25 @@ body{
     border: none;
 }
 
-.homeChartText{
-    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
-    color: #091A5A;
+.homeChartContainer{
+    width: 100%;
 }
 
 .homeChart{
     width: 90%;
     height: 250px;
     margin: auto;
+}
+
+.chartFiller{
+    height: 20px;
+}
+
+.homeChartText{
+    margin-left: 5%;
+    margin-right: auto;
+    font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
+    color: #091A5A;
 }
 
 .homeFooter{
@@ -257,6 +268,22 @@ a:focus {
     color: #4C74F5;
 }
 
+@media (max-height: 700px){
+    .homeFooterPartnerContainer{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    .homeFooterImage{
+        height: 50px;
+    }
+    .homeFooter h1{
+        font: normal normal normal 20px/0px "Public Sans", Arial, Sans-Serif;
+    }
+    .homeFooter p{
+        font: normal normal normal 10px/12px "Public Sans", Arial, Sans-Serif;
+    }
+}
+
 @media (min-width: 2000px){
     .homeChart{
         margin-top: 5vh;
@@ -292,15 +319,11 @@ a:focus {
     .homeFiller{
         height: 290px;
     }
-    .homeFooterPartnerContainer{
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-    }
 }
 
 @media (max-width:600px){
     .homeFiller{
-        height: 100px;
+        height: 200px;
     }
     .homeFooterPartnerContainer{
         grid-template-columns: repeat(3, 1fr);
@@ -330,7 +353,8 @@ a:focus {
         font-size: 14px;
     }
     .homeMainHeader{
-        font: normal normal bold 50px/60px "Public Sans", Arial, Sans-Serif;
+        margin-top: 30px;
+        font: normal normal bold 40px/45px "Public Sans", Arial, Sans-Serif;
     }
     .homeMainText{
         width: 100%;
@@ -338,5 +362,8 @@ a:focus {
     }
     .homeChart{
         height: 150px;
+    }
+    .homeChartText{
+        font: normal normal normal 10px/12px "Public Sans", Arial, Sans-Serif;
     }
 }

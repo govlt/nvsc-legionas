@@ -64,14 +64,15 @@ export const Home: React.FC = () => {
             </button>
           </div>
 
-
-          <div id="chart" className='homeChart'>
-            <Chart />
+          <div className='homeChartContainer'>
+            <div id="chart" className='homeChart'>
+              <Chart/>
+            </div>
+            <div className='chartFiller'></div>
             <a className="homeChartText"
-            href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
+                href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
               Grafikas parengtas pagal statistikos departamento duomenis.
             </a>
-            
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ export const SafetyInfo: React.FC = () => {
   const [showWaterSiteInfoModal, setShowWaterSiteInfoModal] = useState(false);
   const [showBoreHoleInfoModal, setShowBoreHoleInfoModal] = useState(false);
 
-  const [footerVisibility, changeVisibility] = useState(true);
+  const [footerVisibility, changeVisibility] = useState(false);
   
 
   const handleBathModalClick = () => {
@@ -308,12 +308,12 @@ export const SafetyInfo: React.FC = () => {
             <p className='optionFooterText'>{residenceType}</p>
           </div>
           <div className='optionFooterItemContainer'>
-            <img src={ColdWaterSVG} className="optionFooterImage"></img>
-            <p className='optionFooterText'>{drinkingWaterSource}</p>
-          </div>
-          <div className='optionFooterItemContainer'>
             <img src={HotWaterSVG} className="optionFooterImage"></img>
             <p className='optionFooterText'>{hotWaterSource}</p>
+          </div>
+          <div className='optionFooterItemContainer'>
+            <img src={ColdWaterSVG} className="optionFooterImage"></img>
+            <p className='optionFooterText'>{drinkingWaterSource}</p>
           </div>
           <button className='optionFooterItemContainer optionFooterButton'
               style={{marginRight: '10px'}}

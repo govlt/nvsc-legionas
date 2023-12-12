@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import { OptionValuesButtons } from './OptionValuesButton';
+import HouseSVG from '../assets/daugiabutis_ikona.svg'
+import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
+import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
 
 interface OptionsButtonProps {
     residenceType: string;
@@ -34,13 +37,7 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
           optValue1="Daugiabutyje"
           optValue2="Individualiame name"
           setProperty={setResidenceType}
-        />
-        <OptionValuesButtons
-          text="Geriamu vandeniu apsirūpinu"
-          property={drinkingWaterSource}
-          optValue1="Centralizuotai"
-          optValue2="Individualiai"
-          setProperty={setDrinkingWaterSource}
+          svg={HouseSVG}
         />
         <OptionValuesButtons
           text="Karštu vandeniu apsirūpinu"
@@ -49,6 +46,15 @@ export const OptionsButton: React.FC<OptionsButtonProps> = ({
           optValue2="Individualiai"
           setProperty={setHotWaterSource}
           disableOptValue1={residenceType === 'Individualiame name'}
+          svg={HotWaterSVG}
+        />
+        <OptionValuesButtons
+          text="Geriamu vandeniu apsirūpinu"
+          property={drinkingWaterSource}
+          optValue1="Centralizuotai"
+          optValue2="Individualiai"
+          setProperty={setDrinkingWaterSource}
+          svg={ColdWaterSVG}
         />
       </div>
     </>

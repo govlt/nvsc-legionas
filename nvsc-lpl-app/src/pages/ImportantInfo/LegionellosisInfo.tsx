@@ -3,12 +3,8 @@ import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const LegionellosisInfo: React.FC = () => {
   useEffect(() => {
-    const old = document.body.style.overflow;
-    document.body.style.overflow = "scroll";
-    return () => {
-      window.scrollTo(0, 0);
-      document.body.style.overflow = old;
-    };}, []);
+    return () => {window.scrollTo(0, 0);};
+  }, []);
 
   return (
     <>

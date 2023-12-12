@@ -3,11 +3,8 @@ import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const FAQ: React.FC = () => {
   useEffect(() => {
-    document.body.style.overflow = "scroll";
-    return () => {
-      window.scrollTo(0, 0);
-      document.body.style.overflow = "initial";
-    };}, []);
+    return () => {window.scrollTo(0, 0);};
+  }, []);
     
   return (
     <>

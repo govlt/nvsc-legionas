@@ -25,7 +25,7 @@ const ExtraInfoPublic = () => {
   return(
     <>
       <p className="interactiveText">
-        Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, juos reguliariai dezinketuoti
+        Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, juos reguliariai dezinfekuoti
         <br/>
         Išamiau:&nbsp;
         <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>

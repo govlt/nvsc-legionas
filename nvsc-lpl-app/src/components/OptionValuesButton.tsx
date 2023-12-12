@@ -8,6 +8,7 @@ interface OptionValueButtonProps {
     optValue2: string;
     setProperty: React.Dispatch<React.SetStateAction<string>>;
     disableOptValue1?: boolean;
+    svg?: string;
 }
 
 export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
@@ -17,6 +18,7 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
   optValue2,
   setProperty,
   disableOptValue1 = false,
+  svg
 }) => {
 
   const handleValueChange = (newValue: string) => {
@@ -28,7 +30,8 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
   return(
     <div className="switch-field">
       <p className='optionButtonText'>
-        {text}
+        <img src={svg} className='optionImage'></img>
+        &nbsp;{text}
       </p>
       <div className='optionButtonContainer'>
         <button 

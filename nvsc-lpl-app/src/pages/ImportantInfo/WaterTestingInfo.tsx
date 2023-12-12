@@ -3,13 +3,9 @@ import InfoHeader from '../../components/InfoHeader.tsx';
 
 export const WaterTestingInfo: React.FC = () => {
   useEffect(() => {
-    const old = document.body.style.overflow;
-    document.body.style.overflow = "scroll";
-    return () => {
-      window.scrollTo(0, 0);
-      document.body.style.overflow = old;
-    };}, []);
-
+    return () => {window.scrollTo(0, 0);};
+  }, []);
+  
   return (
     <>
       <InfoHeader/>
@@ -29,9 +25,9 @@ export const WaterTestingInfo: React.FC = () => {
           •	surinkti informaciją apie geriamojo vandens saugą ir kokybę,
             siekiant įrodyti, jog laikomasi&nbsp;
           <a href = "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.216309/asr">
-            Higienos normoje&nbsp;
+            Higienos normoje
           </a>
-          nustatytų reikalavimų;
+          &nbsp;nustatytų reikalavimų;
           <br/>
             •	nustatyti tinkamiausius rizikos žmonių sveikatai mažinimo būdus.
         </p>
