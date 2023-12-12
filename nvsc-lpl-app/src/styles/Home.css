@@ -53,9 +53,19 @@
     }
 }
 
+.homeWindowCenteringContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.homeWindowContainer{
+    max-width: 1500px;
+}
+
 body{
     background-color: #dde1ec;
-    overflow: hidden;
+    overflow: scroll;
     padding: 30px;
     /* background-image: url('/src/assets/fonas_extended.jpg'); */
     background-image: url('/src/assets/legionas_pries_legioneles_01.png');
@@ -229,6 +239,7 @@ body{
 }
 
 .homeFooterImage{
+    cursor: pointer;
     height: 80px;
 }
 
@@ -246,45 +257,12 @@ a:focus {
     color: #4C74F5;
 }
 
-@media (min-width: 1500px){
-    .homeMainTextContainer{
-        gap: 100px;
-        grid-template-columns: repeat(3, minmax(400px, 1fr));
-        width: 1500px;
-    }
-    .homeMainTextContainer h3{
-        width: 100%;
-    }
-    .homeMainTextGridContainer{
-        display: flex;
-        justify-content: center;
-    }
-}
-
 @media (min-width: 2000px){
     .homeChart{
-        height: 35vh;
-    }
-    .homeMainButtonContainer{
-        margin-top: 10vh;
-    }
-    body{
-        overflow: scroll;
+        margin-top: 5vh;
+        height: 30vh;
     }
 }
-
-@media (min-width: 2500px){
-    .homeMainButtonContainer{
-        margin-top: 20vh;
-    }
-}
-
-@media (min-width: 3000px){
-    .homeMainButtonContainer{
-        margin-top: 30vh;
-    }
-}
-
 
 @media (max-width: 1200px){
     .homeFiller{

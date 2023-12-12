@@ -12,10 +12,17 @@
     font-style: normal;
 }
 
-.importantInfoMainButtonContainer{
+.importantWindowContainer{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.importantInfoMainButtonContainer{
+    width: 50%;
+    display: flex;
+    justify-content: right;
     align-items: center;
 }
 
@@ -23,8 +30,6 @@
     background: #4C74F5 0% 0% no-repeat padding-box;
     border-radius: 16px;
     padding: 20px;
-    opacity: 1;
-    text-align: center;
     font: normal normal normal 18px/28px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     cursor: pointer;
@@ -37,14 +42,20 @@
     padding-right: 10%;
 }
 
+.importantHeaderContainer{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
 .importantHeader{
+    width: 50%;
     text-align: left;
     font: normal normal 600 48px/57px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
     margin-top: 0;
     margin-bottom: 0;
-    opacity: 1;
 }
 
 .importantTextHeader{
@@ -52,7 +63,6 @@
     font: normal normal 500 24px/29px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
-    opacity: 1;
     margin-bottom: 5px;
 }
 
@@ -62,7 +72,6 @@
     font: normal normal normal 16px/26px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
-    opacity: 1;
 }
 
 .importantSmallText{
@@ -72,7 +81,6 @@
     font: normal normal normal 10px/15px "Public Sans", Arial, Sans-Serif;
     letter-spacing: 0px;
     color: #091A5A;
-    opacity: 1;
 }
 
 .importantInfoCollapsibleSummary{
@@ -153,6 +161,18 @@
 }
 
 @media (max-width: 1000px) {
+    .importantHeaderContainer{
+        flex-direction: column;
+    }
+    .importantHeader{
+        width: 100%;
+    }
+    .importantInfoMainButtonContainer{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
     .importantGrid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);

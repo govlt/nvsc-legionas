@@ -28,48 +28,52 @@ export const ImportantInfo: React.FC = () => {
   return (
     <>
       <InfoHeader/>
-
-      <div className='importantInfoMainButtonContainer'>
-        <button className="importantInfoMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
-          Susipažinti kaip apsisaugoti
-        </button>
-      </div>
       
-      <div className="importantContainer">
-        <div>
-          <h1 className="importantHeader">Svarbu žinoti</h1>
-        </div>
-        <div className="importantGrid">
-          <ImportantInfoCard 
-            image={legioneleIcon}
-            header="Kas yra legioneliozė?"
-            link={'/legionelioze'}
-          />
-          <ImportantInfoCard 
-            image={prevencijaIcon}
-            header="Kokios prevencinės priemonės?"
-            link={'/prevencija'}
-          />
-          <ImportantInfoCard 
-            image={rightsAndObligationsIcon}
-            header="Mano teisės ir pareigos"
-            link={'/teises-atsakomybes'}
-          />
-          <ImportantInfoCard 
-            image={contactsIcon}
-            header="Institucijų ir įmonių atsakomybės ir kontaktai"
-            link={'/kontaktai'}
-          />
-          <ImportantInfoCard 
-            image={waterTestsIcon}
-            header="Geriamojo vandens tyrimų programos"
-            link={'/geriamojo-vandens-tyrimu-programos'}
-          />
-          <ImportantInfoCard 
-            image={faqIcon}
-            header="DUK"
-            link={'/duk'}
-          />
+      <div className='importantWindowContainer'>
+        <div className="importantContainer">
+          <div className='importantHeaderContainer'>
+            <h1 className="importantHeader">
+              Svarbu žinoti
+            </h1>
+            <div className='importantInfoMainButtonContainer'>
+              <button className="importantInfoMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
+                Susipažinti kaip apsisaugoti
+              </button>
+            </div>
+          </div>
+
+          <div className="importantGrid">
+            <ImportantInfoCard 
+              image={legioneleIcon}
+              header="Kas yra legioneliozė?"
+              link={'/legionelioze'}
+            />
+            <ImportantInfoCard 
+              image={prevencijaIcon}
+              header="Kokios prevencinės priemonės?"
+              link={'/prevencija'}
+            />
+            <ImportantInfoCard 
+              image={rightsAndObligationsIcon}
+              header="Mano teisės ir pareigos"
+              link={'/teises-atsakomybes'}
+            />
+            <ImportantInfoCard 
+              image={contactsIcon}
+              header="Institucijų ir įmonių atsakomybės ir kontaktai"
+              link={'/kontaktai'}
+            />
+            <ImportantInfoCard 
+              image={waterTestsIcon}
+              header="Geriamojo vandens tyrimų programos"
+              link={'/geriamojo-vandens-tyrimu-programos'}
+            />
+            <ImportantInfoCard 
+              image={faqIcon}
+              header="DUK"
+              link={'/duk'}
+            />
+          </div>
         </div>
       </div>
     </>
