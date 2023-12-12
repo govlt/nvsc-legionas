@@ -144,6 +144,10 @@ export const SafetyInfo: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {window.scrollTo(0, 0);};
+  }, []);
+
   if (!imagesPreloaded) {
     return <p>Preloading Assets</p>;
   }

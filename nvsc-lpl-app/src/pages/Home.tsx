@@ -24,6 +24,10 @@ export const Home: React.FC = () => {
     sessionStorage.setItem("welcomeModal", "true");
   }, []);
 
+  useEffect(() => {
+    return () => {window.scrollTo(0, 0);};
+  }, []);
+
   return (
     <>
       <InfoHeader/>

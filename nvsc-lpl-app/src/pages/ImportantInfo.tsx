@@ -25,6 +25,10 @@ export const ImportantInfo: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {window.scrollTo(0, 0);};
+  }, []);
+
   return (
     <>
       <InfoHeader/>
