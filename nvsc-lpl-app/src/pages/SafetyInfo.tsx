@@ -134,17 +134,6 @@ export const SafetyInfo: React.FC = () => {
   };
 
   useEffect(() => {
-    const handleResize = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
     return () => {window.scrollTo(0, 0);};
   }, []);
 
