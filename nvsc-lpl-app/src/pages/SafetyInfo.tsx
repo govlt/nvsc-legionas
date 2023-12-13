@@ -41,16 +41,6 @@ import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
 import SettingsSVG from '../assets/cog.svg'
 import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, LegionInfoRed, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
-
-const preloadSrcList: string[] = [
-  apartamnetsCC,
-  apartamnetsCI,
-  apartamnetsIC,
-  apartamnetsII,
-  houseCIG,
-  houseIIG
-];
-
 export const SafetyInfo: React.FC = () => {
   const [residenceType, setResidenceType] = useState('Daugiabutyje');
   const [drinkingWaterSource, setDrinkingWaterSource] = useState('Centralizuotai');
