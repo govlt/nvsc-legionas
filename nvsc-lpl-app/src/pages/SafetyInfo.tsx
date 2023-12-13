@@ -34,7 +34,6 @@ import { AdditionalInfoWaterSite } from '../components/PreventionInfoModalInfoCo
 import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
-import useImagePreloader from '../hooks/PreloadImages.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
 import HouseSVG from '../assets/daugiabutis_ikona.svg'
 import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
@@ -53,7 +52,6 @@ const preloadSrcList: string[] = [
 ];
 
 export const SafetyInfo: React.FC = () => {
-  const { imagesPreloaded } = useImagePreloader(preloadSrcList);
   const [residenceType, setResidenceType] = useState('Daugiabutyje');
   const [drinkingWaterSource, setDrinkingWaterSource] = useState('Centralizuotai');
   const [hotWaterSource, setHotWaterSource] = useState('Centralizuotai');
@@ -136,10 +134,6 @@ export const SafetyInfo: React.FC = () => {
   useEffect(() => {
     return () => {window.scrollTo(0, 0);};
   }, []);
-
-  if (!imagesPreloaded) {
-    return <p>Preloading Assets</p>;
-  }
 
   return (
     <>
