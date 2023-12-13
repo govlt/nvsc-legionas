@@ -25,12 +25,13 @@ export const ContactsInfo: React.FC = () => {
             paėmimo vietos nustatymu, skirtu
             geriamojo vandens saugai ir
             kokybei tikrinti.
-            <p className="importantSmallText">
+          </p>
+          <p className="importantSmallText">
               Geriamojo vandens tiekimo ir
               nuotekų tvarkymo įstatymas
               (20 str. 2 d. 14 p.)
-            </p>
-            <br/>
+          </p>
+          <p className="importantMainText">
             Kontaktai:
             <br/>
             El. p. info@am.lt
@@ -229,20 +230,21 @@ export const ContactsInfo: React.FC = () => {
             - Pagal kompetenciją konsultuoja ūkio
             subjektus, legioneliozės prevencijos
             klausimais.
-            <p className="importantSmallText">
+          </p>
+          <p className="importantSmallText">
               Lietuvos higienos normos HN 24:2023 „Geriamojo
               vandens saugos ir kokybės reikalavimai“ patvirtinta
               Lietuvos Respublikos sveikatos apsaugos ministro
               2003 m. liepos 23 d. įsakymu Nr. V-455, kurioje
               nustayti geriamojo vandens ir naudojamo karšto
               vandens saugos ir kokybės reikalavimai;
-              <br/>
+            <br/>
               Lietuvos higienos normos HN 136:2023 „Karšto
               vandens visuomenės sveikatos saugos reikalavimai“
               patvirtinta Lietuvos Respublikos sveikatos apsaugos
               ministro 2023 m. birželio 20 d. įsakymu Nr. V-710
-            </p>
-            <br/>
+          </p>
+          <p className="importantMainText">
             Kontaktai:
             <br/>
             Konsultacijų tel. nr. (8 5) 264 967
