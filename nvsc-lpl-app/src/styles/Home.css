@@ -25,6 +25,16 @@ body{
     height: 100vh;
 }
 
+.loadingCircle{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 40px);
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    position: absolute;
+}
 
 .welcomeBackground{
     position: absolute;
@@ -36,6 +46,21 @@ body{
     width: 100%;
     z-index: 20;
     background: rgb(0, 0, 0, 0.6);
+    opacity: 1;
+    animation: yeet 3s;
+    -webkit-animation: yeet 3s;
+}
+
+@keyframes yeet {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .welcomeImage{
@@ -46,25 +71,6 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-.fadeModalAnimation{
-    animation: yeet 2s;
-}
-
-@keyframes yeet {
-    0% {
-        /* transform: translateY(0); */
-        opacity: 1;
-    }
-    50% {
-        /* transform: translateY(-100vh); */
-        opacity: 0;
-    }
-    100% {
-        /* transform: translateY(-100vh); */
-        opacity: 0;
-    }
 }
 
 .homeWindowCenteringContainer{
@@ -80,6 +86,7 @@ body{
 .blob {
     background: #4C74F5;
     animation: morph 4s ease-in-out infinite;
+    -webkit-animation: morph 4s ease-in-out infinite;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     height: 100%;
     float: right;

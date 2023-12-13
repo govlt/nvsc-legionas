@@ -21,7 +21,18 @@ export const Home: React.FC = () => {
     // localStorage vs sessionStorage???
     const savedState = sessionStorage.getItem('welcomeModal');
     if (savedState) return;
+
+    const delay = (ms: number) => new Promise(
+      resolve => setTimeout(resolve, ms)
+    );
+    async function waitSomeTime() {
+      await delay(3000);
+      setShowWelcomeModal(false);
+    }
+
     setShowWelcomeModal(true);
+    waitSomeTime();
+    
     sessionStorage.setItem('welcomeModal', 'true');
   }, []);
 
@@ -31,7 +42,10 @@ export const Home: React.FC = () => {
 
   if (!imagesPreloaded) {
     return (
-      <CircularProgress />
+      <div className='loadingCircle'>
+        <CircularProgress size="10vh"/>
+      </div>
+      
     );
   }
 
@@ -82,7 +96,7 @@ export const Home: React.FC = () => {
             <div className="chartFiller"></div>
             <a className="homeChartText"
               href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
-              Grafikas parengtas pagal statistikos departamento duomenis.
+              Grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.
             </a>
           </div>
         </div>

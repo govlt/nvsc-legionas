@@ -52,7 +52,9 @@
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
+  opacity: 1;
   animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
   padding: 5px;
   border: none;
 }
