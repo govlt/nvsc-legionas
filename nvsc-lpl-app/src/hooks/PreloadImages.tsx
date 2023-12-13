@@ -5,7 +5,6 @@ function preloadImage (src: string) {
     const img = new Image();
     img.onload = function() {
       resolve(img);
-      console.log('preloaded img', img);
     };
     img.onerror = img.onabort = function() {
       reject(src);

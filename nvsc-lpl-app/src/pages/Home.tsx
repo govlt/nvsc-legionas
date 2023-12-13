@@ -9,16 +9,13 @@ import NVSCLogo from '../assets/NVSC.svg';
 import LRVKLogo from '../assets/LRVK.svg';
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import { preloadImageList } from '../preloadImageList.tsx';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export const Home: React.FC = () => {
   const {imagesPreloaded} = useImagePreloader(preloadImageList);
 
   const navigate = useNavigate();
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
-
-  const handleCloseWelcomeModal = () => {
-    setShowWelcomeModal(false);
-  };
 
   useEffect(() => {
     // localStorage vs sessionStorage???
@@ -34,7 +31,7 @@ export const Home: React.FC = () => {
 
   if (!imagesPreloaded) {
     return (
-      <p>Loading assets</p>
+      <CircularProgress />
     );
   }
 
@@ -120,9 +117,7 @@ export const Home: React.FC = () => {
       
       
       { showWelcomeModal &&
-        <WelcomeModal
-          onClose={handleCloseWelcomeModal}
-        />
+        <WelcomeModal />
       }
     </>
   );
