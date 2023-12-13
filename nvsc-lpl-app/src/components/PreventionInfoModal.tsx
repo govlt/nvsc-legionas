@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import '../styles/PreventionInfoModal.css';
-import { createFocusTrap } from 'focus-trap';
+import { createFocusTrap, FocusTrap } from 'focus-trap';
 
 interface PreventionInfoModalProps {
   image: React.ReactNode;
@@ -8,7 +8,7 @@ interface PreventionInfoModalProps {
   legionInfo: React.ReactNode;
   headerSectionContent: React.ReactNode;
   lowerSection: React.ReactNode;
-  lowerLink: React.ReactNode;
+  lowerLink: React.ReactElement;
   onClose: () => void;
 }
 
@@ -23,10 +23,10 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
 }) => {
 
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const [focusTrap, setFocusTrap] = useState<any>(null);
+  const [focusTrap, setFocusTrap] = useState<FocusTrap | null>(null);
 
   const onCloseAction = () => {
-    focusTrap.deactivate();
+    focusTrap!.deactivate();
     onClose();
   };
 
@@ -41,39 +41,40 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onClose]);
 
   useEffect(() => {
     const trap = createFocusTrap('#preventionInfoModal');
     trap.activate();
     setFocusTrap(trap);
-  }, [])
+  }, []);
+
+  const lowerLinkWithOnClick = React.cloneElement(lowerLink, { onClick: onCloseAction });
 
   return (
     <>
       <div id="preventionInfoModal" className="modalBackground"
         style={{height: window.document.body.scrollHeight}}>
         <div className="modal" ref={wrapperRef}>
-        <button 
-          className="close" 
-          onClick={onCloseAction} 
-          tabIndex={1} 
-          role="button" 
-          aria-label="Close modal"
-      >
+          <button 
+            className="close" 
+            onClick={onCloseAction} 
+            aria-label={`Uždaryti informaciją apie ${header}`}
+          >
           &times;
-      </button>
+          </button>
           <div className="modalImagePlaceHolder">
             {image}
           </div>
           <div className="modalInfo">
-            <div className='modalContent'>
-              <h2 className='modalTitle'>{header}</h2>
-              <p className='modalText'>{headerSectionContent}</p>
+            <div className="modalContent">
+              <h2 className="modalTitle">{header}</h2>
+              <p className="modalText">{headerSectionContent}</p>
               {legionInfo}
               {lowerSection}
-              <div onClick={onCloseAction} >
-                {lowerLink}
+              <div>
+                {lowerLinkWithOnClick}
               </div>
             </div>
           </div>

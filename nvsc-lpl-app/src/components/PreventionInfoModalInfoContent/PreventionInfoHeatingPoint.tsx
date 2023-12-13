@@ -12,28 +12,28 @@ export const PreventionInfoHeatingPoint: React.FC= () => {
 export const AdditionalInfoHeatingPoint: React.FC= () => {
   return(
     <>
-    <p>
+      <p>
       BNO (bendrojo naudojimo objektų) administratorius
       pastato administratorius/bendrija/jungtinės veiklos sutarties dalyvis atsako už:
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Reikiamą temperatūrą butuose;
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Karšto vandens temperatūrą;
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Kokybišką pastato šildymo ir karšto vandens sistemų priežiūrą;
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Vidaus šildymo sistemų avarijų likvidavimą;
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Pastato šildymo ir karšto vandens sistemų paruošimą šildymo sezonui;
-    </p>
-    <p>
+      </p>
+      <p>
       ✓ Informuoja apie prevencines priemones.
-    </p>
+      </p>
     </>
   );
 };

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { OptionValuesButtons } from './OptionValuesButton';
-import HouseSVG from '../assets/daugiabutis_ikona.svg'
-import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
-import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
+import HouseSVG from '../assets/daugiabutis_ikona.svg';
+import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg';
+import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg';
 
 interface OptionsButtonProps {
     residenceType: string;

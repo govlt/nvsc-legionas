@@ -10,7 +10,7 @@ export const PreventionInfoBoreHole: React.FC= () => {
 export const AdditionalInfoBoreHole: React.FC= () => {
   return(
     <div>
-      <h1 className='modalTopicHeader'>
+      <h1 className="modalTopicHeader">
         Valstybinė maisto ir veterinarijos tarnyba vykdo:
       </h1>
       <p>

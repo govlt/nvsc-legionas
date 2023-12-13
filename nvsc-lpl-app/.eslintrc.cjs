@@ -5,13 +5,30 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    "react-app",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'jsx-a11y'],
   rules: {
+    'jsx-a11y/anchor-is-valid': 'warn',  // Warns on invalid anchor elements
+    'jsx-a11y/label-has-associated-control': [ 'error', {
+      required: {
+        some: ['nesting', 'id']
+      }
+    }],
+    'jsx-a11y/no-static-element-interactions': 'warn',
+    'jsx-a11y/alt-text': 'warn',
+    'jsx-a11y/aria-role': 'warn',
+    'jsx-a11y/interactive-supports-focus': 'error',
+    'jsx-a11y/no-noninteractive-element-interactions': 'error',
+    'jsx-a11y/no-noninteractive-tabindex': 'error',
+    'jsx-a11y/role-has-required-aria-props': 'error',
+    'jsx-a11y/no-redundant-roles': 'warn',
+    'jsx-a11y/media-has-caption': 'warn',
+    'jsx-a11y/mouse-events-have-key-events': 'error',
+    'jsx-a11y/no-autofocus': 'warn',
+    'jsx-a11y/label-has-for': 'error',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
@@ -54,6 +71,6 @@ module.exports = {
         "flatTernaryExpressions": false,
         "ignoreComments": false
       }
-    ]
+    ],
   },
 }

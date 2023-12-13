@@ -10,14 +10,14 @@ export const PreventionInfoHotWaterProvider: React.FC= () => {
 export const AdditionalInfoHotWaterProvider: React.FC= () => {
   return(
     <>
-      <h1 className='modalTopicHeader'>
+      <h1 className="modalTopicHeader">
         Centrinių šilumos tinklų atsakomybės:
       </h1>
       <p>
         ✓ Karšto vandens tiekėjas atsako už karšto vandens temperatūrinių parametrų nukrypimus,
         nuo nustatytų galiojančiuose teisės aktuose ir karšto vandens pirkimo pardavimo sutartyje,
         bei karšto vandens kokybę&nbsp;
-        <a href = 'https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.384505/asr'>
+        <a href = "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.384505/asr">
           (ŠTVŠ 232.1 p.)
         </a>;
       </p>

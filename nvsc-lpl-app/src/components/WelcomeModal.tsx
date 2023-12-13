@@ -1,7 +1,7 @@
 import mainImage from '../assets/legionas_pries_legioneles.png';
 import React, { useRef, useEffect, useState} from 'react';
 import '../styles/PreventionInfoModal.css';
-import { createFocusTrap } from 'focus-trap';
+import { createFocusTrap, FocusTrap } from 'focus-trap';
 
 interface PreventionInfoModalProps {
     onClose: () => void;
@@ -12,7 +12,7 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
 }) => {
 
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const [focusTrap, setFocusTrap] = useState<any>(null);
+  const [focusTrap, setFocusTrap] = useState<FocusTrap | null>(null);
 
   const [fadeModal, setModalFade] = useState(false);
   const delay = (ms: number) => new Promise(
@@ -22,7 +22,7 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
   const onCloseAction = async () => {
     setModalFade(true);
     await delay(1000);
-    focusTrap.deactivate();
+    focusTrap!.deactivate();
     onClose();
   };
 
@@ -37,29 +37,28 @@ export const WelcomeModal: React.FC<PreventionInfoModalProps> = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onClose]);
 
   useEffect(() => {
     const trap = createFocusTrap('#welcomeModal');
     trap.activate();
     setFocusTrap(trap);
-  }, [])
+  }, []);
 
   return (
     <>
-    <div id="welcomeModal" className={`welcomeBackground ${fadeModal? 'fadeModalAnimation' : ''}`}>
-      <button 
+      <div id="welcomeModal" className={`welcomeBackground ${fadeModal? 'fadeModalAnimation' : ''}`}>
+        <button 
           className="close" 
           onClick={onCloseAction} 
-          tabIndex={1} 
-          role="button" 
-          aria-label="Close modal"
-          onKeyDown={(e) => { if (e.key === 'Enter') onCloseAction(); }}
-      >
+          tabIndex={0} 
+          aria-label="Uždaryti pasisveikinimo nuotrauką"
+        >
           &times;
-      </button>
-        <img src={mainImage} className='welcomeImage'></img>
-    </div>
+        </button>
+        <img src={mainImage} alt="Pasisveikinimo nuotrauka" className="welcomeImage"></img>
+      </div>
     </>
   );
 };

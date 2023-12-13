@@ -14,8 +14,8 @@ export const FAQ: React.FC = () => {
         <h1 className="importantHeader">Dažnai užduodami klausimai</h1>
         <hr/>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kaip atpažinti šią ligą, kokie jos požymiai?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kaip atpažinti šią ligą, kokie jos požymiai?</summary>
           <p className="importantMainText">
             Legionierių ligai būdingas plaučių uždegimas, lydimas karščiavimo, kosulio, dusulio, raumenų ir galvos skausmo.
             Vidutiniškai 25-50 proc. pacientų gali viduriuoti, galimi sąmonės sutrikimai.
@@ -24,8 +24,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kaip galiu užsikrėsti legionelioze?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kaip galiu užsikrėsti legionelioze?</summary>
           <p className="importantMainText">
             Legionelioze dažniausiai užsikrečiama įkvepiant aerozolio (smulkių vandens lašelių)
             su Legionella bakterijomis patekus į plaučius arba galimas ir tiesioginis sukėlėjo patekimas į kvėpavimo takus
@@ -35,16 +35,16 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Ar galiu užsikrėsti gerdamas vandenį?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Ar galiu užsikrėsti gerdamas vandenį?</summary>
           <p className="importantMainText">
             Ne, geriant vandenį šia liga neužsikrečiama.
           </p>
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kam kyla didesnė rizika susirgti legionelioze?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kam kyla didesnė rizika susirgti legionelioze?</summary>
           <p className="importantMainText">
             Nors Legionella bakterijos yra plačiai paplitusios aplinkoje
             (nedideli jų kiekiai randami natūralioje aplinkoje: upių ir ežerų vandenyje, drėgname dirvožemyje,
@@ -56,8 +56,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kokios sąlygos palankios Legionella bakterijų augimui?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kokios sąlygos palankios Legionella bakterijų augimui?</summary>
           <p className="importantMainText">
             Legionella bakterijoms daugintis palankiausia vandens temperatūra 20-45ºC.
             Maistinės medžiagos, kurios gaunamos iš vandens sistemose aptinkamų organizmų (pirmuonys, dumbliai ir kt.)
@@ -66,8 +66,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kur šios bakterijos veisiasi dažniausiai?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kur šios bakterijos veisiasi dažniausiai?</summary>
           <p className="importantMainText">
             Legionella bakterijos veisiasi stovinčiame vandenyje, kurio temperatūra 20-45 ºC.
             Tai gali būti šalto ir karšto vandens sistemos, vandens maišytuvo ir dušo galvutės,
@@ -82,8 +82,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kaip apsisaugoti nuo legioneliozės?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kaip apsisaugoti nuo legioneliozės?</summary>
           <p className="importantMainText">
             Pagrindinė legioneliozės prevencijos priemonė tinkama vandens sistemų eksploatacija.
             Tinkamas vandens temperatūros palaikymas vandens sistemose yra vienas
@@ -95,13 +95,13 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Ką galiu padaryti aš pats, kad mano vanduo būtų saugus?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Ką galiu padaryti aš pats, kad mano vanduo būtų saugus?</summary>
           <p className="importantMainText">
           Nesvarbu, ar naudojatės centralizuotai ruošiamo karšto vandens sistemomis,
           ar karštą vandenį ruošiate savarankiškai, kad išvengtumėte legioneliozės,
           turite laikytis šių taisyklių:
-          <br/><br/>
+            <br/><br/>
           1. Nuleisti užsistovėjusį vandenį. Karštas vanduo tiekimo sistemose ne tik turi
           būti atitinkamos temperatūros, bet ir jose neužsistovėti. Būtent stovinčiame,
           netinkamos temperatūros vandenyje bakterijos ir linkusios daugintis, todėl po
@@ -110,13 +110,13 @@ export const FAQ: React.FC = () => {
           esančio čiaupo stipria srove nuleisti 5 minutes ir tik tuomet po juo praustis.
           Tiek laiko reikia, kad jūsų bute esančiuose vamzdynuose kurį laiką stovėjęs
           ir galimai nesaugus vanduo nubėgtų ir iš čiaupo pradėtų bėgti tinkamos temperatūros vanduo.
-          <br/>
+            <br/>
           2. Reguliariai valyti dušų galvutes ir čiaupus. Legionelioze užsikrečiama ne vandenį geriant
           ar naudojant jį maistui gaminti, o įkvėpus vandens lašelių - aerozolio, kuris susidaro, pavyzdžiui,
           prausiantis duše. Todėl itin svarbus dalykas, kurio negalima pamiršti - reguliarus čiaupų,
           dušo galvučių valymas. Būtent dušų galvutėse ar čiaupuose ilgainiui susikaupusiose nuosėdose gali
           atsirasti ir daugintis legionelės. Rekomenduojama šiuos įrenginius valyti bent kartą per mėnesį, kad neužkalkėtų.
-          <br/>
+            <br/>
           3. Palaikyti tinkamą temperatūrą. Kad vandens sistemose legionelių,
           būtina palaikyti tinkamą vandens temperatūrą: karštas vanduo visada turi
           būti pakankamai karštas (čiaupuose ne mažiau kaip 50 °C), o šaltas - visada pakankamai
@@ -127,8 +127,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kokios temperatūros vanduo turi bėgti iš čiaupo?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kokios temperatūros vanduo turi bėgti iš čiaupo?</summary>
           <p className="importantMainText">
           Karšto vandens temperatūra vartotojų čiaupuose turi būti ne žemesnė kaip 50 °C
           (išmatavus temperatūrą po 1 min., kai buvo atsuktas čiaupas ir paleistas vanduo).
@@ -136,8 +136,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Kaip galiu suprasti, ar iš mano čiaupo bėga tinkamos temperatūros vanduo?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kaip galiu suprasti, ar iš mano čiaupo bėga tinkamos temperatūros vanduo?</summary>
           <p className="importantMainText">
           Jeigu atsukus karštą vandenį po 1 min. ranką išlaikyti po juo yra nesunku,
           galite įtarti, kad vandens temperatūra nesiekia 50 laipsnių.
@@ -147,8 +147,8 @@ export const FAQ: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Ką daryti, jeigu įtariu, kad iš čiaupo bėga nepakankamos temperatūros vanduo?</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Ką daryti, jeigu įtariu, kad iš čiaupo bėga nepakankamos temperatūros vanduo?</summary>
           <p className="importantMainText">
           Jei karštas vanduo ruošiamas individualiai, tuomet reikia pasitikrinti
           šildytuvo parametrus ir pakelti ruošiamo vandens temperatūrą.

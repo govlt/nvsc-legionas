@@ -18,8 +18,8 @@ const ExtraInfoIndividual = () => {
         “).
       </p>
     </>
-  )
-}
+  );
+};
 
 const ExtraInfoPublic = () => {
   return(
@@ -31,8 +31,8 @@ const ExtraInfoPublic = () => {
         <Link className="link" to="/teises-atsakomybes">Mano teisės ir pareigos</Link>
       </p>
     </>
-  )
-}
+  );
+};
 
 const InteractiveHeader: React.FC<InteractiveHeaderProps> = ({
   header,
@@ -44,7 +44,7 @@ const InteractiveHeader: React.FC<InteractiveHeaderProps> = ({
         <h3 className="interactiveHeader">
           {header}
         </h3>
-        {header == "Individualus namas"? <ExtraInfoIndividual/> : <ExtraInfoPublic/>}
+        {header == 'Individualus namas'? <ExtraInfoIndividual/> : <ExtraInfoPublic/>}
       </div>
     </>
   );

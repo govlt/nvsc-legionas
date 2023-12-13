@@ -10,7 +10,7 @@ export const PreventionInfoWaterSite: React.FC= () => {
 export const AdditionalInfoWaterSite: React.FC= () => {
   return(
     <div>
-      <h1 className='modalTopicHeader'>
+      <h1 className="modalTopicHeader">
         Geriamo vandens tiekėjų atsakomybės:
       </h1>
       <p>
@@ -23,7 +23,7 @@ export const AdditionalInfoWaterSite: React.FC= () => {
         pagal sveikatos apsaugos ministro nustatytus reikalavimus.
       </p>
 
-      <h1 className='modalTopicHeader'>
+      <h1 className="modalTopicHeader">
         Valstybinė maisto ir veterinarijos tarnyba vykdo:
       </h1>
       <p>

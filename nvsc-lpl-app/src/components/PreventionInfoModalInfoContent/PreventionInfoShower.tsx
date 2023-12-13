@@ -11,9 +11,9 @@ export const PreventionInfoShower: React.FC= () => {
 export const AdditionalInfoShower: React.FC= () => {
   return(
     <>
-    <p>
+      <p>
       Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti.
-    </p>
+      </p>
     </>
   );
 };

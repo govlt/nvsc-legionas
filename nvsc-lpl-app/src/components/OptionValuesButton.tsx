@@ -29,22 +29,22 @@ export const OptionValuesButtons: React.FC<OptionValueButtonProps> = ({
 
   return(
     <div className="switch-field">
-      <p className='optionButtonText'>
-        <img src={svg} className='optionImage'></img>
+      <p className="optionButtonText">
+        <img src={svg} alt="Pasirinkimo nuotrauka" className="optionImage"></img>
         &nbsp;{text}
       </p>
-      <div className='optionButtonContainer'>
+      <div className="optionButtonContainer">
         <button 
           className={`option ${property === optValue1 ? 'selected' : ''} ${disableOptValue1 ? 'disabled' : ''}`}
           onClick={() => handleValueChange(optValue1)}>
-          <div className='optionButton'>
+          <div className="optionButton">
             {optValue1}
           </div>
         </button>
         <button 
           className={`option ${property === optValue2 ? 'selected' : ''}`} 
           onClick={() => handleValueChange(optValue2)}>
-          <div className='optionButton'>
+          <div className="optionButton">
             {optValue2}
           </div>
         </button>

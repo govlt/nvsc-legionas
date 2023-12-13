@@ -9,13 +9,13 @@ import NVSCLogo from './assets/NVSC.svg';
 import LRVKLogo from './assets/LRVK.svg';
 
 export const preloadImageList = [
-    apartamnetsCC,
-    apartamnetsCI,
-    apartamnetsIC,
-    apartamnetsII,
-    houseCIG,
-    houseIIG,
-    KTULogo,
-    NVSCLogo,
-    LRVKLogo
+  apartamnetsCC,
+  apartamnetsCI,
+  apartamnetsIC,
+  apartamnetsII,
+  houseCIG,
+  houseIIG,
+  KTULogo,
+  NVSCLogo,
+  LRVKLogo
 ];

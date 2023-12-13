@@ -11,9 +11,9 @@ export const PreventionInfoSink: React.FC= () => {
 export const AdditionalInfoSink: React.FC= () => {
   return(
     <>
-    <p>
+      <p>
       Mano atsakomybė prižiūrėti karšto vandens įrenginių būklę, reguliariai dezinfekuoti.
-    </p>
+      </p>
     </>
   );
 };

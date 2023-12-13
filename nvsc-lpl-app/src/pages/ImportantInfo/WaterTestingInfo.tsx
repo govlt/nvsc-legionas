@@ -14,7 +14,7 @@ export const WaterTestingInfo: React.FC = () => {
         <h1 className="importantHeader">Geriamojo vandens tyrimų programos</h1>
         <hr/>
         
-        <p className='importantMainText'>
+        <p className="importantMainText">
           Geriamojo vandens tiekėjai turi rengti ir vykdyti geriamojo
           vandens stebėsenos programas. Šios stebėsenos tikslas yra: 
           <br/><br/>

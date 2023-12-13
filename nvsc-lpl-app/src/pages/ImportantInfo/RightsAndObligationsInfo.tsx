@@ -35,12 +35,12 @@ export const RightsAndObligationsInfo: React.FC = () => {
           eksploatuoti juos taip, kad jie neblogintų
           karšto vandens bei cirkuliacijos kokybės.
         </p>
-        <p className='importantSmallText'>
+        <p className="importantSmallText">
           Daugiabučio namo buto ar kitų patalpų savininko - buitinio karšto vandens vartotojo prievolė nurodyta
           ŠTVT 235.1. p., prižiūrėtojo ŠTVT 138 p., karšto vandens tiekėjo ŠTVT 231 p. ir šilumos tiekėjo ŠTVT 129 p.,
           ŠTVT 130 p. prievolės ir atsakomybės.
         </p>
-        <a className='importantSmallText' href='https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.384505/asr'>
+        <a className="importantSmallText" href="https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.384505/asr">
           ŠILUMOS TIEKIMO IR VARTOJIMO TAISYKLĖS
         </a>
         <p className="importantMainText">
@@ -52,7 +52,7 @@ export const RightsAndObligationsInfo: React.FC = () => {
           metus išplauti vamzdyną, pažymėdamas
           pastato techniniame pase.
         </p>
-        <a className='importantSmallText' href='https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.216857/asr'>
+        <a className="importantSmallText" href="https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.216857/asr">
             Reikalavimas nurodytas STR 2.07.01:2003 „Vandentiekis ir nuotekų
             šalintuvas. Pastato inžinerinės sistemos. Lauko inžineriniai tinklai“ 168
             punkte, Galiojanti suvestinė redakcija (nuo 2023-07-25).

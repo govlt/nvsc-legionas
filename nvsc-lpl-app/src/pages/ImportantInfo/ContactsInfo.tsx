@@ -14,8 +14,8 @@ export const ContactsInfo: React.FC = () => {
         <h1 className="importantHeader">Kontaktinė informacija</h1>
         <br/>
         
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Aplinkos ministerija</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">LR Aplinkos ministerija</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -25,7 +25,7 @@ export const ContactsInfo: React.FC = () => {
             paėmimo vietos nustatymu, skirtu
             geriamojo vandens saugai ir
             kokybei tikrinti.
-            <p className='importantSmallText'>
+            <p className="importantSmallText">
               Geriamojo vandens tiekimo ir
               nuotekų tvarkymo įstatymas
               (20 str. 2 d. 14 p.)
@@ -40,8 +40,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Energetikos ministerija </summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">LR Energetikos ministerija </summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -76,8 +76,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>LR Sveikatos apsaugos ministerija</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">LR Sveikatos apsaugos ministerija</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -97,8 +97,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Valstybinė maisto ir veterinarijos tarnyba</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Valstybinė maisto ir veterinarijos tarnyba</summary>
           <p className="importantMainText">
             Vykdo:
             <br/>
@@ -131,8 +131,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Valstybinė energetikos reguliavimo taryba </summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Valstybinė energetikos reguliavimo taryba </summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -206,8 +206,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Nacionalinis visuomenės sveikatos centras</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Nacionalinis visuomenės sveikatos centras</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -229,7 +229,7 @@ export const ContactsInfo: React.FC = () => {
             - Pagal kompetenciją konsultuoja ūkio
             subjektus, legioneliozės prevencijos
             klausimais.
-            <p className='importantSmallText'>
+            <p className="importantSmallText">
               Lietuvos higienos normos HN 24:2023 „Geriamojo
               vandens saugos ir kokybės reikalavimai“ patvirtinta
               Lietuvos Respublikos sveikatos apsaugos ministro
@@ -252,8 +252,8 @@ export const ContactsInfo: React.FC = () => {
 
         
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>BNO administratorius</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">BNO administratorius</summary>
           <p className="importantMainText">
             BNO – bendrojo naudojimo objektai, kaip bendros patalpos,
             laiptinės, stogas, bendri koridoriai ir panašiai, kurių
@@ -292,8 +292,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Centriniai šilumos tinklai</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Centriniai šilumos tinklai</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -328,8 +328,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Geriamo vandens tiekėjai</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Geriamo vandens tiekėjai</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>
@@ -353,8 +353,8 @@ export const ContactsInfo: React.FC = () => {
           <hr/>
         </details>
 
-        <details className='imporantInfoCollapsible'>
-          <summary className='importantInfoCollapsibleSummary importantTextHeader'>Savivaldybių administracijos</summary>
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Savivaldybių administracijos</summary>
           <p className="importantMainText">
             Atsakomybės:
             <br/>

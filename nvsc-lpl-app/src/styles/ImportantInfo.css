@@ -107,12 +107,13 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 15px #12112714;
     border-radius: 12px;
-    width: 300px;
-    height: 110px;
+    width: 340px;
+    height: 150px;
     padding: 20px;
     margin: 20px;
     text-align: center;
     cursor: pointer;
+    border: none;
 }
 
 .importantCardHeader{
@@ -121,6 +122,7 @@
     font: normal normal bold 18px/21px "Public Sans", Arial, Sans-Serif;
     color: #091A5A;
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 .importantCardText{

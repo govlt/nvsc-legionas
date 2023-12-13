@@ -22,10 +22,10 @@ export const Home: React.FC = () => {
 
   useEffect(() => {
     // localStorage vs sessionStorage???
-    const savedState = sessionStorage.getItem("welcomeModal");
+    const savedState = sessionStorage.getItem('welcomeModal');
     if (savedState) return;
     setShowWelcomeModal(true);
-    sessionStorage.setItem("welcomeModal", "true");
+    sessionStorage.setItem('welcomeModal', 'true');
   }, []);
 
   useEffect(() => {
@@ -33,25 +33,25 @@ export const Home: React.FC = () => {
   }, []);
 
   if (!imagesPreloaded) {
-  return (
-    <p>Loading assets</p>
-  )
+    return (
+      <p>Loading assets</p>
+    );
   }
 
   return (
     <>
       <InfoHeader/>
 
-      <div className='homeWindowCenteringContainer'>
-        <div className='homeWindowContainer'>
+      <div className="homeWindowCenteringContainer">
+        <div className="homeWindowContainer">
           <div>
-            <h1 className='homeMainHeader'>
+            <h1 className="homeMainHeader">
               Legionas prieš legioneles
             </h1> 
           </div>
 
-          <div className='homeMainTextGridContainer'>
-            <div className='homeMainTextContainer'>
+          <div className="homeMainTextGridContainer">
+            <div className="homeMainTextContainer">
               <h3>
                 Legioneliozė, nors ir ne visada plačiai aptariama,
                 yra rimta grėsmė visuomenės sveikatai, 
@@ -72,44 +72,47 @@ export const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className='homeMainButtonContainer'>
+          <div className="homeMainButtonContainer">
             <button className="homeMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
               Susipažinti kaip apsisaugoti
             </button>
           </div>
 
-          <div className='homeChartContainer'>
-            <div id="chart" className='homeChart'>
+          <div className="homeChartContainer">
+            <div id="chart" className="homeChart">
               <Chart/>
             </div>
-            <div className='chartFiller'></div>
+            <div className="chartFiller"></div>
             <a className="homeChartText"
-                href = 'https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji'>
+              href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
               Grafikas parengtas pagal statistikos departamento duomenis.
             </a>
           </div>
         </div>
       </div>
 
-      <div className='homeFiller'></div>
-      <div className='homeFooter'>
+      <div className="homeFiller"></div>
+      <div className="homeFooter">
         <p>
           Projektas gimė siekiant padididinti gyventojų
           sąmoningumą kovoje su legionelioze.
           Projekto partneriai: 
         </p>
-        <div className='homeFooterPartnerContainer'>
-          <div className='homeFooterPartner'>
-            <img src={KTULogo} className='homeFooterImage'
-            onClick={()=>window.open('https://ktu.edu')}></img>
+        <div className="homeFooterPartnerContainer">
+          <div className="homeFooterPartner">
+            <a href="https://ktu.edu" target="_blank" rel="noopener noreferrer" >
+              <img src={KTULogo} alt="KTU logotipas" className="homeFooterImage" />
+            </a>
           </div>
-          <div className='homeFooterPartner'>
-            <img src={NVSCLogo} className='homeFooterImage'
-            onClick={()=>window.open('https://nvsc.lrv.lt')}></img>
+          <div className="homeFooterPartner">
+            <a href="https://nvsc.lrv.lt" target="_blank" rel="noopener noreferrer" >
+              <img src={NVSCLogo} alt="NVSC logotipas" className="homeFooterImage" />
+            </a>
           </div>
-          <div className='homeFooterPartner'>
-            <img src={LRVKLogo} className='homeFooterImage'
-            onClick={()=>window.open('https://lrvk.lrv.lt')}></img>
+          <div className="homeFooterPartner">
+            <a href="https://lrvk.lrv.lt" target="_blank" rel="noopener noreferrer" >
+              <img src={LRVKLogo} alt="LRVK logotipas" className="homeFooterImage" />
+            </a>
           </div>
         </div>
       </div>

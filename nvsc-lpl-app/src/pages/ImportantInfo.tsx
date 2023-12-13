@@ -22,13 +22,13 @@ export const ImportantInfo: React.FC = () => {
     <>
       <InfoHeader/>
       
-      <div className='importantWindowContainer'>
+      <div className="importantWindowContainer">
         <div className="importantContainer">
-          <div className='importantHeaderContainer'>
+          <div className="importantHeaderContainer">
             <h1 className="importantHeader">
               Svarbu žinoti
             </h1>
-            <div className='importantInfoMainButtonContainer'>
+            <div className="importantInfoMainButtonContainer">
               <button className="importantInfoMainButton" onClick={() => navigate('/kaip-apsisaugoti')}>
                 Susipažinti kaip apsisaugoti
               </button>

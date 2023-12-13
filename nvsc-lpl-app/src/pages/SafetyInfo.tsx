@@ -35,10 +35,10 @@ import { PreventionInfoBoreHole } from '../components/PreventionInfoModalInfoCon
 import { AdditionalInfoBoreHole } from '../components/PreventionInfoModalInfoContent/PreventionInfoBoreHole';
 import { DaugiabutisDefaultButtons, DaugiabutisAdditionalHot, IndividualusDefaultButtons} from '../components/PulsingButtons.tsx';
 import InteractiveHeader from '../components/InteractiveHeader.tsx';
-import HouseSVG from '../assets/daugiabutis_ikona.svg'
-import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg'
-import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg'
-import SettingsSVG from '../assets/cog.svg'
+import HouseSVG from '../assets/daugiabutis_ikona.svg';
+import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg';
+import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg';
+import SettingsSVG from '../assets/cog.svg';
 import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, LegionInfoRed, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
 
 export const SafetyInfo: React.FC = () => {
@@ -129,12 +129,12 @@ export const SafetyInfo: React.FC = () => {
     <>
       <InfoHeader/>
       { residenceType === 'Daugiabutyje' &&
-        <div className='firstInteractiveHeader'>
+        <div className="firstInteractiveHeader">
           <InteractiveHeader header="Daugiabutis namas"/>
         </div>
       }
       { residenceType === 'Individualiame name' &&
-        <div className='firstInteractiveHeader'>
+        <div className="firstInteractiveHeader">
           <InteractiveHeader header="Individualus namas"/>
         </div>
       }
@@ -223,7 +223,7 @@ export const SafetyInfo: React.FC = () => {
 
       
       <div className="interactiveButtonAndTextContainer interactive1">
-        <div className='interactiveButtonContainer'>
+        <div className="interactiveButtonContainer">
           <div className="optionButtons">
             <OptionsButton
               residenceType={residenceType}
@@ -236,12 +236,12 @@ export const SafetyInfo: React.FC = () => {
           </div>
         </div>
         { residenceType === 'Daugiabutyje' &&
-          <div className='secondInteractiveHeader'>
+          <div className="secondInteractiveHeader">
             <InteractiveHeader header="Daugiabutis namas"/>
           </div>
         }
         { residenceType === 'Individualiame name' &&
-          <div className='secondInteractiveHeader'>
+          <div className="secondInteractiveHeader">
             <InteractiveHeader header="Individualus namas"
             />
           </div>
@@ -249,9 +249,9 @@ export const SafetyInfo: React.FC = () => {
       </div>
       <br/><br/><br/><br/>
 
-      <div className='optionFooter'>
+      <div className="optionFooter">
         <div className={`interactiveButtonAndTextContainer interactive2 ${footerVisibility ? 'openFooter' : ''}`}>
-          <div className='interactiveButtonContainer'>
+          <div className="interactiveButtonContainer">
             <div className="optionButtons">
               <OptionsButton
                 residenceType={residenceType}
@@ -264,12 +264,12 @@ export const SafetyInfo: React.FC = () => {
             </div>
           </div>
           { residenceType === 'Daugiabutyje' &&
-            <div className='secondInteractiveHeader'>
+            <div className="secondInteractiveHeader">
               <InteractiveHeader header="Daugiabutis namas"/>
             </div>
           }
           { residenceType === 'Individualiame name' &&
-            <div className='secondInteractiveHeader'>
+            <div className="secondInteractiveHeader">
               <InteractiveHeader header="Individualus namas"/>
             </div>
           }
@@ -280,23 +280,23 @@ export const SafetyInfo: React.FC = () => {
 
 
         <div className={`optionFooterSettings ${footerVisibility ? '' : 'openFooterSettings'}`}>
-          <div className='optionFooterItemContainer' style={{marginLeft: '10px'}}>
-            <img src={HouseSVG} className="optionFooterImage"></img>
-            <p className='optionFooterText'>{residenceType}</p>
+          <div className="optionFooterItemContainer" style={{marginLeft: '10px'}}>
+            <img src={HouseSVG} alt="Gyvenamojo namo ikona" className="optionFooterImage"></img>
+            <p className="optionFooterText">{residenceType}</p>
           </div>
-          <div className='optionFooterItemContainer'>
-            <img src={HotWaterSVG} className="optionFooterImage"></img>
-            <p className='optionFooterText'>{hotWaterSource}</p>
+          <div className="optionFooterItemContainer">
+            <img src={HotWaterSVG} alt="Karšto vandens ikona" className="optionFooterImage"></img>
+            <p className="optionFooterText">{hotWaterSource}</p>
           </div>
-          <div className='optionFooterItemContainer'>
-            <img src={ColdWaterSVG} className="optionFooterImage"></img>
-            <p className='optionFooterText'>{drinkingWaterSource}</p>
+          <div className="optionFooterItemContainer">
+            <img src={ColdWaterSVG} alt="Šalto vandens ikona" className="optionFooterImage"></img>
+            <p className="optionFooterText">{drinkingWaterSource}</p>
           </div>
-          <button className='optionFooterItemContainer optionFooterButton'
-              style={{marginRight: '10px'}}
-              onClick={() => changeVisibility(!footerVisibility)}>
-            <img src={SettingsSVG} className="optionFooterImage"></img>
-            <p className='optionFooterText'>
+          <button className="optionFooterItemContainer optionFooterButton"
+            style={{marginRight: '10px'}}
+            onClick={() => changeVisibility(!footerVisibility)}>
+            <img src={SettingsSVG} alt="Nustatymų ikona" className="optionFooterImage"></img>
+            <p className="optionFooterText">
               {footerVisibility? 'Keisti nustatymus': 'Saugoti'}
             </p>
           </button>

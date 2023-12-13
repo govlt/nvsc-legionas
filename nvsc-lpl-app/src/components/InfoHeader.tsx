@@ -5,21 +5,21 @@ const InfoHeader = () => {
   const navigate = useNavigate();
   return(
     <>
-    <div className="infoContainer">
-      <div className='infoItemContainer'>
-        <button className="infoLogo" onClick={() => navigate('/')}>
-          <img src={LPLLogo} alt="LPL Logotipas"></img>
-        </button>
-      </div>
+      <div className="infoContainer">
+        <div className="infoItemContainer">
+          <button className="infoLogo" onClick={() => navigate('/')}>
+            <img src={LPLLogo} alt="LPL Logotipas"></img>
+          </button>
+        </div>
       
-      <div className='infoItemContainer'>
-        <button className="blob" onClick={() => navigate('/svarbu-zinoti')}>
+        <div className="infoItemContainer">
+          <button className="blob" onClick={() => navigate('/svarbu-zinoti')}>
           Svarbu žinoti
-        </button>
+          </button>
+        </div>
       </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
 export default InfoHeader;
