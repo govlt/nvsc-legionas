@@ -7,8 +7,12 @@ import { WelcomeModal } from '../components/WelcomeModal.tsx';
 import KTULogo from '../assets/KTUIF.svg';
 import NVSCLogo from '../assets/NVSC.svg';
 import LRVKLogo from '../assets/LRVK.svg';
+import useImagePreloader from '../hooks/PreloadImages.tsx';
+import { preloadImageList } from '../preloadImageList.tsx';
 
 export const Home: React.FC = () => {
+  const {imagesPreloaded} = useImagePreloader(preloadImageList);
+
   const navigate = useNavigate();
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
 
@@ -27,6 +31,12 @@ export const Home: React.FC = () => {
   useEffect(() => {
     return () => {window.scrollTo(0, 0);};
   }, []);
+
+  if (!imagesPreloaded) {
+  return (
+    <p>Loading assets</p>
+  )
+  }
 
   return (
     <>
