@@ -69,7 +69,7 @@ export const Home: React.FC = () => {
                 sukelianti pavojingas ir net mirtinas pasekmes.
               </h3>
               <h3>
-                Ši liga, kurią sukelia bakterijos, vadinamos legionelėmis, 
+                Ši liga, kurią sukelia įkvėptos bakterijos, vadinamos legionelėmis, 
                 dažniausiai plinta per užterštą vandenį,
                 todėl yra svarbu žinoti ir suprasti, kaip to galima išvengti.
               </h3>
