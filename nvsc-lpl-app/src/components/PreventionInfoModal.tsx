@@ -26,7 +26,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
   const [focusTrap, setFocusTrap] = useState<FocusTrap | null>(null);
 
   const onCloseAction = () => {
-    focusTrap!.deactivate();
+    focusTrap?.deactivate();
     onClose();
   };
 
@@ -54,8 +54,7 @@ export const PreventionInfoModal: React.FC<PreventionInfoModalProps> = ({
 
   return (
     <>
-      <div id="preventionInfoModal" className="modalBackground"
-        style={{height: window.document.body.scrollHeight}}>
+      <div id="preventionInfoModal" className="modalBackground">
         <div className="modal" ref={wrapperRef}>
           <button 
             className="close" 

@@ -40,6 +40,7 @@ import ColdWaterSVG from '../assets/melynas_ciaupas_ikona.svg';
 import HotWaterSVG from '../assets/raudonas_ciaupas_ikona.svg';
 import SettingsSVG from '../assets/cog.svg';
 import { ContactsLink, LegionInfoHeater, LegionInfoHeatingPoint, LegionInfoInside, LegionInfoNothing, LegionInfoRed, RightsAndObligationsLink } from '../components/PreventionInfoModalInfoContent/LegionInfo.tsx';
+import { useModalOverflow } from '../hooks/useModalOverflow.tsx';
 
 export const SafetyInfo: React.FC = () => {
   const [residenceType, setResidenceType] = useState('Daugiabutyje');
@@ -55,70 +56,88 @@ export const SafetyInfo: React.FC = () => {
   const [showBoreHoleInfoModal, setShowBoreHoleInfoModal] = useState(false);
 
   const [footerVisibility, changeVisibility] = useState(false);
+
+  const {setHideBodyOverflow} = useModalOverflow();
   
 
   const handleBathModalClick = () => {
     setShowBathInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseBathModal = () => {
     setShowBathInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleSinkModalClick = () => {
     setShowSinkInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseSinkModal = () => {
     setShowSinkInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleShowerModalClick = () => {
     setShowShowerInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseShowerModal = () => {
     setShowShowerInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleHeatingPointModalClick = () => {
     setShowHeatingPointInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseHeatingPointModal = () => {
     setShowHeatingPointInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleHeaterModalClick = () => {
     setShowHeaterInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseHeaterModal = () => {
     setShowHeaterInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleHotWaterProviderModalClick = () => {
     setShowHotWaterProviderInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseHotWaterProviderModal = () => {
     setShowHotWaterProviderInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleWaterSiteModalClick = () => {
     setShowWaterSiteInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseWaterSiteModal = () => {
     setShowWaterSiteInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   const handleBoreHoleModalClick = () => {
     setShowBoreHoleInfoModal(true);
+    setHideBodyOverflow(true);
   };
 
   const handleCloseBoreHoleModal = () => {
     setShowBoreHoleInfoModal(false);
+    setHideBodyOverflow(false);
   };
 
   useEffect(() => {
