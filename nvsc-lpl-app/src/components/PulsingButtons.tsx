@@ -64,7 +64,6 @@ export const DaugiabutisDefaultButtons: React.FC<HouseItems> = ({
         aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
-
       <button 
         className="buttonOnImage" 
         style={{top: '62%',  left: '42.5%', backgroundColor: '#DE1829'}}
@@ -107,7 +106,6 @@ export const DaugiabutisDefaultButtons: React.FC<HouseItems> = ({
         aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
-
       <button 
         className="buttonOnImage" 
         style={{top: '84%',  left: '45%', backgroundColor: '#DE1829'}} 
@@ -150,12 +148,14 @@ export const DaugiabutisAdditionalHot: React.FC<SingleButton> = ({
         className="buttonOnImage" 
         style={{top: '89%',  left: '15%'}} 
         onClick={singleButton}
+        aria-label="Atidaryti prevencinę informaciją"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '89%',  left: '15%'}} 
         onClick={singleButton}
+        aria-label="Atidaryti prevencinę informaciją"
         tabIndex={-1}
       />
     </>
@@ -215,29 +215,32 @@ export const IndividualusDefaultButtons: React.FC<HouseItems> = ({
         aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
-
       <button 
         className="buttonOnImage" 
         style={{top: '80%',  left: '39%', backgroundColor: '#DE1829'}} 
         onClick={heatingButton}
+        aria-label="Atidaryti prevencinę informaciją apie šildytuvą"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '80%',  left: '39%', backgroundColor: '#DE1829'}} 
         onClick={heatingButton}
+        aria-label="Atidaryti prevencinę informaciją apie šildytuvą"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '70.5%',  left: '15.25%'}} 
         onClick={coldButton}
+        aria-label="Atidaryti prevencinę informaciją apie vandens tiekimą"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '70.5%',  left: '15.25%'}} 
         onClick={coldButton}
+        aria-label="Atidaryti prevencinę informaciją apie vandens tiekimą"
         tabIndex={-1}
       />
     </>
