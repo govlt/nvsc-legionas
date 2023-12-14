@@ -47,7 +47,7 @@ body{
     z-index: 20;
     background: rgb(0, 0, 0, 0.6);
     opacity: 1;
-    animation: yeet 3s;
+    animation: yeet 4s;
     -webkit-animation: yeet 3s;
 }
 
@@ -57,6 +57,9 @@ body{
     }
     50% {
         opacity: 1;
+    }
+    75% {
+        opacity: 0;
     }
     100% {
         opacity: 0;
