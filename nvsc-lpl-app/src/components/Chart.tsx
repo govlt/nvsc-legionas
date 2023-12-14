@@ -26,10 +26,10 @@ export const Chart: React.FC = () => {
         }
 
         if (item.mirtis === true) {
-          groupedData[year].deaths++;
+          groupedData[year].deaths+= item.atvejai;
         }
 
-        groupedData[year].infections++;
+        groupedData[year].infections += item.atvejai;
       });
 
       // Find the minimum and maximum years in the results

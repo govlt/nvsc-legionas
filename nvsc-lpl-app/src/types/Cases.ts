@@ -5,4 +5,5 @@ export interface Cases {
 export interface Case {
   pranesimo_menuo: Date;
   mirtis: boolean | null;
+  atvejai: number;
 }
