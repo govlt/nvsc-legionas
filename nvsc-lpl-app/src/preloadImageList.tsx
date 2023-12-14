@@ -19,6 +19,15 @@ import LPLLogo from './assets/legion.svg';
 import KTULogo from './assets/KTUIF.svg';
 import NVSCLogo from './assets/NVSC.svg';
 import LRVKLogo from './assets/LRVK.svg';
+import bath from './assets/vonia_back.svg';
+import boreHole from './assets/grezinys.svg';
+import heater from './assets/vandens_sildytuvas.svg';
+import heatingPoint from './assets/silumos_punktas.svg';
+import hotWaterProvider from './assets/centriniai_silumos_tinklai.svg';
+import shower from './assets/dusas_back.svg';
+import sink from './assets/kriaukle_back.svg';
+import waterSite from './assets/vandenviete.svg';
+
 
 
 export const preloadImageList = [
@@ -42,5 +51,13 @@ export const preloadImageList = [
   LPLLogo,
   KTULogo,
   NVSCLogo,
-  LRVKLogo
+  LRVKLogo,
+  bath,
+  boreHole,
+  heater,
+  heatingPoint,
+  hotWaterProvider,
+  shower,
+  sink,
+  waterSite
 ];
