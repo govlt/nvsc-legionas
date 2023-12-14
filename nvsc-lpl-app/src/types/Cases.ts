@@ -3,7 +3,7 @@ export interface Cases {
 }
 
 export interface Case {
-  pranesimo_menuo: Date;
+  pranesimo_menuo: string;
   mirtis: boolean | null;
   atvejai: number;
 }
