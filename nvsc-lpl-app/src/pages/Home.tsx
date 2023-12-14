@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
 
   if (!imagesPreloaded) {
     return (
-      <div className='loadingCircle'>
+      <div className="loadingCircle">
         <CircularProgress size="10vh"/>
       </div>
       

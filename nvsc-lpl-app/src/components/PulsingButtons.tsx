@@ -25,37 +25,43 @@ export const DaugiabutisDefaultButtons: React.FC<HouseItems> = ({
       <button 
         className="buttonOnImage" 
         style={{top: '33.75%',  left: '42.75%', backgroundColor: '#DE1829'}} 
-        onClick={sinkButton} 
+        onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={0}
       />
       <button
         className="wave" 
         style={{top: '33.75%',  left: '42.75%', backgroundColor: '#DE1829'}} 
         onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '37%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={0}
       />
       <button 
         className="wave" 
         style={{top: '37%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '25%',  left: '77.75%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '25%',  left: '77.75%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
 
@@ -63,36 +69,42 @@ export const DaugiabutisDefaultButtons: React.FC<HouseItems> = ({
         className="buttonOnImage" 
         style={{top: '63%',  left: '42.75%', backgroundColor: '#DE1829'}}
         onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '63%',  left: '42.75%', backgroundColor: '#DE1829'}} 
         onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '66%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '66%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '54%',  left: '77.75%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '54%',  left: '77.75%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
 
@@ -161,36 +173,42 @@ export const IndividualusDefaultButtons: React.FC<HouseItems> = ({
         className="buttonOnImage" 
         style={{top: '49.75%',  left: '43%', backgroundColor: '#DE1829'}} 
         onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '49.75%',  left: '43%', backgroundColor: '#DE1829'}} 
         onClick={sinkButton}
+        aria-label="Atidaryti prevencinę informaciją apie kriauklę"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '54%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '54%',  left: '59.75%', backgroundColor: '#DE1829'}} 
         onClick={bathButton}
+        aria-label="Atidaryti prevencinę informaciją apie vonią"
         tabIndex={-1}
       />
       <button 
         className="buttonOnImage" 
         style={{top: '38%',  left: '78%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={0} 
       />
       <button 
         className="wave" 
         style={{top: '38%',  left: '78%', backgroundColor: '#DE1829'}} 
         onClick={showerButton}
+        aria-label="Atidaryti prevencinę informaciją apie dušą"
         tabIndex={-1}
       />
 
