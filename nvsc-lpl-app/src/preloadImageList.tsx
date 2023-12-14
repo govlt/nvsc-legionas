@@ -27,6 +27,7 @@ import hotWaterProvider from './assets/centriniai_silumos_tinklai.svg';
 import shower from './assets/dusas_back.svg';
 import sink from './assets/kriaukle_back.svg';
 import waterSite from './assets/vandenviete.svg';
+import background from './assets/legionas_pries_legioneles_01.png';
 
 
 
@@ -59,5 +60,6 @@ export const preloadImageList = [
   hotWaterProvider,
   shower,
   sink,
-  waterSite
+  waterSite,
+  background
 ];
