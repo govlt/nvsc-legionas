@@ -11,12 +11,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'jsx-a11y'],
   rules: {
-    'jsx-a11y/anchor-is-valid': 'warn',  // Warns on invalid anchor elements
-    'jsx-a11y/label-has-associated-control': [ 'error', {
-      required: {
-        some: ['nesting', 'id']
-      }
-    }],
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': 'error',
