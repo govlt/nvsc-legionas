@@ -119,7 +119,7 @@ export const Chart: React.FC = () => {
         lineThickness: 5,
       },
       {
-        label: 'Užsikrėtimai',
+        label: 'Atvejai',
         borderWidth: 5,
         data: results.map((item) => item.infections),
         tension: 0.3, // smoothness of line
