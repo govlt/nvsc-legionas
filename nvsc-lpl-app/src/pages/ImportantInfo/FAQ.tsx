@@ -157,6 +157,26 @@ export const FAQ: React.FC = () => {
           </p>
           <hr/>
         </details>
+
+        <details className="imporantInfoCollapsible">
+          <summary className="importantInfoCollapsibleSummary importantTextHeader">Kokiais atvejais daugiabučiame gyvenamajame name gali būti atliekama terminė dezinfekcija?</summary>
+          <p className="importantMainText">
+          Karšto vandens sistemas rekomenduojama plauti ir dezinfekuoti, kai jos
+          pradedamos naudoti daugiau kaip po vieno mėnesio pertraukos, po vandens tiekimo
+          sistemos rekonstrukcijos, remonto arba kai diagnozuojami vartotojų susirgimai
+          legionelioze. Dezinfekcija gali būti terminė arba cheminė.
+
+          Apie planuojamos karšto vandens sistemos dezinfekcijos atlikimo datą ir laiką,
+          jos tikslus, trukmę ir būtinas saugos priemones pastato šildymo ir karšto vandens
+          sistemų prižiūrėtojas (eksploatuotojas) ir karšto vandens tiekėjas ne vėliau
+          kaip prieš dvi kalendorines dienas privalo raštu informuoti vartotojus.
+
+          Jei atliekama terminė dezinfekcija (termošokas), svarbu, kad gyventojai 
+          bendradarbiautų ir atliktų prašomus veiksmus – po terminės dezinfekcijos
+          bent 5 minutėms atsuktų visus bute esančius karšto vandens čiaupus.         
+          </p>
+          <hr/>
+        </details>
       </div>
     </>
   );
