@@ -6,6 +6,7 @@ import '../styles/Home.css';
 import { WelcomeModal } from '../components/WelcomeModal.tsx';
 import KTULogo from '../assets/KTUIF.svg';
 import NVSCLogo from '../assets/NVSC.svg';
+import VVTATLogo from '../assets/VVTAT.svg';
 import LRVKLogo from '../assets/LRVK.svg';
 import useImagePreloader from '../hooks/PreloadImages.tsx';
 import { preloadImageList } from '../preloadImageList.tsx';
@@ -118,6 +119,11 @@ export const Home: React.FC = () => {
           <div className="homeFooterPartner">
             <a href="https://nvsc.lrv.lt" target="_blank" rel="noopener noreferrer" >
               <img src={NVSCLogo} alt="NVSC logotipas" className="homeFooterImage" />
+            </a>
+          </div>
+          <div className="homeFooterPartner">
+            <a href="https://www.vvtat.lt/" target="_blank" rel="noopener noreferrer" >
+              <img src={VVTATLogo} alt="VVTAT logotipas" className="homeFooterImage" />
             </a>
           </div>
           <div className="homeFooterPartner">
