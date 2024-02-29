@@ -18,7 +18,7 @@ import SettingsSVG from './assets/cog.svg';
 import LPLLogo from './assets/legion.svg';
 import KTULogo from './assets/KTUIF.svg';
 import NVSCLogo from './assets/NVSC.svg';
-import VVTATLogo from '.assets/VVTAT.svg';
+import VVTATLogo from './assets/VVTAT.svg';
 import LRVKLogo from './assets/LRVK.svg';
 import bath from './assets/vonia_back.svg';
 import boreHole from './assets/grezinys.svg';
