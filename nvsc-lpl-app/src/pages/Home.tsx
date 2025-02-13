@@ -90,13 +90,13 @@ export const Home: React.FC = () => {
             </button>
           </div>
            <div className="homeChartContainer">
-            <div id="chart" className="homeChart">
+             {/* <div id="chart" className="homeChart">
                <Chart/>
             </div>
             <div className="chartFiller"></div>
             <a className="homeChartText"
               href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
-           </div>    Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
+           </div>    Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.. */}
             </a>
           </div>
         </div>
