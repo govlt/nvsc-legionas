@@ -7,43 +7,26 @@ import { ChartOptions } from 'chart.js';
 
 export const Chart: React.FC = () => {
   const { cases } = useCases();
-  const [results, setResults] = useState<{ year: number; infections: number; deaths: number }[]>([]);
+  const [results, setResults] = useState<{ year: number; infections: number }[]>([]);
 
   useEffect(() => {
     if (cases) {
-      const groupedData: { [key: number]: { year: number; infections: number; deaths: number } } = {};
+      const groupedData: { [key: number]: { year: number; infections: number } } = {};
 
       cases.forEach((item: Case) => {
-        const date = new Date(item.pranesimo_menuo);
-        const year = date.getFullYear();
-
+        const year = new Date(item.pranesimo_menuo).getFullYear();
         if (!groupedData[year]) {
-          groupedData[year] = {
-            year,
-            infections: 0,
-            deaths: 0,
-          };
+          groupedData[year] = { year, infections: 0 };
         }
-
-        if (item.mirtis === true) {
-          groupedData[year].deaths += item.atvejai;
-        }
-
         groupedData[year].infections += item.atvejai;
       });
 
-      const minYear = Math.min(...Object.keys(groupedData).map(Number));
-      const maxYear = Math.max(...Object.keys(groupedData).map(Number));
-      const allYears = Array.from({ length: maxYear - minYear + 1 }, (_, index) => minYear + index);
+      const allYears = Array.from(
+        { length: Math.max(...Object.keys(groupedData).map(Number)) - Math.min(...Object.keys(groupedData).map(Number)) + 1 },
+        (_, index) => Math.min(...Object.keys(groupedData).map(Number)) + index
+      );
 
-      const filledResults = allYears.map((year) => {
-        if (groupedData[year]) {
-          return groupedData[year];
-        } else {
-          return { year, infections: 0, deaths: 0 };
-        }
-      });
-
+      const filledResults = allYears.map((year) => groupedData[year] || { year, infections: 0 });
       setResults(filledResults);
     }
   }, [cases]);
@@ -55,42 +38,15 @@ export const Chart: React.FC = () => {
       tooltip: {
         displayColors: false,
         backgroundColor: 'rgba(72, 99, 160, 1)',
-        bodyFont: {
-          size: 20,
-          family: 'Public Sans',
-          weight: 'normal',
-          style: 'normal'
-        },
-        callbacks: {
-          title: () => '',
-        }
+        bodyFont: { size: 20, family: 'Public Sans' },
+        callbacks: { title: () => '' }
       },
-      legend: {
-        display: false,
-      },
-      title: {
-        display: false,
-      },
+      legend: { display: false },
+      title: { display: false },
     },
     scales: {
-      x: {
-        grid: {
-          display: false,
-        },
-        ticks: {
-          color: '#4C74F5',
-        },
-        border: {
-          width: 1,
-          color: '#4C74F5',
-        },
-      },
-      y: {
-        display: false,
-        grid: {
-          display: false,
-        },
-      },
+      x: { grid: { display: false }, ticks: { color: '#4C74F5' }, border: { width: 1, color: '#4C74F5' } },
+      y: { display: false, grid: { display: false } },
     }
   };
 
@@ -111,18 +67,9 @@ export const Chart: React.FC = () => {
         pointHoverRadius: 10,
         pointBorderColor: '#FFFFFF',
         pointBorderWidth: 2,
-      },
-    ],
+      }
+    ]
   };
 
-  return (
-    <>
-      {results.length > 0 &&
-        <Line
-          options={options} 
-          data={data} 
-        />
-      }
-    </>
-  );
+  return results.length > 0 ? <Line options={options} data={data} /> : null;
 };
