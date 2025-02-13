@@ -96,7 +96,7 @@ export const Home: React.FC = () => {
             <div className="chartFiller"></div>
             <a className="homeChartText"
               href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
-           </div>    Grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
+           </div>    Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
             </a>
           </div>
         </div>
