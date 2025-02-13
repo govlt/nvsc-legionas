@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Chart } from '../components/Chart';
 import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
