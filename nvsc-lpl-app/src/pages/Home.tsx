@@ -89,8 +89,8 @@ export const Home: React.FC = () => {
               Susipažinti kaip apsisaugoti
             </button>
           </div>
-
-          <div className="homeChartContainer">
+/*
+           <div className="homeChartContainer">
             <div id="chart" className="homeChart">
               <Chart/>
             </div>
@@ -100,6 +100,7 @@ export const Home: React.FC = () => {
               Grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.
             </a>
           </div>
+*/
         </div>
       </div>
 
