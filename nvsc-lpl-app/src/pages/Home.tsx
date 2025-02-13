@@ -99,7 +99,7 @@ export const Home: React.FC = () => {
               href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
               Grafikas
             </a> */}
-            Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
+            Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.
           </div>
         </div>
       </div>
