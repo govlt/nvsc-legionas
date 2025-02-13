@@ -89,18 +89,18 @@ export const Home: React.FC = () => {
               Susipažinti kaip apsisaugoti
             </button>
           </div>
-/*
-           <div className="homeChartContainer">
-            <div id="chart" className="homeChart">
-              <Chart/>
-            </div>
-            <div className="chartFiller"></div>
-            <a className="homeChartText"
-              href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
-              Grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.
-            </a>
-          </div>
-*/
+
+    //       <div className="homeChartContainer">
+    //        <div id="chart" className="homeChart">
+    //          <Chart/>
+    //        </div>
+    //        <div className="chartFiller"></div>
+    //        <a className="homeChartText"
+    //          href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
+    //          Grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis.
+    //        </a>
+    //      </div>
+
         </div>
       </div>
 
