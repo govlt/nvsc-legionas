@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Chart } from '../components/Chart';
+// Remove the Chart import as it is not used
+// import { Chart } from '../components/Chart';
 import InfoHeader from '../components/InfoHeader.tsx';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
@@ -89,15 +90,16 @@ export const Home: React.FC = () => {
               Susipažinti kaip apsisaugoti
             </button>
           </div>
-           <div className="homeChartContainer">
-            <div id="chart" className="homeChart">
-               <Chart/>
+          <div className="homeChartContainer">
+            {/* <div id="chart" className="homeChart">
+              <Chart/>
             </div>
             <div className="chartFiller"></div>
             <a className="homeChartText"
               href = "https://get.data.gov.lt/datasets/gov/nvsc/uzkreciamos_ligos/atvejai/Bendrieji">
-           </div>    Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
-            </a>
+              Grafikas
+            </a> */}
+            Šis grafikas parengtas pagal Lietuvos atvirų duomenų portalo duomenis..
           </div>
         </div>
       </div>
