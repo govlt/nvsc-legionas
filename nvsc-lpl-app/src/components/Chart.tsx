@@ -26,20 +26,16 @@ export const Chart: React.FC = () => {
         }
 
         if (item.mirtis === true) {
-          groupedData[year].deaths+= item.atvejai;
+          groupedData[year].deaths += item.atvejai;
         }
 
         groupedData[year].infections += item.atvejai;
       });
 
-      // Find the minimum and maximum years in the results
       const minYear = Math.min(...Object.keys(groupedData).map(Number));
       const maxYear = Math.max(...Object.keys(groupedData).map(Number));
-
-      // Create an array of all years from minYear to maxYear
       const allYears = Array.from({ length: maxYear - minYear + 1 }, (_, index) => minYear + index);
 
-      // Fill in missing years with zero values for infections and deaths
       const filledResults = allYears.map((year) => {
         if (groupedData[year]) {
           return groupedData[year];
@@ -57,7 +53,7 @@ export const Chart: React.FC = () => {
     responsive: true,
     plugins: {
       tooltip: {
-        displayColors: false, // don't show color box in
+        displayColors: false,
         backgroundColor: 'rgba(72, 99, 160, 1)',
         bodyFont: {
           size: 20,
@@ -66,9 +62,7 @@ export const Chart: React.FC = () => {
           style: 'normal'
         },
         callbacks: {
-          title: function () {
-            return '';
-          },
+          title: () => '',
         }
       },
       legend: {
@@ -92,7 +86,7 @@ export const Chart: React.FC = () => {
         },
       },
       y: {
-        display: false, 
+        display: false,
         grid: {
           display: false,
         },
@@ -106,30 +100,17 @@ export const Chart: React.FC = () => {
     labels,
     datasets: [
       {
-        label: 'Mirtys',
-        borderWidth: 2,
-        data: results.map((item) => item.deaths),
-        tension: 0.3, // smoothness of line
-        borderColor: '#000000',
-        backgroundColor: '#000000',
-        pointRadius: 5,
-        pointHoverRadius: 10,
-        pointBorderColor: '#FFFFFF', 
-        pointBorderWidth: 2,
-        lineThickness: 5,
-      },
-      {
         label: 'Atvejai',
         borderWidth: 5,
         data: results.map((item) => item.infections),
-        tension: 0.3, // smoothness of line
+        tension: 0.3,
         borderColor: '#4C74F5',
         backgroundColor: '#4C74F5',
         pointStyle: 'circle',
         pointRadius: 5,
         pointHoverRadius: 10,
         pointBorderColor: '#FFFFFF',
-        pointBorderWidth: 2, 
+        pointBorderWidth: 2,
       },
     ],
   };
